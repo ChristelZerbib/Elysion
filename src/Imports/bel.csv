@@ -1,0 +1,254 @@
+id,rank_id,up_feature_id,name,isunique,israre,description,add_glyphe_place,bought,special,evol_salary,evol_maintenance,evol_staff
+1,4,NULL,Absorption cathartique,0,0,"L'objet absorbe, depuis tout individu touchant l’objet retissé, un sentiment par contact. Peut contenir jusque 3 sentiments que le porteur peur utiliser à tout moment (pour se nourrir par exemple si Tyr).",NULL,0,0,NULL,NULL,NULL
+2,4,191,Absorption des chocs,0,0,"L’objet a été pensé pour garder une certaine malléabilité. Plutôt que de résister rigidement, il s'adapte aux coups et absorbe une partie du choc, ce qui sauvegarde une partie de l’endurance du porteur.
++ : +10 pts aux jets d’Endurance aux coups reçus, réparation plus simple.",NULL,0,0,NULL,NULL,NULL
+3,7,NULL,Absorption des chocs,0,0,"L’objet n'a pas été pensé pour garder une certaine malléabilité. Il résiste rigidement, il ne s'adapte pas aux coups et n'absorbe pas les chocs. Aucun impact sur l'endurance du porteur.
+- : Coups reçus normalement, mieux vaut racheter que réparer.",NULL,0,0,NULL,NULL,NULL
+4,4,NULL,Distorsion des chocs,0,0,"La coque a tendance à se déformer plutôt que d’encaisser un choc de front, ce qui lui permet de subir moins de dégâts et d’avaries. Nécessite moins de réparation et moins d’entretien. 
+Réduction du coût d’entretien à zéro.",NULL,0,0,NULL,1,NULL
+5,4,NULL,Hydrophobe ,0,0,L'eau ne le mouille pas.,NULL,0,0,NULL,NULL,NULL
+6,4,NULL,Inaltérabilité ,0,0,"L’objet est plus résistant par rapport aux dégâts engendrés par le temps et les éléments (ex : rouille, moisissure, fonte, fissure, ect …).
++ : L’objet devient insensible aux dégâts du temps et des éléments.",NULL,0,0,NULL,NULL,NULL
+7,7,NULL,Inaltérabilité ,0,0,"L’objet est moins résistant par rapport aux dégâts engendrés par le temps et les éléments (ex : rouille, moisissure, fonte, fissure, ect …).
+- : L’objet est très délicat et s’altère très facilement, il demande beaucoup d'entretien.",NULL,0,0,NULL,NULL,NULL
+8,4,NULL,Magnifique ,0,0,"L'objet possède un beau visuel, ce qui peut modifier la réaction d'un spectateur à sa vue (effet RP à la discrétion du MJ).",NULL,0,0,NULL,NULL,NULL
+9,4,NULL,Maîtrise ,0,0,"L’objet ne nécessite pas de niveau particulier dans la compétence à laquelle il est lié pour être utilisé.
++ : L’objet est très accessible et peut-être manié par un enfant.",NULL,0,0,NULL,NULL,NULL
+10,7,NULL,Maîtrise ,0,0,"L’objet nécessite un certain niveau dans la compétence à laquelle il est lié pour être utilisé.
+- : L’objet est complexe et ne peut être manié qu'avec une compétence de niveau Maître au minimum.",NULL,0,0,NULL,NULL,NULL
+11,4,NULL,Parfaite flottaison,0,0,"Le navire ne peut pas être coulé ou prendre l’eau (s'il est toutefois trop détruit, il ne peut plus combattre).",NULL,0,0,NULL,NULL,NULL
+12,4,NULL,Poids ,0,0,"L’objet est moins lourd, ce qui signifie qu’il nécessite moins de force physique pour être utilisé et que le porteur sera plus rapide.
++ : L’objet est léger et peut se manier avec une force de niveau Très faible au minimum. Rapidité +1 (n'est pas un bonus en caractéristique mais offre l'initiative à l’attaque).",NULL,0,0,NULL,NULL,NULL
+13,7,NULL,Poids,0,0,"L’objet est plus lourd, ce qui signifie qu’un certain niveau en force physique s’avére nécessaire et que le porteur sera moins rapide.
+- : L’objet est lourd et ne peut se manier qu'avec une force de niveau Maître au minimum. Rapidité -1 (n'est pas un malus en caractéristique mais fait perdre l'initiative à l’attaque).",NULL,0,0,NULL,NULL,NULL
+14,4,NULL,Portée ,0,0,"La portée des armes de trait est modifiée.
++ : Portée augmentée de 50 mètres.",NULL,0,0,NULL,NULL,NULL
+15,7,NULL,Portée ,0,0,"La portée des armes de trait est modifiée.
+- : Portée réduite de 50 mètres.",NULL,0,0,NULL,NULL,NULL
+16,4,NULL,Résistance magique ,0,0,"L’objet est plus résistant par rapport aux dégâts magiques qu’il pourrait subir, et ne se brise pas facilement.
++ : Diminue la gravité des dégâts magiques subis par l'objet d’un rang.",NULL,0,0,NULL,NULL,NULL
+17,7,NULL,Résistance magique,0,0,"L’objet est moins résistant par rapport aux dégâts magiques qu’il pourrait subir, et peut se briser facilement.
+- : Aucune protection magique n’est offerte au porteur, l’objet supporte mal les attaques magiques.",NULL,0,0,NULL,NULL,NULL
+18,4,NULL,Résistance physique,0,0,"L’objet est plus résistant par rapport aux dégâts physiques qu’il pourrait subir et ne se brise pas facilement.
++ : Diminue la gravité des dégâts physiques subis par l'objet d’un rang, les objets non forgés ne traversent plus.",NULL,0,0,NULL,NULL,NULL
+19,7,NULL,Résistance physique,0,0,"L’objet est moins résistant par rapport aux dégâts physiques qu’il pourrait subir et peut se briser facilement.
+- : Aucune protection physique n’est offerte au porteur, l’objet est délicat et se brise très facilement.",NULL,0,0,NULL,NULL,NULL
+20,5,NULL,Aérodynamisme ,0,0,"L’objet pénètre mieux dans l’air et lui résiste moins.
++ : La vitesse est augmentée de ¼.",NULL,0,0,NULL,NULL,NULL
+21,8,NULL,Aérodynamisme ,0,0,"L’objet pénètre moins bien dans l’air et lui résiste plus.
+- : La vitesse est diminuée de ¼.",NULL,0,0,NULL,NULL,NULL
+22,5,NULL,Catalyseur ,0,0,"L’objet concentre et conduit mieux l’énergie, ce qui permet de faciliter son utilisation de façon générale. Cela peut améliorer l’endurance du porteur, ou sa rapidité à produire un effet magique.
++ : Les sorts demandent 1/4 d’énergie en moins pour être lancés OU Rapidité +1 (n'est pas un bonus en caractéristique mais offre l'initiative à l’attaque).",NULL,0,0,NULL,NULL,NULL
+23,8,NULL,Catalyseur ,0,0,"L’objet concentre et conduit moins bien l’énergie, ce qui complexifie son utilisation de façon générale. Cela peut réduire l’endurance du porteur, ou sa rapidité à produire un effet magique.
+- : Les sorts demandent 1/4 d’énergie en plus pour être lancés OU Rapidité -1 (n'est pas un malus en caractéristique mais fait perdre l'initiative à l’attaque).",NULL,0,0,NULL,NULL,NULL
+24,5,NULL,Complexité ,0,0,"L’utilisation de l’objet est moins complexe, ce qui signifie qu’il est facile à utiliser.
++ : L’objet est très accessible et peut être manié par un enfant.",NULL,0,0,NULL,NULL,NULL
+25,8,NULL,Complexité ,0,0,"L’utilisation de l’objet est plus complexe, ce qui signifie qu’un certain niveau en Education peut s’avérer nécessaire.
+- : L’objet est complexe et ne peut être manié qu'avec une Education de niveau Maître minimum.",NULL,0,0,NULL,NULL,NULL
+26,5,NULL,Dragon d'ossement,0,0,La figure de proue est une gueule de dragon en os qui inspire la peur à ceux qui l’observe (Jet de Force mentale nécessaire).,NULL,0,0,NULL,NULL,NULL
+27,5,NULL,Hydrodynamisme ,0,0,"L’objet pénètre mieux dans l’eau et lui résiste moins.
++ : La vitesse est augmentée de ¼.",NULL,0,0,NULL,NULL,NULL
+28,8,NULL,Hydrodynamisme ,0,0,"L’objet pénètre moins bien dans l’eau et lui résiste plus.
+- : La vitesse est diminuée de ¼.",NULL,0,0,NULL,NULL,NULL
+29,5,NULL,Puissance de perforation,0,0,"L’arme de trait augmente les dégâts de perforation des projectiles.
++ : Les projectiles ignorent la résistance des armures de plaque.",NULL,0,0,NULL,NULL,NULL
+30,8,NULL,Puissance de perforation,0,0,"L’arme de trait diminue les dégâts de perforation des projectiles.
+- : Les projectiles ne peuvent percer que le tissu ou le cuir classique.",NULL,0,0,NULL,NULL,NULL
+31,5,NULL,Réservoir magique,0,0,"L'objet peut contenir une réserve magique équivalente à un sort de niveau Maître, dans laquelle le possesseur pourra puiser. La réserve se remplit lentement (en 1 semaine) en absorbant la magie du porteur.",NULL,0,0,NULL,NULL,NULL
+32,8,NULL,Impossibilité de réservoir magique,0,0,"L’objet ne peut pas contenir de réserve magique, quelle qu’elle soit.",NULL,0,0,NULL,NULL,NULL
+33,5,200,Résistance au froid,0,0,"L'objet est pensé pour modifier la capacité du porteur à évoluer en milieu froid.
++ : La résistance au froid est augmentée de 10 pts.",NULL,0,0,NULL,NULL,NULL
+34,8,NULL,Résistance au froid,0,0,"L'objet n'est pas pensé pour modifier la capacité du porteur à évoluer en milieu froid.
+- : Laisse complètement passer les températures.",NULL,0,0,NULL,NULL,NULL
+35,5,NULL,Vitesse de croisière ,0,0,Réduit le temps de trajet de 1/4.,NULL,0,0,NULL,NULL,NULL
+36,6,NULL,Absorption magique,0,0,"L'objet absorbe depuis la trame l’équivalent énergétique d’un sort de niveau Maître toutes les 10 minutes / 2 tours d’intrigue, et la transmet au corps du porteur ou à un objet doté d’une réserve magique.",NULL,0,0,NULL,NULL,NULL
+37,9,NULL,Impossibilité d’absorption magique,0,0,"L’objet ne peut absorber l’énergie de la trame, de quelque manière que ce soit.",NULL,0,0,NULL,NULL,NULL
+38,6,NULL,Bonus aux glyphes de type élémentaire,0,0,L’objet augmente la puissance des glyphes du type élémentaire de moitié.,NULL,0,1,NULL,NULL,NULL
+39,6,NULL,Bonus aux glyphes de type funeste,0,0,L’objet augmente la puissance des glyphes du type funeste de moitié.,NULL,0,1,NULL,NULL,NULL
+40,6,NULL,Bonus aux glyphes de type soutien,0,0,L’objet augmente la puissance des glyphes du type soutien de moitié.,NULL,0,1,NULL,NULL,NULL
+41,6,NULL,Bonus aux glyphes de type draconique,0,0,L’objet augmente la puissance des glyphes du type draconique de moitié.,NULL,0,1,NULL,NULL,NULL
+42,9,NULL,Incompatibilité aux glyphes de type élémentaire,0,0,L’objet ne peut plus se voir apposer de glyphes du type élémentaire.,NULL,0,0,NULL,NULL,NULL
+43,9,NULL,Incompatibilité aux glyphes de type funeste,0,0,L’objet ne peut plus se voir apposer de glyphes du type funeste.,NULL,0,0,NULL,NULL,NULL
+44,9,NULL,Incompatibilité aux glyphes de type soutien,0,0,L’objet ne peut plus se voir apposer de glyphes du type soutien.,NULL,0,0,NULL,NULL,NULL
+45,9,NULL,Incompatibilité aux glyphes de type draconique,0,0,L’objet ne peut plus se voir apposer de glyphes du type draconique.,NULL,0,0,NULL,NULL,NULL
+46,6,NULL,Bonus aux glyphes,0,0,L’objet augmente la puissance de tous les types de glyphes qui sont apposés dessus de moitié.,NULL,0,1,NULL,NULL,NULL
+47,9,NULL,Impossibilité de glyphe,0,0,L’objet ne peut plus se voir apposer de glyphes.,NULL,0,0,NULL,NULL,NULL
+48,6,NULL,Bonus aux améliorations technologiques,0,0,"Double la puissance des améliorations technologiques de moitié, par la grande adaptabilité du support.",NULL,0,1,NULL,NULL,NULL
+49,9,NULL,Impossibilité d'amélioration technologique,0,0,L’objet ne peut plus se voir apposer d'améliorations technologiques.,NULL,0,0,NULL,NULL,NULL
+50,6,NULL,Catalyseur surpuissant,0,0,"Les armes du navires sont modifiées pour la puissance des projectiles.
++ : Permet de faire attaquer les armes magiques deux fois pendant le même tour.",NULL,0,0,NULL,NULL,NULL
+51,6,191,Confort ,0,0,"L'objet a été conçu pour les efforts physiques de son porteur.
++ : Donne 10 pts de MR sur les jets d'Endurance lorsque le porteur combat ou pratique une activité physique (course, escalade...).",NULL,0,0,NULL,NULL,NULL
+52,9,407,Confort ,0,0,"L'objet n'a pas été conçu pour les efforts physiques de son porteur.
+- : Enlève 10 pts de MR sur les jets d'Endurance lorsque le porteur combat ou pratique une activité physique.",NULL,0,0,NULL,NULL,NULL
+53,6,8,Esthétique ,0,0,"L’objet est esthétique.
++ : L’objet est très beau, il attire l’oeil et aide au Charisme de son porteur (+1 rang de Charisme).",NULL,0,0,NULL,NULL,NULL
+54,9,NULL,Esthétique ,0,0,"L’objet est moins esthétique.
+- : L’objet est laid ou quelconque.",NULL,0,0,NULL,NULL,NULL
+55,6,166,Furtivité ,0,0,"L'objet a été conçu pour mieux masquer son porteur.
++ : Donne 10 pts en jets de Furtivité.",NULL,0,0,NULL,NULL,NULL
+56,9,382,Furtivité ,0,0,"L'objet n'a pas été conçu pour masquer son porteur.
+- : Enlève 10 pts en jets de Furtivité.",NULL,0,0,NULL,NULL,NULL
+57,6,NULL,Impassable ,0,0,"L'objet a été pensé pour protéger les secrets de son utilisateur.
++ : L’objet est protégé contre les sorts et glyphes du flux érudition ainsi que contre les vibrations baptistrales.",NULL,0,0,NULL,NULL,NULL
+58,6,187,Instincts des océans,0,0,"De par sa composition, le navire évolue plus facilement dans son élément (bonus +10 aux jets de manoeuvres).",NULL,0,0,NULL,NULL,NULL
+59,6,NULL,Maîtrise,0,0,Réduit d'un rang le niveau de Navigation nécessaire pour diriger ce navire.,NULL,0,0,NULL,NULL,NULL
+60,6,440,Maniabilité ,0,0,"L’objet a été pensé pour mieux s’adapter aux exigences variables du terrain ou des manoeuvres.
++ : +10 pts de bonus sur les manoeuvres complexes.",NULL,0,0,NULL,NULL,NULL
+61,9,448,Maniabilité ,0,0,"L’objet n'a pas été pensé pour s’adapter aux exigences variables du terrain ou des manoeuvres.
+- : -10 pts de malus sur les manoeuvres complexes.",NULL,0,0,NULL,NULL,NULL
+62,6,436,Précision ,0,0,"L’objet est calibré et équilibré de façon optimisée.
++ : Les attaques sont plus précises de 10 pts.",NULL,0,0,NULL,NULL,NULL
+63,9,444,Précision ,0,0,"L’objet n'est pas calibré ni équilibré de façon optimisée.
+- : Les attaques sont moins précises de 10 pts.",NULL,0,0,NULL,NULL,NULL
+64,6,NULL,Puissance des coups contondants,0,0,"L’objet a été pensé pour des coups contondants.
++ : Aggrave d’un niveau le rang des blessures infligées.",NULL,0,0,NULL,NULL,NULL
+65,9,NULL,Puissance des coups contondants,0,0,"L’objet n'a pas été pensé pour des coups contondants.
+- : Diminue d’un niveau le rang des blessures infligées.",NULL,0,0,NULL,NULL,NULL
+66,6,NULL,Puissance des coups magiques,0,0,"L’objet a été pensé pour des coups magiques.
++ : Aggrave d’un niveau le rang des blessures infligées.",NULL,0,0,NULL,NULL,NULL
+67,9,NULL,Puissance des coups magiques,0,0,"L’objet n'a pas été pensé pour des coups magiques.
+- : Diminue d’un niveau le rang des blessures infligées.",NULL,0,0,NULL,NULL,NULL
+68,6,NULL,Puissance des coups tranchants,0,0,"L’objet a été pensé pour des coups tranchants.
++ : Aggrave d’un niveau le rang des blessures infligées.",NULL,0,0,NULL,NULL,NULL
+69,9,NULL,Puissance des coups tranchants,0,0,"L’objet n'a pas été pensé pour des coups tranchants.
+- : Diminue d’un niveau le rang des blessures infligées.",NULL,0,0,NULL,NULL,NULL
+70,6,NULL,Puissance de tir,0,0,"L’arme de trait modifie la puissance des projectiles.
++ : Les blessures causées par l’arme sont 1 rang supérieur à celui qu’elles seraient normalement (une blessure légère devient moyenne).",NULL,0,0,NULL,NULL,NULL
+71,9,NULL,Puissance de tir,0,0,"L’arme de trait modifie la puissance des projectiles.
+- : Les blessures causées par l’arme sont 1 rang inférieur à celui qu’elles seraient normalement (une blessure moyenne devient légère).",NULL,0,0,NULL,NULL,NULL
+72,1,NULL,Aura de flamme,0,0,"Une température élevée s’en dégage (niveau de Résistance physique Très bon minimum, ou immunité à la chaleur, pour toucher l’objet sans blessure).",NULL,0,0,NULL,NULL,NULL
+73,1,NULL,Aura de givre,0,0,"Une température froide s’en dégage (niveau Résistance physique Très bon minimum, ou immunité au froid, pour toucher l’objet sans blessure).",NULL,0,0,NULL,NULL,NULL
+74,1,NULL,Couvre son,0,0,Étouffe les sons de mouvement produits par le porteur.,NULL,0,0,NULL,NULL,NULL
+75,1,NULL,Fidélité ,0,0,L'objet ne peut être utilisé que par son propriétaire.,NULL,0,0,NULL,NULL,NULL
+76,1,NULL,Garde-Chaleur,0,0,"Conserve la chaleur corporelle du porteur, quelle que soit la température extérieure.",NULL,0,0,NULL,NULL,NULL
+77,1,NULL,Guérison ,0,0,L’objet peut guérir écorchures et blessures légères en puisant dans les forces du porteur (l’énergie dépend de la blessure en guérison). Sur activation.,NULL,0,0,NULL,NULL,NULL
+78,1,NULL,Indétectable ,0,0,"Quand l’objet n’est pas utilisé, les observateurs ne se rendent pas compte de sa présence.",NULL,0,0,NULL,NULL,NULL
+79,1,NULL,Litanie marine,0,0,"Les marins du navire ont l’habitude de chanter lorsqu’ils sont à bord du navire, il y fait donc plus naturellement bon vivre, si bien qu’il arrive aux membres de l’équipage de ne pas demander leur solde. 
+Retire les frais d’équipage.",NULL,0,0,NULL,NULL,1
+80,1,NULL,Lubie,0,0,"Destiné aux armures
+L'armure, au repos, se transforme en un pendentif, ou un objet simple comme une ceinture. L'objet étant en rapport avec la taille et le poids de l'armure. Elle se transforme sous une lueur blanche et satinée. La transformation de l'armure demande de l'énergie au porteur (sort niveau Faible).",NULL,0,0,NULL,NULL,NULL
+81,1,NULL,Lueur,0,0,L’objet peut luire d'une lumière pâle et spectrale.,NULL,0,0,NULL,NULL,NULL
+82,1,NULL,Marquage luminescence,0,0,"Sur ordre du capitaine, la voile peut expulser une boule de mucus sur un autre navire. Les parties touchées du navire, ainsi que l’équipage touché à bord, luiront pendant plusieurs jours. Pratique quand on veut traquer un navire y compris en pleine nuit.",NULL,0,0,NULL,NULL,NULL
+83,1,NULL,Miroir d'eau,0,0,La proue agit comme un véritable réflecteur de lumière et peut éblouir pendant 30 minutes / 1 tour d'intrigue ceux qui la regarderaient pendant une poignée de secondes.,NULL,0,0,NULL,NULL,NULL
+84,1,NULL,Mutation volatile,0,0,"Fait pousser un membre supplémentaire (bras, jambe) ou un organe supplémentaire (coeur, poumon) pendant 1 heure / 3 tours d’intrigue.",NULL,0,0,NULL,NULL,NULL
+85,1,NULL,Nexus draconique,0,0,L’objet possède les propriétés de catalyseur et d’absorption magique des dragons.,NULL,0,0,NULL,NULL,NULL
+86,1,NULL,Nimbé de lumière,0,0,"Le bateau dégage une impression de pureté, tant et si bien que cela le rend plus attrayant, au point que certains ne soupçonneront jamais quoique que ce soit vis-à-vis de ce qu’il transporte, son équipage, ce qu’il fait en mer... Il s'agit essentiellement d'un effet RP (à la discrétion des joueurs ou sous décision MJ en intrigue).",NULL,0,0,NULL,NULL,NULL
+87,1,NULL,Océamorphe,0,0,"A l’activation sous ordre du capitaine, le bateau prend l’apparence d’une créature marine qu’il a déjà rencontrée et avalée (le bateau devra s’être nourrie de la créature en question en l’ayant avalée avec Voracité océanique et cela devra être évoquée dans un rp antérieur – nature de la créature marine à préciser lors de l’utilisation). Il s'agit d'une illusion.",NULL,0,0,NULL,NULL,NULL
+88,1,NULL,Protection,0,0,"Quand une blessure non mortelle doit être subie par le porteur, l’objet désactive à la place un enchantement possédé par lui, et ce jusqu'à ce qu'il ne lui en reste plus.
+Ne peut pas fonctionner avec Auramancie.",NULL,0,0,NULL,NULL,NULL
+89,1,NULL,Résonance,0,0,La cible frappée par le poing du poteur est sonnée pendant un tour d'intrigue (sur jet de Résistance physique adverse).,NULL,0,0,NULL,NULL,NULL
+90,1,NULL,Songe,0,0,"Destiné aux armes
+La lame au repos disparaît en semblant fondre dans une lueur blanche. Ne reste que la garde de l'arme, qui peut alors être rangée plus aisément.",NULL,0,0,NULL,NULL,NULL
+91,1,NULL,Toxique,0,0,"Destiné aux armes
+Quand l’arme est plongée dans l’eau, elle devient toxique. Chaque blessure réussie entraîne -1 rang en Endurance sur la victime.",NULL,0,1,NULL,NULL,NULL
+92,1,NULL,Voracité océanique,0,0,"A l’activation sous l’ordre du capitaine, la proue se transforme en gigantesque gueule de créatures marines pour manger ce qui se trouve devant. Elle peut ainsi attaquer un navire ennemi en refermant ses machoires dessus plutôt que de l’éperonner. Durée de 1 heure / 2 tours d'intrigue.",NULL,0,0,NULL,NULL,NULL
+93,2,NULL,Anonymat,0,0,"Moyennant l’équivalent énergétique d’un sort de niveau bon, permet au porteur de se faire anonyme et insignifiant, de sorte à passer si inaperçu que les observateurs ne notent même pas sa présence.",NULL,0,0,NULL,NULL,NULL
+94,2,NULL,Auramancie,0,0,"Dans un rayon de 4 à 5 mètres autour du porteur, les glyphes sont protégés contres les effets visant à les désactiver, les détruire ou les annuler.
+Ne peut pas fonctionner avec l’effet Protection.",NULL,0,0,NULL,NULL,NULL
+95,2,158,Bélier de poing,0,0,"A l'activation, le gant du porteur devient un véritable “bélier de poing” et porte des actions en combat au corps à corps plus puissantes (bonus de +5 sur la MR sur ces actions).",NULL,0,0,NULL,NULL,NULL
+96,2,NULL,Bête du marais,0,0,"Les créatures du marais de Néthéril, bestiaire compris, confondent le porteur avec une bête vivant dans les marais et n’engagent pas d’hostilité à son encontre. Sauf s’il les attaque en premier.",NULL,0,0,NULL,NULL,NULL
+97,2,NULL,La Bête humaine,0,0,"Sur le reste des îles de l’archipel de Tiamaranta, les créatures, bestiaire compris, sont intimidées par le porteur. Les créatures les plus hostiles ne l’attaqueront pas directement, ce qui peut lui permettre de préparer une défense.",NULL,0,0,NULL,NULL,NULL
+98,2,452,Bonus aux Esprits-Liés,0,0,L’objet donne +10 pts aux jets sur les pouvoirs d’Esprits-Liés.,NULL,0,0,NULL,NULL,NULL
+99,2,NULL,Bouclier coloré,0,0,"L’objet se transforme temporairement en bouclier, pouvant arrêter trois sorts de niveaux Bons ou l’équivalent en niveaux inférieurs. Ensuite il se brise et doit être appelé de nouveau.",NULL,0,0,NULL,NULL,NULL
+100,2,NULL,Bouclier d’eau,0,0,"Destiné aux tissus
+Le tissu se transforme en eau et forme un bouclier temporaire devant la personne, absorbant 3 sorts de niveau Bon ou l'équivalent en rangs inférieurs.",NULL,0,0,NULL,NULL,NULL
+101,2,NULL,"Capitaine, iceberg droit devant",0,0,"Pendant un tour d'intrigue, le navire et son équipage deviennent impalpables, comme éthérés, tel un vaisseau fantôme. Le bateau peut alors passer au travers d'obstacles ou d'autres navires. Ne peut pas attaquer pendant la manœuvre. (Une fois par jour seulement).",NULL,0,0,NULL,NULL,NULL
+102,2,NULL,Cocon de chaleur,0,0,"Le porteur dégage une aura de chaleur, à la vue de cette peau lainée, qui augmente la résistance au froid des alliés du porteur de 10 pts (effet purement psychologique, les alliés ont l'impression d'avoir plus chaud).",NULL,0,1,NULL,NULL,NULL
+103,2,NULL,Compagnon immatériel,0,0,Fait apparaître contre de l'énergie un animal immatériel qui tient compagnie au propriétaire et dégage de la lumière pouvant éclairer dans l'obscurité. L’apparition est égale à un sort niveau Faible.,NULL,0,0,NULL,NULL,NULL
+104,2,NULL,Dévore joie,0,0,L’objet absorbe tous les sentiments positifs émanant des individus autour du porteur. Cela inflige -1 rang en Force mentale aux personnes sur 5 mètres de rayon.,NULL,0,VRAI,NULL,NULL,NULL
+105,2,192,Don d’Océan,0,0,"Destiné aux tissus
+Le tissu se transforme en nageoires dans l’eau, augmentant grandement l’agilité (+10 pts en Jet de Coordination) et la rapidité (Rapidité +1 : n'est pas un bonus en caractéristique mais offre l'initiative à l’attaque).",NULL,0,0,NULL,NULL,NULL
+106,2,NULL,Empreinte du froid,0,0,"Destiné aux armes
+Au contact de l'air, l'arme refroidit progressivement les alentours, rendant l’environnement de plus en plus dangereux (malus possible en Coordination, ou possibles blessures dues au froid).",NULL,0,VRAI,NULL,NULL,NULL
+107,2,NULL,Empreinte lumineuse,0,0,"Destiné aux armes
+Au contact de l'air, l'arme illumine progressivement ses alentours jusqu’à devenir aveuglante pour les adversaires du porteur.",NULL,0,0,NULL,NULL,NULL
+108,2,NULL,Empreinte orageuse,0,0,"Destiné aux armes
+Au contact de l'air, l'arme se charge d'énergie jusqu'à produire des décharges électriques dans l’air.",NULL,0,0,NULL,NULL,NULL
+109,2,NULL,Empreinte ténébreuse,0,0,"Destiné aux armes
+Au contact de l'air, l'arme absorbe la lumière jusqu'à plonger les alentours dans l'obscurité.",NULL,0,0,NULL,NULL,NULL
+110,2,NULL,Empreinte volcanique,0,0,"Destiné aux armes
+Au contact de l'air, l'arme réchauffe progressivement l'atmosphère (malus possible à l’Endurance, Perception, ou possibles blessures dues à la chaleur).",NULL,0,VRAI,NULL,NULL,NULL
+111,2,NULL,Exaltation d’aspiration,0,0,"A l’activation, la cible se prend soudain pour un Dieu, capable de tout, même de l’impossible, de braver tous les dangers, de vaincre tous les obstacles : pour elle, rien ne peut plus lui résister ! Dure 1 heure / 2 tours d’intrigue. Cela ne donne aucun bonus de caractéristique. Cela influence juste la cible à faire certains actes.",NULL,0,0,NULL,NULL,NULL
+112,2,NULL,Fascination,0,0,L’objet provoque la fascination chez les spectateurs pendant 5 minutes/1 tour d’intrigue. Equivalent d’un sort de niveau Bon.,NULL,0,0,NULL,NULL,NULL
+113,2,NULL,Hémorragie feinte,0,0,"Quand le tissu se déchire, une importante quantité de liquide rougeâtre se déverse de la coupure, faisant alors croire à une blessure plus grave qu'elle ne l'est réellement. Idéal pour faire croire que l'on est affaibli et leurrer l'adversaire avant d'en profiter pour une fuite ou une contre-attaque surprise.
+Accorde un bonus à l'initiative sur la prochaine action sur jet de sauvegarde de l'observateur (jet de sauvegarde Intuition ou Perception).",NULL,0,0,NULL,NULL,NULL
+114,2,117,Illumination,0,0,Octroie un bonus de +5 de MR sur les jets d'Intuition.,NULL,0,0,NULL,NULL,NULL
+115,2,NULL,Invisibilité,0,0,Le support devient invisible à l'oeil nu.,NULL,0,0,NULL,NULL,NULL
+116,2,NULL,Miroir d’impulsion,0,0,"A l’activation, envoie une impulsion mentale qui inverse les sentiments ressentis à l’origine par la cible à l’encontre du porteur (par exemple si la cible hait viscéralement le porteur, elle est soudainement folle amoureuse de lui). Dure 1 heure / 2 tours d’intrigue. (Jet de sauvegarde : Force mentale).",NULL,0,0,NULL,NULL,NULL
+117,2,NULL,Miroir magique,0,0,L’objet permet de dévier les sorts jusqu'au niveau Bon.,NULL,0,0,NULL,NULL,NULL
+118,2,195,Pourfend peine,0,0,L’objet absorbe tous les sentiments négatifs émanant des individus autour du porteur et les canalise dans l’objet (offre +10 pts aux jets de résistance à la peur ou à la folie).,NULL,0,0,NULL,NULL,NULL
+119,2,NULL,Résilience,0,0,"Destiné aux armes
+L'arme combat seule, même si son porteur ne la porte plus, du moment que le porteur peut la nourrir en énergie. Le temps de combat de l'arme seule dépend de l'Endurance du propriétaire.",NULL,0,0,NULL,NULL,NULL
+120,2,NULL,Résistance draconique,0,0,Les résistances physique et magique deviennent égales à celles des écailles de dragons.,NULL,0,VRAI,NULL,NULL,NULL
+121,2,NULL,Rêve,0,0,"Destiné aux armes
+L'arme, au repos, se transforme en un animal ou une miniature d'animal (si l'animal dépasse la taille du chat). Il ne sert pas à l'attaque, mais simplement à l'apparat. La transformation de l'arme demande de l'énergie au porteur (sort niveau Faible).",NULL,0,0,NULL,NULL,NULL
+122,2,439,Soutien des morts,0,0,"A l’activation, fait apparaître l’image éthérée d’un proche décédé du possesseur, lui insufflant des sentiments capables de le nourrir. Il peut s’agir d’un proche aimé, insufflant des sentiments positifs, ou d’un proche haï insufflant des sentiments négatifs, à préciser lors de l’invocation. Les sentiments insufflés peuvent l’aider alors à effectuer une action (+5 aux jets pour cette action si les sentiments insufflés sont concordants) ou au contraire l’entraver (-5 aux jets en cas inverse) / sur décision MJ.",NULL,0,0,NULL,NULL,NULL
+123,3,NULL,Absorption de vie,0,0,"L’objet draine l’énergie vitale des personnes dans un périmètre de 5 mètres et la transmet au corps du porteur, ce qui le soigne d'une blessure (une blessure légère si qu'une seule personne drainée, une blessure moyenne jusque 3 personnes, une blessure grave pour plus de 5 personnes) ou lui faire récupérer de l’endurance en l’absence de blessures (sur jet de Résistance magique).",NULL,0,0,NULL,NULL,NULL
+124,3,NULL,Absorption solaire,0,0,"Destiné aux coques de bateau.
+Absorbe la lumière solaire afin de gorger l’équipage et le capitaine en énergie (tout membre d’équipage ou allié présent sur le navire aura droit à 2 actions par tour).",NULL,0,0,NULL,NULL,NULL
+125,3,NULL,Aspiration du Käducë,0,0,"En touchant la cible avec l’objet forgé, cela permet de guérir une blessure que l’objet renferme ensuite en lui, même mortelle. Utilisable qu’une seule fois par intrigue et qu’une fois par semaine, le temps que l’objet se renforce.",NULL,0,0,NULL,NULL,NULL
+126,3,NULL,Atténuation magique,0,0,Réduit les effets magiques des sorts et des glyphes lancés contre le porteur de moitié.,NULL,0,0,NULL,NULL,NULL
+127,3,NULL,Bassin du Käducë,0,0,En touchant le sol avec l’objet permet de faire apparaître un bassin d’eau pure inépuisable sur un rayon de 5 mètres. Le bassin disparaît quand l’objet est retiré ou au bout d’une heure / 2 tours d’intrigue.,NULL,0,0,NULL,NULL,NULL
+128,3,NULL,Cercle protecteur,0,0,"Poser l’objet sur le sol forme une zone de protection pendant 3 tours d’intrigue, qui interdit la violence dans la zone ainsi sanctifiée.",NULL,0,0,NULL,NULL,NULL
+129,3,NULL,Conscience du vent,0,0,"Les voiles peuvent murmurer à votre esprit ce que le vent leur porte comme information. Cette information peut être un danger qui arrive en chemin, ou une conversation que le vent a entendu sur un navire proche… ou tout simplement ce chant envoûtant si célèbre des néréides pour mieux vous perdre dans vos songes, si vous n’êtes pas de Force mentale assez forte. Peut nécessiter un jet de Force mentale. En intrigue, si jet réussi, l’information entendue sera choisie par le MJ.",NULL,0,0,NULL,NULL,NULL
+130,3,NULL,Construct mortuaire,0,0,"La coque peut se modeler selon la volonté de son maître afin de prendre la forme d’armes non magiques (balistes, catapultes, etc) tant que la transformation n'endommage pas la flottaison. Equivalent d’un sort de rang maître.",NULL,0,0,NULL,NULL,NULL
+131,3,NULL,Désactivation des glyphes,0,0,"Désactive les glyphes par contact. 
+Les glyphes de l'objet touché mettent 1 tour d’intrigue à se réactiver.",NULL,0,0,NULL,NULL,NULL
+132,3,NULL,Détection de l'omission,0,0,Permet de détecter toute omission de la part de l’interlocuteur du porteur.,NULL,0,0,NULL,NULL,NULL
+133,3,NULL,Empreinte Spirituelle,0,0,"Au contact de l’air, l’objet se charge de l’énergie des spirites alentour et vient perturber les connexions des adversaires du porteur à leurs Esprits-Liés sur un rayon de 5 mètres (-10 pts aux jets d’Esprits-Liés pour ces personnes).",NULL,0,VRAI,NULL,NULL,NULL
+134,3,NULL,Extension,0,0,"Lorsqu’un sort de soutien ou de soin est reçu par le porteur, il s’étend à une autre cible également.",NULL,0,0,NULL,NULL,NULL
+135,9,NULL,Extension corporelle,0,0,Un bris ou une rayure de l’objet est ressenti(e) comme une douleur corporelle par le porteur. Celui-ci ressent un malaise quand il est séparé de son arme.,NULL,0,0,NULL,NULL,NULL
+136,3,NULL,Fausse copie,0,0,"Lorsque la personne est repérée, alors qu’elle tente d’être discrète, une illusion, créant un double d’elle, apparaît. Le double se dirigera dans la direction opposée du porteur.",NULL,0,0,NULL,NULL,NULL
+137,3,NULL,Imposition magique,0,0,"Dans un rayon de 5 mètres autour du porteur, tous les sorts demandent un niveau supplémentaire pour être utilisé, sauf les sorts de niveau Exceptionnel. Ainsi un sort de niveau Bon ne pourra être lancé que par un mage de niveau Très bon et ainsi de suite. Sur activation.",NULL,0,0,NULL,NULL,NULL
+138,3,NULL,Initiative,0,0,"Lors d'un combat, le porteur attaque en premier.",NULL,0,0,NULL,NULL,NULL
+139,3,NULL,Inversion,0,0,"L’objet permet, lorsque le porteur arrive à résister à un sort de charme, ou un effet de charme dépendant d'un enchantement, de pouvoir tenter de retourner contre un peu d'énergie ledit effet contre celui qui l'avait utilisé.",NULL,0,0,NULL,NULL,NULL
+140,3,NULL,Juste terreur,0,0,L’objet inspire de la peur aux ennemis de Force mentale inférieure au porteur (ils ne peuvent plus se battre sans jet de Force mentale critique).,NULL,0,0,NULL,NULL,NULL
+141,3,NULL,Lame de lumière,0,0,"Destiné aux armes
+L’arme capte la lumière et la transforme en énergie, que l'utilisateur peut diriger soit vers la lame (lame d’énergie), pour la rendre aussi efficace qu'une arme réelle, soit vers le corps de l'arme pour provoquer une hypnose, affectant seulement les ennemis.",NULL,0,0,NULL,NULL,NULL
+142,3,NULL,Lame énergie,0,0,"Destiné aux armes
+La lame devient de pure énergie et passe au travers de toutes les protections, y compris les écailles de dragon.",NULL,0,0,NULL,NULL,NULL
+143,3,NULL,Lame illusoire,0,0,"Destiné aux armes
+L’arme capte lumière et obscurité en son sein. Le tranchant ne cause pas de blessures physiques, mais s'attaque à l'esprit provoquant une folie temporaire (10 minutes/2 tours d’intrigue). Sur le corps de l'arme, l'énergie accumulée peut provoquer une hypnose ou une illusion.",NULL,0,0,NULL,NULL,NULL
+144,3,NULL,Lame tachée d'ombre,0,0,"Destiné aux armes
+L’arme capte la lumière et l'obscurité au sein de la lame (lame d’énergie), pour la rendre aussi efficace qu'une arme réelle. L'utilisateur peut également les détourner vers le corps de l'arme afin d'enténébrer un lieu.",NULL,0,0,NULL,NULL,NULL
+145,3,NULL,Lien de vie,0,0,Toute attaque réussie par le porteur provoquant une blessure permet de soigner une de ses propres blessures.,NULL,0,0,NULL,NULL,NULL
+146,3,NULL,Limbes de la pensée,0,0,"Le bateau devient manipulable par la seule pensée, sans même toucher la barre. Toutefois celui qui manipule le bateau doit rester entièrement concentré sur cette tâche et ne peut rien faire d’autre. Bien entendu, il ne peut tenir tout le temps d’un trajet qui durerait plusieurs jours. Possibilité d’ordonner à l’esquif de retourner en un lieu où il se trouvait auparavant sans navigateur en suivant le même trajet qu’à l’aller. À vos risques et périls si des obstacles apparaissent alors...",NULL,0,0,NULL,NULL,NULL
+147,3,NULL,Magnificence nocturne,0,0,"Hypnotise une cible à la Force mentale inférieure à Maître (le porteur peut lui faire faire une action, le plonger dans ses souvenirs, etc, à son choix / Sous réserve de jet de Force mentale adverse).",NULL,0,0,NULL,NULL,NULL
+148,3,NULL,Malédiction de Nature,0,0,"Dans un rayon de 5 mètres, les glyphes élémentaires perdent la moitié de leur efficacité.",NULL,0,1,NULL,NULL,NULL
+149,3,NULL,Malus aux glyphes adverses,0,0,"Au contact, l’objet diminue de moitié la puissance des glyphes possédés par le support touché.",NULL,0,1,NULL,NULL,NULL
+150,3,NULL,Miroir de Mort,0,0,La figure de proue est une gueule de dragon en os qui inspire la peur à ceux qui l’observent (Jet de Force mentale nécessaire).,NULL,0,0,NULL,NULL,NULL
+151,3,NULL,Paix désirée,0,0,L’objet inspire de la douceur et de la bonté aux ennemis de Force mentale inférieure au porteur.,NULL,0,0,NULL,NULL,NULL
+152,3,NULL,Parfum d’attraction,0,0,Le porteur est irrésistible pour les personnes de niveau de Force mentale inférieur au sien.,NULL,0,0,NULL,NULL,NULL
+153,3,NULL,Planque secrète,0,0,Permet de ranger jusqu’à 5 objets de petite taille à l'intérieur (il faut pouvoir les rentrer dans la poche) sans qu'ils ne se voient. La magie les rend invisibles à l’œil nu et impalpables.,NULL,0,0,NULL,NULL,NULL
+154,3,NULL,Puissance native de Paadshail,0,0,"Issus d'éléments obtenus au plus froid de ""l'île de l'hiver"", les objets en givranium doublent la puissance des glyphes, des sorts et de toutes capacités liés à l'Eau et la Glace, et divisent par deux la puissance de ceux liés au Feu.",NULL,0,1,NULL,NULL,NULL
+155,3,NULL,Puissance native de Vaalaamuk,0,0,"Issus d'éléments obtenus des entrailles de “la Montagne de Feu”, les objets en volcanium doublent la puissance des glyphes, des sorts et de toutes capacités liés au Feu et à la Lumière, et divisent par deux la puissance de ceux liés à l’Eau et à la Glace.",NULL,0,1,NULL,NULL,NULL
+156,3,NULL,Rapiat,0,0,"Quand le boss est tué, vous êtes le premier à vous jeter sur le loot ? Cet effet permet d'avoir deux dés de récompense, à la fin d'une intrigue, pour le personnage, au lieu d'un.",NULL,0,0,NULL,NULL,NULL
+157,3,NULL,Rage,0,0,"Lorsque le porteur est atteint par une blessure grave, la puissance de son Esprit-Lié double.",NULL,0,1,NULL,NULL,NULL
+158,3,NULL,Rejeté par les Déesses,0,0,"Dans un rayon de 5 mètres, les glyphes de soutien perdent la moitié de leur efficacité.",NULL,0,1,NULL,NULL,NULL
+159,3,NULL,Réverbération,0,0,"Lorsqu'un sort de soutien ou de soin est reçu par le porteur, il est doublé.",NULL,0,0,NULL,NULL,NULL
+160,3,NULL,Serment funeste,0,0,"Dans un rayon de 5 mètres, les glyphes funestes perdent la moitié de leur efficacité.",NULL,0,1,NULL,NULL,NULL
+161,3,198,Sixième sens,0,0,"A l’activation, permet d’affûter l’intuition du porteur et de ses alliés dans un rayon de 5 mètres pour une durée maximale de 1heure / 2 tours d’intrigue (bonus de +10 aux jets d’Intuition).",NULL,0,0,NULL,NULL,NULL
+162,3,NULL,Souffle spirituel,0,0,L’objet double l’efficacité des pouvoirs des Esprits-Liés.,NULL,0,1,NULL,NULL,NULL
+163,3,NULL,Stimulation,0,0,"Lorsqu’un sort de soutien ou de soin est émis par le porteur, il est dédoublé sur une cible supplémentaire.",NULL,0,0,NULL,NULL,NULL
+164,3,NULL,Union,0,0,Les effets bénéfiques de glyphes ou de sorts sont dédoublés sur un parent vampirique se trouvant dans un périmètre de 5 mètres (hors up de caractéristiques).,NULL,0,0,NULL,NULL,NULL
+165,3,NULL,Vitesse solaire,0,0,"Destiné aux coques de bateau.
+Absorbe la lumière solaire afin d’accélérer la vitesse du navire. La vitesse dépend de la luminosité et est fonction de la position du soleil dans le ciel (aube, zénith, crépuscule). Jusqu’à 100% de vitesse en plus quand le soleil est au zenith.",NULL,0,0,NULL,NULL,NULL
+166,9,NULL,Conditions d'utilisation,0,1,Actif uniquement quand porté,NULL,0,0,NULL,NULL,NULL
+167,6,NULL,Bonus aux glyphes liés à la voie mystique,0,1,L’objet augmente la puissance des glyphes liés à la voie mystique de moitié.,NULL,0,1,NULL,NULL,NULL
+168,6,NULL,Emplacement de glyphes +1,0,1,Ajoute 1 emplacement de glyphes/améliorations.,1,0,0,NULL,NULL,NULL
+169,7,NULL,Maîtrise en Force,0,1,L’objet est complexe et ne peut être manié qu'avec une Force de niveau Maître au minimum.,NULL,0,0,NULL,NULL,NULL
+170,7,NULL,Maîtrise en Arme de trait,0,1,L’objet est complexe et ne peut être manié qu'avec une Expertise en Arme de trait de niveau Maître au minimum.,NULL,0,0,NULL,NULL,NULL
+171,6,184,Précision Armes de Trait,0,0,"L’objet est calibré et équilibré de façon optimisée.
++ : Les attaques sont plus précises de 10 pts. Bonus de +10 en Jet d'Armes de Trait",NULL,0,0,NULL,NULL,NULL
+172,9,400,Précision Armes de Trait,0,0,"L’objet n'est pas calibré ni équilibré de façon optimisée.
+- : Les attaques sont moins précises de 10 pts. Malus de -10 en Jet d'Armes de Trait",NULL,0,0,NULL,NULL,NULL
+173,6,182,Précision Armes de Jet,0,0,"L’objet est calibré et équilibré de façon optimisée.
++ : Les attaques sont plus précises de 10 pts. Bonus de +10 en Jet d'Armes de Jet",NULL,0,0,NULL,NULL,NULL
+174,9,398,Précision Armes de Jet,0,0,"L’objet n'est pas calibré ni équilibré de façon optimisée.
+- : Les attaques sont moins précises de 10 pts. Malus de -10 en Jet d'Armes de Jet",NULL,0,0,NULL,NULL,NULL
+175,6,NULL,Bonus aux glyphes et effets d'alliage en relation avec l'eau,0,1,"L’objet augmente la puissance des glyphes et effets d'alliage liés à l'élément eau (armes à eau, hydrodynamique...) de moitié.",NULL,0,1,NULL,NULL,NULL
+176,6,NULL,Emplacement de glyphes +2,0,1,Ajoute 2 emplacements de glyphes/améliorations.,2,0,0,NULL,NULL,NULL
+177,6,NULL,Bonus aux glyphes et améliorations liés aux voiles,0,1,L’objet augmente la puissance des glyphes et améliorations liés aux voiles de moitié.,NULL,0,1,NULL,NULL,NULL
+178,7,NULL,Maîtrise en Force mentale et Magie,0,1,"La manoeuvre du bateau est complexe. Celle-ci pouvant se faire par la pensée, la compétence Navigation peut être remplacée par les compétences Force mentale ET Magie qui doivent être du même niveau requis que la navigation demandée. Si tel est le cas, le conducteur ne peut utiliser d’arme, il peut juste utiliser le bateau pour se déplacer.",NULL,0,0,NULL,NULL,NULL
+179,6,NULL,Bonus aux armes et glyphes liés à l’armement,0,1,L’objet augmente la puissance des armes et des glyphes liés à l’armement de moitié.,NULL,0,1,NULL,NULL,NULL

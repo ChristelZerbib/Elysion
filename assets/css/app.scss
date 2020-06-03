@@ -1,0 +1,73 @@
+@import "~bootstrap/scss/bootstrap";
+
+.text-ocean 
+{
+	color: #0C5460;
+}
+
+/* Formatting menus */
+.dropdown .dropdown-menu 
+{
+	border-radius:0rem;
+	margin: 0.5rem 0 0;
+}
+
+/* Formatting template */
+body
+{
+	background-image:url("/build/images/wallpaper6.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.global-frame
+{
+	text-align : justify;
+	background-color : rgba(209,236,241,.8);
+	color: #0C5460;
+	padding-top : 5%;
+	padding-bottom : 5%;
+	padding-right : 5%;
+	padding-left : 5%;
+	min-height: 88.5vh;
+}
+
+/* Cards*/
+.card-text
+{
+	margin-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+/* alloys*/
+.sup-type
+{
+	font-size: 0.8em;
+}
+
+.bold-title
+{
+	font-weight: bold;
+}
+
+.bonus
+{
+	color: BlanchedAlmond;
+}
+
+.malus
+{
+	color: Tan;
+}
+
+.effect
+{
+	color: MediumTurquoise;
+}
+
+.filters 
+{
+	margin-top: 2em;
+	margin-bottom: 3em;
+}

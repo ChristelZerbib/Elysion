@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Alliages</h1>
+
+        {% block filters %}
+            {% include ("alloys_list/_filters.html.twig") %}
+        {% endblock %}
+
+
+
+        {% for alloys_list in alloys_lists %}
+ 
+            <div class="card bg-dark border-info mb-3" data-type="{{ alloys_list.type }}" data-supp1= "{{ alloys_list.support }}" data-supp2= "{{ alloys_list.support2 }}" data-supp3= "{{ alloys_list.support3 }}" data-name="{{ alloys_list.name }}" data-name="{{ alloys_list.description }}">
+                <div class="card-header border-info text-info bold-title">
+                    {{ alloys_list.name }}
+                </div>
+                <div class="card-body bg-secondary no-gutters row justify-content-around">
+
+
+                    {# description of the alloy #}
+                    <div class="card-text text-light col-12 sup-type">
+
+                        {% if alloys_list.support is defined and alloys_list.support is not empty %}
+                            {{ alloys_list.support }}
+                        {% endif %}
+                        {% if alloys_list.support2 is defined and alloys_list.support2 is not empty %}
+                            , {{ alloys_list.support2 }}
+                        {% endif %}
+                        {% if alloys_list.support3 is defined and alloys_list.support3 is not empty %}
+                            , {{ alloys_list.support3 }}
+                        {% endif %}
+                        - {{ alloys_list.type }}
+                    </div>
+                    <div class="card-text text-light col-md-5">{{ alloys_list.description }}</div>
+
+
+                    {# description of the bonus and the effects #}
+                    <div class="card-text text-light col-md-5 sup-type">
+                        {% set price = 0 %}
+                        {% if alloys_list.bonus1.name is defined and alloys_list.support is not empty %}
+                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus1.name }} :</span> {{ alloys_list.bonus1.description }} </span> <br/>
+                            {% set price = price + alloys_list.bonus1.rank.price %}
+                        {% endif %}
+                        {% if alloys_list.bonus2.name is defined and alloys_list.support is not empty %}
+                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus2.name }} :</span> {{ alloys_list.bonus2.description }} </span> <br/>
+                            {% set price = price + alloys_list.bonus2.rank.price %}
+                        {% endif %}
+                        {% if alloys_list.bonus3.name is defined and alloys_list.support is not empty %}
+                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus3.name }} :</span> {{ alloys_list.bonus3.description }} </span> <br/>
+                            {% set price = price + alloys_list.bonus3.rank.price %}
+                        {% endif %}
+                        {% if alloys_list.bonus4.name is defined and alloys_list.support is not empty %}
+                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus4.name }} :</span> {{ alloys_list.bonus4.description }} </span><br/>
+                            {% set price = price + alloys_list.bonus4.rank.price %}
+                        {% endif %}
+
+                        {% if alloys_list.malus1.name is defined and alloys_list.support is not empty %}
+                            <span class="malus"><span class="bold-title">Malus - {{ alloys_list.malus1.name }} :</span> {{ alloys_list.malus1.description }} </span><br/>
+                        {% endif %}
+                        {% if alloys_list.malus2.name is defined and alloys_list.support is not empty %}
+                            <span class="malus"><span class="bold-title">Malus - {{ alloys_list.malus2.name }} :</span> {{ alloys_list.malus2.description }} </span> <br/>
+                        {% endif %}
+                        {% if alloys_list.malus3.name is defined and alloys_list.support is not empty %}
+                            <span class="malus"><span class="bold-title">Malus - {{ alloys_list.malus3.name }} :</span> {{ alloys_list.malus3.description }} </span> <br/>
+                        {% endif %}
+                        
+                        {% if alloys_list.effect1.name is defined and alloys_list.support is not empty %}
+                            <br/><span class="effect"><span class="bold-title">Effet - {{ alloys_list.effect1.name }} :</span> {{ alloys_list.effect1.description }}</span> <br/>
+                            {% set price = price + alloys_list.effect1.rank.price %}
+                        {% endif %}
+                        {% if alloys_list.effect2.name is defined and alloys_list.support is not empty %}
+                            <span class="effect"><span class="bold-title">Effet - {{ alloys_list.effect2.name }} :</span> {{ alloys_list.effect2.description }}</span> <br/>
+                            {% set price = price + alloys_list.effect2.rank.price %}
+                        {% endif %}
+
+                        
+
+
+                    </div>
+                    <div class="card-text col-12 text-center">
+                        {% if is_granted('ROLE_ADMIN') %}   
+                            <a href="{{ path('alloys_list_edit', {'id': alloys_list.id}) }}" class="btn btn-dark text-info border-info">Modifier</a>
+                        {% endif %}
+                        <a href="#" class="btn btn-dark text-info border-info">Acheter pour {{ price }} PO</a>
+                    </div>
+                </div>
+                  
+            </div>
+     
+        {% else %}
+            <p>Aucun alliage ne correspond.</p>
+        {% endfor %}
+   
+    <a href="{{ path('alloys_list_new') }}">Create new</a>
+{% endblock %}

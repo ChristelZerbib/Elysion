@@ -1,0 +1,37 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block body %}
+    <h1>Validations en attente</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Requête</th>
+                <th>Statut</th>
+                <th>Message</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for pending_validation in pending_validations %}
+            <tr>
+                <td>{{ pending_validation.type }}</td>
+                <td>{{ pending_validation.requestId }}</td>
+                <td>{{ pending_validation.statut }}</td>
+                <td>{{ pending_validation.message }}</td>
+                <td>
+                    <a href="{{ path('pending_validations_show', {'id': pending_validation.id}) }}">Voir</a>
+                    <a href="{{ path('pending_validations_edit', {'id': pending_validation.id}) }}">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">Il n'y a pas de validation en attente</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('pending_validations_new') }}">Créer une nouvelle requête</a>
+{% endblock %}

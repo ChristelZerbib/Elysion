@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Elysion - Gestion RPG{% endblock %}</title>
+        {{ encore_entry_link_tags('app') }}
+    </head>
+    <body>
+        {% block nav %}
+        	{% include ("nav.html.twig") %}
+    	{% endblock %}
+
+    	<div class="container global-frame">
+			<div class="row">
+				<div class="col-12">
+        			{% block body %}
+        				<section>Cette page n'existe pas.</section>
+        			{% endblock %}
+				</div>
+			</div>
+		</div>
+
+        {% block footer %}
+        	{% include ("footer.html.twig") %}
+        {% endblock %}
+
+        {{ encore_entry_script_tags('app') }}
+    </body>
+</html>

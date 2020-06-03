@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"> 
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+      				<li class="nav-item active">
+        				<a class="nav-link text-info" href="{{ path('accueil') }}">Accueil <span class="sr-only">(current)</span></a>
+     				</li>
+      				<li class="nav-item dropdown">
+        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         				Univers
+        				</a>
+				        <div class="dropdown-menu alert-info" aria-labelledby="navbarDropdown">
+				            <a class="dropdown-item text-ocean" href="#">Contexte</a>
+				            <a class="dropdown-item text-ocean" href="#">Magie</a>
+				            <a class="dropdown-item text-ocean" href="#">Esprits-liés</a>
+				        </div>
+				    </li>
+				    <li class="nav-item">
+        				<a class="nav-link" href="#">Personnages</a>
+      				</li>
+      				<li class="nav-item dropdown">
+        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         				Boutiques
+        				</a>
+				        <div class="dropdown-menu alert-info" aria-labelledby="navbarDropdown">
+					        <a class="dropdown-item text-ocean" href="#">Objets</a>
+					        <a class="dropdown-item text-ocean" href="#">Atelier</a>
+					        <a class="dropdown-item text-ocean" href="#">Glyphes et améliorations</a>
+					        <a class="dropdown-item text-ocean" href="#">Evolution du personnage</a>
+					        <a class="dropdown-item text-ocean" href="#">Récompenses</a>
+				        </div>
+				    </li>
+				    <li class="nav-item">
+        				<a class="nav-link" href="#">Evénements</a>
+      			</li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            {% if is_granted('ROLE_USER') %}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Bonjour, {{ app.user.username }}
+                </a>
+                <div class="dropdown-menu alert-info" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-ocean" href="#">Validations</a>
+                  <a class="dropdown-item text-ocean" href="{{ path('user_password', {id: app.user.id}) }}"">Mot de passe</a>
+                  <a class="dropdown-item text-ocean" href="{{ path('app_logout') }}">Déconnexion</a>
+                </div>
+            </li>
+            {% else %}
+              <li class="nav-item mr-sm-2">
+                <a class="nav-link text-info" href="{{ path('app_login') }}">Connexion</a>
+              </li>
+            {% endif %}
+				   	
+    			</ul>
+    		</div>
+</nav>

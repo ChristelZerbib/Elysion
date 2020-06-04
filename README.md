@@ -10,6 +10,13 @@ Run the composer command.
 composer update
 ```
 
+Then run yarn command.
+
+```bash
+yarn
+yarn encore dev
+```
+
 ## Usage
 
 First, you have to start server by the php command. 

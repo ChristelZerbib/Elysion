@@ -10,6 +10,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class AlloysList
 {
+    const TYPES = ["Alliage métalique","Essence de bois & laque", "Tissu & cuir", "Alliage pour navire"
+    ];
+    const SUPPORTS = ["Armures", "Armes", "Armes de trait", "Toute arme sauf armes de traits", "Tout objet sauf arme", "Bijoux", "Vêtements", "Tout objet", "Coque","Voiles", "Poupe & Proue", "Autres parties du navire"
+    ];
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()

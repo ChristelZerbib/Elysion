@@ -26,7 +26,7 @@
         				</a>
 				        <div class="dropdown-menu alert-info" aria-labelledby="navbarDropdown">
 					        <a class="dropdown-item text-ocean" href="#">Objets</a>
-					        <a class="dropdown-item text-ocean" href="#">Atelier</a>
+					        <a class="dropdown-item text-ocean" href="{{ path('alloys_list_index') }}">Atelier</a>
 					        <a class="dropdown-item text-ocean" href="#">Glyphes et améliorations</a>
 					        <a class="dropdown-item text-ocean" href="#">Evolution du personnage</a>
 					        <a class="dropdown-item text-ocean" href="#">Récompenses</a>
@@ -44,7 +44,7 @@
                 </a>
                 <div class="dropdown-menu alert-info" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item text-ocean" href="#">Validations</a>
-                  <a class="dropdown-item text-ocean" href="{{ path('user_password', {id: app.user.id}) }}"">Mot de passe</a>
+                  <a class="dropdown-item text-ocean" href="{{ path('user_password', {id: app.user.id}) }}">Mot de passe</a>
                   <a class="dropdown-item text-ocean" href="{{ path('app_logout') }}">Déconnexion</a>
                 </div>
             </li>

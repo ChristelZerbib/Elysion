@@ -4,29 +4,41 @@ namespace App\Controller;
 
 use App\Entity\AlloysList;
 use App\Form\AlloysListType;
+use App\Form\AlloySearchType;
 use App\Repository\AlloysListRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Knp\Component\Pager\PaginatorInterface;
 
 /**
- * @Route("/alloys")
+ * @Route("/atelier")
  */
 class AlloysListController extends AbstractController
 {
     /**
-     * @Route("/", name="alloys_list_index", methods={"GET"})
+     * @Route("/", name="alloys_list_index", methods={"GET","POST"})
      */
-    public function index(AlloysListRepository $alloysListRepository): Response
+    public function index(Request $request, PaginatorInterface $paginator): Response
     {
+        $form = $this->createForm(AlloySearchType::class);
+        $data = $this->getDoctrine()->getRepository(AlloysList::class)->findBy([],['name'=>'asc']);
+        $form->handleRequest($request);
+         if ($form->isSubmitted() && $form->isValid()) {
+
+        }
+
+        $alloys = $paginator->paginate($data, $request->query->getInt('page',1),10);
         return $this->render('alloys_list/index.html.twig', [
-            'alloys_lists' => $alloysListRepository->findAll(),
+            'alloys_lists' => $alloys,
+            'form' => $form->createView(),
+
         ]);
     }
 
     /**
-     * @Route("/new", name="alloys_list_new", methods={"GET","POST"})
+     * @Route("/nouveau", name="alloys_list_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -59,7 +71,7 @@ class AlloysListController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="alloys_list_edit", methods={"GET","POST"})
+     * @Route("/{id}/modifier", name="alloys_list_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, AlloysList $alloysList): Response
     {

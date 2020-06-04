@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/bonus/effects/list")
+ * @Route("/bonus-effets")
  */
 class BonusEffectsListController extends AbstractController
 {
@@ -26,7 +26,7 @@ class BonusEffectsListController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="bonus_effects_list_new", methods={"GET","POST"})
+     * @Route("/nouveau", name="bonus_effects_list_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -59,7 +59,7 @@ class BonusEffectsListController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="bonus_effects_list_edit", methods={"GET","POST"})
+     * @Route("/{id}/modifier", name="bonus_effects_list_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, BonusEffectsList $bonusEffectsList): Response
     {

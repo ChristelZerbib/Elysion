@@ -3,42 +3,26 @@
 {% block title %}BonusEffectsList index{% endblock %}
 
 {% block body %}
-    <h1>BonusEffectsList index</h1>
+    <h1>Bonus et effets d'alliages</h1>
 
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Isunique</th>
-                <th>Israre</th>
+                <th>Type</th>
+                <th>Nom</th>
                 <th>Description</th>
-                <th>Add_glyph_place</th>
-                <th>Bought</th>
-                <th>Special</th>
-                <th>Evol_salary</th>
-                <th>Evol_maintenance</th>
-                <th>Evol_staff</th>
-                <th>actions</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
         {% for bonus_effects_list in bonus_effects_lists %}
             <tr>
-                <td>{{ bonus_effects_list.id }}</td>
+                <td>{{ bonus_effects_list.id }} ({{ bonus_effects_list.rank.type }} de rang {{ bonus_effects_list.rank.number }} : {{ bonus_effects_list.rank.price }} PO)</td>
                 <td>{{ bonus_effects_list.name }}</td>
-                <td>{{ bonus_effects_list.isunique ? 'Yes' : 'No' }}</td>
-                <td>{{ bonus_effects_list.israre ? 'Yes' : 'No' }}</td>
                 <td>{{ bonus_effects_list.description }}</td>
-                <td>{{ bonus_effects_list.addGlyphPlace }}</td>
-                <td>{{ bonus_effects_list.bought ? 'Yes' : 'No' }}</td>
-                <td>{{ bonus_effects_list.special ? 'Yes' : 'No' }}</td>
-                <td>{{ bonus_effects_list.evolSalary }}</td>
-                <td>{{ bonus_effects_list.evolMaintenance }}</td>
-                <td>{{ bonus_effects_list.evolStaff }}</td>
                 <td>
-                    <a href="{{ path('bonus_effects_list_show', {'id': bonus_effects_list.id}) }}">show</a>
-                    <a href="{{ path('bonus_effects_list_edit', {'id': bonus_effects_list.id}) }}">edit</a>
+                    <a href="{{ path('bonus_effects_list_show', {'id': bonus_effects_list.id}) }}">Voir</a>
+                    <a href="{{ path('bonus_effects_list_edit', {'id': bonus_effects_list.id}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}

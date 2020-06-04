@@ -1,8 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Alliages</h1>
-
+    <div class="clearfix">
+            <h1 class="float-left">Alliages</h1>
+        
+            <a href="{{ path('bonus_effects_list_index') }}" class="link-alone btn btn-dark border-info text-info text-right float-right">Bonus et effets d'alliage seuls</a>
+        </div>
+        
         {% block filters %}
             {% include ("alloys_list/_filters.html.twig") %}
         {% endblock %}
@@ -92,5 +96,5 @@
             <p>Aucun alliage ne correspond.</p>
         {% endfor %}
    
-    <a href="{{ path('alloys_list_new') }}">Create new</a>
+    {{ knp_pagination_render(alloys_lists) }}
 {% endblock %}

@@ -31,4 +31,10 @@ security:
     access_control : 
         - { path: '^/utilisateurs/[0-9]+/password', roles: ROLE_USER }
         - { path: '^/utilisateurs', roles: ROLE_ADMIN }
+        - { path: '^/atelier/[0-9]+', roles: ROLE_ADMIN }
+        - { path: '^/atelier/[0-9]+/modifier', roles: ROLE_ADMIN }
+        - { path: '^/atelier/nouveau', roles: ROLE_ADMIN }
     
+        - { path: '^/bonus-effets/[0-9]+', roles: ROLE_ADMIN }
+        - { path: '^/bonus-effets/[0-9]+/modifier', roles: ROLE_ADMIN }
+        - { path: '^/bonus-effets/nouveau', roles: ROLE_ADMIN }

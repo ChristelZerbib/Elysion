@@ -19,6 +19,40 @@ class AlloysListRepository extends ServiceEntityRepository
         parent::__construct($registry, AlloysList::class);
     }
 
+    public function search($recherche=null,$type=null,$support=null, $order='alpha')
+    {
+        $qb = $this->createQueryBuilder('a');
+
+        if($recherche !== null){
+            $qb->expr()->like('a.name', $qb->expr()->literal('%' . $recherche . '%'));
+
+            // expr('OR' (name) (desc)) ----> %LIKE%
+        } 
+
+        if($support !== null){
+            $qb->andWhere('a.support = :support');
+            $qb->orWhere('a.support_2 = :support');
+            $qb->orWhere('a.support_3 = :support');
+        }
+
+        if($type !== null){
+            $qb->andWhere('a.type = :type');
+        }
+        
+        //choose order by price or alpha
+        if ($order == 'price'){
+          
+        }
+        else 
+        {
+            $qb->orderBy('a.name', 'ASC');
+        }
+
+        return $qb->getQuery()->getResult();
+    }
+
+
+
     // /**
     //  * @return AlloysList[] Returns an array of AlloysList objects
     //  */

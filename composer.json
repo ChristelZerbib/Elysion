@@ -25,6 +25,8 @@
         "symfony/yaml": "5.0.*"
     },
     "require-dev": {
+        "symfony/web-profiler-bundle": "*",
+        "symfony/web-server-bundle": "*"
     },
     "config": {
         "preferred-install": {

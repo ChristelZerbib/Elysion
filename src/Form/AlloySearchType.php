@@ -90,7 +90,15 @@ class AlloySearchType extends AbstractType
         return $results;
     }
 
-        public function getSupport() {
+    public function getSupport() {
+        $results = [];
+        foreach (AlloysList::SUPPORTS as $support) {
+           $results[$support] = $support;
+        }
+        return $results;
+    }
+
+    public function getBonusEffect() {
         $results = [];
         foreach (AlloysList::SUPPORTS as $support) {
            $results[$support] = $support;

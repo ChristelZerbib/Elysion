@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+    <h1>Glyphes et améliorations</h1>
+
+        {% for glyphs_list in glyphs_lists %}
+
+           
+            <div class="card bg-dark border-info mb-3">
+
+                <div class="card-header border-info text-info bold-title">
+                    {{ glyphs_list.name }}
+                </div>
+                <div class="card-body bg-secondary no-gutters row justify-content-around">
+            {{ glyphs_list.name }}{{ glyphs_list.price }}{{ glyphs_list.description }}{{ glyphs_list.effect }}{{ glyphs_list.support }}{{ glyphs_list.support2 }}{{ glyphs_list.support3 }}<
+                    <a href="{{ path('glyphs_list_show', {'id': glyphs_list.id}) }}">show</a>
+                    <a href="{{ path('glyphs_list_edit', {'id': glyphs_list.id}) }}">edit</a>
+                </div>
+            </div>
+       
+
+     
+        {% else %}
+       
+        no records found<
+          
+        {% endfor %}
+
+    <a href="{{ path('glyphs_list_new') }}">Create new</a>
+{% endblock %}

@@ -16,12 +16,12 @@
         {% for alloys_list in alloys_lists %}
  
         {% if alloys_list.bought is defined and alloys_list.bought == false %}
-            <div class="card bg-dark border-info mb-3" data-type="{{ alloys_list.type }}" data-supp1= "{{ alloys_list.support }}" data-supp2= "{{ alloys_list.support2 }}" data-supp3= "{{ alloys_list.support3 }}" data-name="{{ alloys_list.name }}" data-name="{{ alloys_list.description }}">
+            <div class="card bg-dark border-info mb-3" data-type="{{ alloys_list.type }}" data-supp1= "{{ alloys_list.support }}" data-supp2= "{{ alloys_list.support2 }}" data-supp3= "{{ alloys_list.support3 }}" data-name="{{ alloys_list.name }}" data-name="{{ alloys_list.description }}" data-price="{{ alloys_list.price }}">
                 <div class="card-header border-info text-info bold-title">
                     {{ alloys_list.name }}
                 </div>
                 <div class="card-body bg-secondary no-gutters row justify-content-around">
-
+ 
 
                     {# description of the alloy #}
                     <div class="card-text text-light col-12 sup-type">

@@ -23,10 +23,11 @@ class AlloysListController extends AbstractController
     public function index(Request $request, PaginatorInterface $paginator): Response
     {
         $form = $this->createForm(AlloySearchType::class);
-        $data = $this->getDoctrine()->getRepository(AlloysList::class)->findBy([],['name'=>'asc']);
+        $data = $this->getDoctrine()->getRepository(AlloysList::class)->search();
         $form->handleRequest($request);
          if ($form->isSubmitted() && $form->isValid()) {
-
+            $data = $form->getData();
+            $data = $this->getDoctrine()->getRepository(AlloysList::class)->search($data['recherche'], $data['type'], $data['support'], $data['order']);
         }
 
         $alloys = $paginator->paginate($data, $request->query->getInt('page',1),20);
@@ -102,5 +103,33 @@ class AlloysListController extends AbstractController
         }
 
         return $this->redirectToRoute('alloys_list_index');
+    }
+
+    public function sortByPrice($alloy1, $alloy2) {
+        $alloyArray = [
+            'alloy1' => [
+                'alloy' => $alloy1,
+                'price' => 0
+            ],
+            'alloy2' => [
+                'alloy' => $alloy2,
+                'price' => 0
+            ]
+        ];
+
+        foreach($alloyArray as $alloy => $alloydata) {
+            if( $alloydata['alloy']->getBonus1() !== null ) {
+                $alloydata['price'] += $alloydata['alloy']->getBonus1()->getRank()->getPrice();
+            }
+            if( $alloydata['alloy']->getBonus2() !== null ) {
+                $alloydata['price'] += $alloydata['alloy']->getBonus2()->getRank()->getPrice();
+            }
+            if( $alloydata['alloy']->getBonus3() !== null ) {
+                $alloydata['price'] += $alloydata['alloy']->getBonus3()->getRank()->getPrice();
+            }
+        }
+
+        return $alloyArray['alloy1']['price'] < $alloyArray['alloy2']['price'] ? -1 : 1;
+
     }
 }

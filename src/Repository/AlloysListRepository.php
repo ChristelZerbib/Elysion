@@ -21,37 +21,43 @@ class AlloysListRepository extends ServiceEntityRepository
 
     public function search($recherche=null,$type=null,$support=null, $order='alpha')
     {
-        $qb = $this->createQueryBuilder('a');
+        $qb = $this->createQueryBuilder('a');   
 
         if($recherche !== null){
-            $qb->expr()->like('a.name', $qb->expr()->literal('%' . $recherche . '%'));
-
-            // expr('OR' (name) (desc)) ----> %LIKE%
+            $qb->andWhere(
+                $qb->expr()->orX(
+                    $qb->expr()->like('a.name', ':recherche'),
+                    $qb->expr()->like('a.description', ':recherche')
+                )
+            );
+            echo "name";
+            $qb->setParameter('recherche', '%'.addcslashes($recherche, '%_').'%');
         } 
 
         if($support !== null){
-            $qb->andWhere('a.support = :support');
-            $qb->orWhere('a.support_2 = :support');
-            $qb->orWhere('a.support_3 = :support');
+            $qb->andWhere(
+                $qb->expr()->orX(
+                    $qb->expr()->eq('a.support', ':support'),
+                    $qb->expr()->eq('a.support_2', ':support'),
+                    $qb->expr()->eq('a.support_3', ':support')
+                )
+            );
+            $qb->setParameter('support', $support);
         }
 
         if($type !== null){
-            $qb->andWhere('a.type = :type');
+            $qb->andWhere('a.type LIKE :type');
+            $qb->setParameter('type', $type);
         }
         
         //choose order by price or alpha
-        if ($order == 'price'){
-          
-        }
-        else 
-        {
+        if ($order == 'alpha'){
             $qb->orderBy('a.name', 'ASC');
+        }else{
+            $qb->orderBy('a.price', 'ASC');            
         }
-
         return $qb->getQuery()->getResult();
     }
-
-
 
     // /**
     //  * @return AlloysList[] Returns an array of AlloysList objects

@@ -43,18 +43,27 @@ class AlloysListCommand extends Command
             $alloy->setName($al['name']);
             $alloy->setIsunique($al['isunique']);
             $alloy->setDescription($al['description']);
+            $price = 0;
 
             if(strcmp($al["bonus1_id"], "NULL") !== 0) {
-                $alloy->setBonus1($em->getRepository(BonusEffectsList::class)->findOneById($al['bonus1_id']));
+                $bonus = $em->getRepository(BonusEffectsList::class)->findOneById($al['bonus1_id']);
+                $alloy->setBonus1($bonus);
+                $price += $bonus->getRank()->getPrice();
             }
             if(strcmp($al["bonus2_id"], "NULL") !== 0) {
-                $alloy->setBonus2($em->getRepository(BonusEffectsList::class)->findOneById($al['bonus2_id']));
+                $bonus = $em->getRepository(BonusEffectsList::class)->findOneById($al['bonus2_id']);
+                $alloy->setBonus2($bonus);
+                $price += $bonus->getRank()->getPrice();
             }
             if(strcmp($al["bonus3_id"], "NULL") !== 0) {
-                $alloy->setBonus3($em->getRepository(BonusEffectsList::class)->findOneById($al['bonus3_id']));
+                $bonus = $em->getRepository(BonusEffectsList::class)->findOneById($al['bonus3_id']);
+                $alloy->setBonus3($bonus);
+                $price += $bonus->getRank()->getPrice();
             }
             if(strcmp($al["bonus4_id"], "NULL") !== 0) {
-                $alloy->setBonus4($em->getRepository(BonusEffectsList::class)->findOneById($al['bonus4_id']));
+                $bonus = $em->getRepository(BonusEffectsList::class)->findOneById($al['bonus4_id']);
+                $alloy->setBonus4($bonus);
+                $price += $bonus->getRank()->getPrice();
             }
             if(strcmp($al["malus1_id"], "NULL") !== 0) {
                 $alloy->setMalus1($em->getRepository(BonusEffectsList::class)->findOneById($al['malus1_id']));
@@ -66,10 +75,14 @@ class AlloysListCommand extends Command
                 $alloy->setMalus3($em->getRepository(BonusEffectsList::class)->findOneById($al['malus3_id']));
             }
             if(strcmp($al["effect1_id"], "NULL") !== 0) {
-                $alloy->setEffect1($em->getRepository(BonusEffectsList::class)->findOneById($al['effect1_id']));
+                $effect = $em->getRepository(BonusEffectsList::class)->findOneById($al['effect1_id']);
+                $alloy->setEffect1($effect);
+                $price += $effect->getRank()->getPrice();
             }
             if(strcmp($al["effect2_id"], "NULL") !== 0) {
-                $alloy->setEffect2($em->getRepository(BonusEffectsList::class)->findOneById($al['effect2_id']));
+                $effect = $em->getRepository(BonusEffectsList::class)->findOneById($al['effect2_id']);
+                $alloy->setEffect2($effect);
+                $price += $effect->getRank()->getPrice();
             }
 
             $alloy->setBought($al['bought']);
@@ -78,6 +91,7 @@ class AlloysListCommand extends Command
             $alloy->setSupport($al['support ']);
             $alloy->setSupport2($al['support_2']);
             $alloy->setSupport3($al['support_3']);
+            $alloy->setPrice($price);
            
             $em->persist($alloy);
             $em->flush();

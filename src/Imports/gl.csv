@@ -1,0 +1,1912 @@
+id,rarity_id,ingredient_type_id,characters_id,name,price,isunique,description,bought,used,up_feature_id,effect,support,support_2,support_3,special,Evol_salary,Evol_maintenance,Evol_staff,personalization
+1,5,1,NULL,Armure élémentaire,150,FALSE,"Flux : Élémentaire (au choix)
+Coût en énergie : Moyen
+Utilisation : Passive 
+Effet : Produit un effet élémentaire, à définir à l’achat, lorsque le support reçoit un coup. N’immunise pas le porteur à l’élément choisi. Exemple : produit une bourrasque de vent.",FALSE,FALSE,NULL,Défensif,Armures,Vêtements,,FALSE,0,NULL,NULL,TRUE
+2,5,1,NULL,Armure végétale,100,FALSE,"Flux : Nature
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Augmente la furtivité (+5 au jet de dés) en environnement végétal (forêt, plaine, marais) par la poussée de mousses et plantes sur le support. La végétation créée correspond à l’environnement. Elle dure jusqu’à la désactivation du glyphe par l’utilisateur.",FALSE,FALSE,139,Défensif,Armures,Vêtements,,FALSE,0,NULL,NULL,FALSE
+3,5,1,NULL,Gemmes vivantes,400,FALSE,"Flux : Nature
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Couvre le support de gemmes perméables à la magie. Elles absorbent une partie de l’énergie dirigée contre le porteur du support (+1 rang en Résistance magique). Cette augmentation peut se cumuler 1 fois avec le glyphe “Perfectionnement”. Le type de gemmes est à définir à l’achat.",FALSE,FALSE,12,Défensif,Armures,Vêtements,,FALSE,0,NULL,NULL,TRUE
+4,5,1,NULL,Protection aux températures,50,FALSE,"Flux : Nature
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Produit une immunité aux conditions climatiques pour le porteur lorsque l’objet est porté.",FALSE,FALSE,NULL,Défensif,Armures,Vêtements,,FALSE,0,NULL,NULL,FALSE
+5,5,1,NULL,Protection élémentaire,400,FALSE,"Flux : Élémentaire (au choix)
+Coût en énergie : Moyen
+Utilisation : Passive ou Active
+Effet : Produit une résistance à un élément, défini à l’achat (réduction des dégâts de cet élément de moitié).",FALSE,FALSE,NULL,Défensif,Armures,Vêtements,,TRUE,0,NULL,NULL,TRUE
+6,5,1,NULL,Révélation ,200,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Supérieur
+Utilisation : Active
+Effet : Produit une puissante décharge lumineuse qui bloque l’utilisation de tous les sorts/glyphes/pouvoirs d’Esprits-Liés en lien avec la dissimulation et la furtivité. Dure 3 tours.
+Jet de sauvegarde : Résistance",FALSE,FALSE,NULL,Défensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+7,5,1,NULL,Arme élémentaire,200,FALSE,"Précision support : Toute arme (sauf arme de trait et projectiles)
+Flux : Élémentaire (au choix)
+Coût en énergie : Supérieur
+Utilisation : Passive ou Active
+Effet : Ajoute des dégâts et effets élémentaires sur une arme. L’élément est défini à la création. Il n’est pas possible d’avoir plusieurs éléments sur une même arme. N’immunise pas l’utilisateur à l’élément de son arme. Si l’essence de l’élément n’est pas présent, le glyphe ne fonctionnera pas.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,TRUE
+8,5,1,NULL,Brise-tympan,250,FALSE,"Flux : Élémentaire (air)
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Lorsque l’arme produit un impact, elle produit également un bruit strident, dont la puissance dépend de la force du porteur selon les paliers ci-dessous :
+- Moyen : effet léger, donne des bourdonnements dans les oreilles durant une heure.
+- Bon, Très bon et Maître : probabilité de causer des lésions auditives temporaires.
+- Grand-maître et Exceptionnel : peut causer des lésions auditives graves.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+9,5,1,NULL,Désarmement ,50,FALSE,"Précision support : Arme de jet
+Flux : Élémentaire (air)
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Lorsque cette arme touche sa cible, le choc de la collision est amplifié si bien qu’il fait lâcher son arme à sa cible.
+Jet de sauvegarde : Coordination",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+10,5,1,NULL,Narcose ,100,FALSE,"Flux : Naturel
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Les projectiles ne produisent plus de dégâts physiques mais provoquent un sommeil immédiat de la cible.",FALSE,FALSE,NULL,Offensif,Projectiles,,,FALSE,0,NULL,NULL,FALSE
+11,5,1,NULL,Nuée d’insectes,100,FALSE,"Flux : Nature
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Création d’une nuée d’insectes qui attaquent une cible unique (1 blessure légère par tour) et réduisent ses capacités (-5 au jet de dés en arme ou magie). Le type d’insectes est à définir à l’achat.
+Jet de sauvegarde : Coordination",FALSE,FALSE,NULL,Offensif,Tout objet,,,TRUE,0,NULL,NULL,TRUE
+12,5,1,NULL,Projectile élémentaire ,200,FALSE,"Flux : Élémentaire (au choix)
+Coût en énergie : Supérieur
+Utilisation : Passive ou Active
+Effet : Ajoute des dégâts et effets élémentaires sur un projectile. L’élément est défini à la création. Il n’est pas possible d’avoir plusieurs éléments sur une même arme. N’immunise pas l’utilisateur à l’élément de son arme. Si l’essence de l’élément n’est pas présent, le glyphe ne fonctionnera pas.",FALSE,FALSE,NULL,Offensif,Projectiles,,,FALSE,0,NULL,NULL,FALSE
+13,5,1,NULL,Rayon lunaire,200,FALSE,"Précision support : Arme de trait
+Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Concentre la lumière à partir d’une source existant de nuit (lune, étoiles, spirite lampyre, etc) et la modèle comme un carreau. Ce projectile provoque des brûlures à la victime touchée en plus de la blessure initiale.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+14,5,1,NULL,Rayon solaire ,200,FALSE,"Précision support : Arme de trait
+Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Concentre la lumière à partir d’une source préexistante (soleil, feu, glyphe de lumière, spirite lampyre, etc) et la modèle comme un carreau. Ce projectile provoque des brûlures à la victime touchée en plus de la blessure initiale.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+15,5,1,NULL,Sang acide,250,FALSE,"Flux : Élémentaire (eau) + Nature
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Le sang du porteur devient acide. Il brûle tout ce qui entre en contact avec lui et qui n’est pas le porteur même.
+Jet de sauvegarde : Alliages inaltérables / Réduction des dégâts de nature",FALSE,FALSE,NULL,Offensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+16,5,1,NULL,Sifflement désagréable,150,FALSE,"Flux : Élémentaire (vent)
+Coût en énergie : Faible
+Utilisation : Active
+Effet : À chaque mouvement de l’objet dans l’air, il produit un sifflement qui attaque les nerfs des individus alentour (-5 au jet de dés en Force mentale).
+Jet de sauvegarde : Force mentale",FALSE,FALSE,NULL,Offensif,Tout objet,,,TRUE,0,NULL,NULL,FALSE
+17,5,1,NULL,Spores vénéneuses,50,FALSE,"Flux : Naturel
+Coût en énergie : Variable
+Utilisation : Active
+Effet : Création et libération de spores vénéneuses sur un rayon de 3 mètres autour du porteur. L’effet exact des spores est à déterminer à l’achat et conditionne le coût en énergie. Ces spores disparaissent magiquement après 5 minutes / 1 tour d'intrigue, ou peuvent être balayées par le vent.
+Jet de sauvegarde : Résistance physique",FALSE,FALSE,NULL,Offensif,Tout objet,,,FALSE,0,NULL,NULL,TRUE
+18,5,1,NULL,Bénédiction de la lune - Force,200,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Confère +1 rang dans la caractéristique physique Force, pendant la nuit, et à condition que la lumière de la lune soit accessible (désactivé dans une cave ou une grotte).",FALSE,FALSE,55,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+19,5,1,NULL,Bénédiction de la lune - Endurance,200,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Confère +1 rang dans la caractéristique physique Endurance, pendant la nuit, et à condition que la lumière de la lune soit accessible (désactivé dans une cave ou une grotte).",FALSE,FALSE,56,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+20,5,1,NULL,Bénédiction de la lune - Coordination,200,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Confère +1 rang dans la caractéristique physique Coordination, pendant la nuit, et à condition que la lumière de la lune soit accessible (désactivé dans une cave ou une grotte).",FALSE,FALSE,57,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+21,5,1,NULL,Bénédiction de la lune - Furtivité,200,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Confère +1 rang dans la caractéristique physique Furtivité, pendant la nuit, et à condition que la lumière de la lune soit accessible (désactivé dans une cave ou une grotte).",FALSE,FALSE,58,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+22,5,1,NULL,Bénédiction de la lune - Perception,200,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Confère +1 rang dans la caractéristique physique Perception, pendant la nuit, et à condition que la lumière de la lune soit accessible (désactivé dans une cave ou une grotte).",FALSE,FALSE,59,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+23,5,1,NULL,Bénédiction du soleil - Force,200,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Confère +1 rang dans la caractéristique physique Force, pendant la journée, et à condition que la lumière du soleil soit accessible (désactivé dans une cave ou une grotte).",FALSE,FALSE,55,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+24,5,1,NULL,Bénédiction du soleil - Endurance,200,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Confère +1 rang dans la caractéristique physique Endurance, pendant la journée, et à condition que la lumière du soleil soit accessible (désactivé dans une cave ou une grotte).",FALSE,FALSE,56,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+25,5,1,NULL,Bénédiction du soleil - Coordination,200,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Confère +1 rang dans la caractéristique physique Coordination, pendant la journée, et à condition que la lumière du soleil soit accessible (désactivé dans une cave ou une grotte).",FALSE,FALSE,57,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+26,5,1,NULL,Bénédiction du soleil - Furtivité,200,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Confère +1 rang dans la caractéristique physique Furtivité, pendant la journée, et à condition que la lumière du soleil soit accessible (désactivé dans une cave ou une grotte).",FALSE,FALSE,58,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+27,5,1,NULL,Bénédiction du soleil - Perception,200,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Confère +1 rang dans la caractéristique physique Perception, pendant la journée, et à condition que la lumière du soleil soit accessible (désactivé dans une cave ou une grotte).",FALSE,FALSE,59,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+28,5,1,NULL,Brume solide,200,FALSE,"Flux : Élémentaire (eau)
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Création d’une brume presque opaque qui entoure le porteur. Lorsque celui-ci se fait attaquer, la brume se solidifie et se prend l’impact (prévient 1 blessure moyenne). L’effet dure 24h et peut être activé toutes les 48h.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+29,5,1,NULL,Cape des ombres ,100,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Permet au porteur de se fondre dans une ombre. Il devient ainsi invisible et indétectable. L’effet prend fin quand le porteur bouge ou reçoit un dommage.
+Jet de sauvegarde : Perception",FALSE,FALSE,NULL,Soutien,Armures,Vêtements,,FALSE,0,NULL,NULL,FALSE
+30,5,1,NULL,Couleur changeante,200,FALSE,"Flux : Altération
+Coût en énergie : Très faible
+Utilisation : Active
+Effet : A l'activation du glyphe, l’objet prend la couleur de son environnement, tel un caméléon (+1 rang en Furtivité pendant 1 heure / 2 tours d'intrigue).",FALSE,FALSE,58,Soutien,Armures,Vêtements,,FALSE,0,NULL,NULL,FALSE
+31,5,1,NULL,Coussins d’air,50,FALSE,"Flux : Élémentaire (vent)
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Accumule sous les pieds de l’utilisateur de l’air souple afin de former un coussin invisible qui absorbe ¾ des dégâts de chute. Demande un jet d’Agilité pour savoir si l’utilisateur tombe sur ses pieds. Une chute mortelle reste mortelle.",FALSE,FALSE,NULL,Soutien,Chaussures et Bijou de cheville,,,FALSE,0,NULL,NULL,FALSE
+32,5,1,NULL,Enchevêtrement ,100,FALSE,"Flux : Nature
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Immobilisation par croissance rapide de plantes grimpantes qui viennent se nouer sur la cible.
+Jet de sauvegarde : Coordination",FALSE,FALSE,NULL,Soutien,Armures,Bijoux et accessoires,,FALSE,0,NULL,NULL,FALSE
+33,5,1,NULL,Grande portée,75,FALSE,"Précision support : Arme de trait, Arme de jet
+Flux : Élémentaire (vent)
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Portée de l’arme doublée grâce au vent qui l’accompagne.",FALSE,FALSE,NULL,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+34,5,1,NULL,Ivresse ,50,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Après avoir pointé du doigt ou touché une cible, celle-ci est frappée d’un état ivresse. Très en vogue chez les tire-laines, assassins et taverniers peu scrupuleux.
+Jet de sauvetage : Résistance physique",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,Vêtements,,FALSE,0,NULL,NULL,FALSE
+35,5,1,NULL,Lévitation ,50,FALSE,"Flux : Élémentaire (air) + Altération
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Produit une diminution de moitié du poids et un petit courant d’air qui soulève le porteur à 50 cm au-dessus du sol pendant 30 minutes maximum. Permet d’esquiver les pièges au sol et les difficultés du terrain.",FALSE,FALSE,NULL,Soutien,Vêtements,Armures,,FALSE,0,NULL,NULL,FALSE
+36,5,1,NULL,Mange-Lumière,50,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : L’objet absorbe la luminosité environnante jusqu’à plonger les alentours dans l’obscurité. La puissance de cette absorption dépend de la puissance magique du porteur, plus elle est élevée, plus la zone sera large.
+Paliers ci-dessous :
+- Très faible : 2 mètres
+- Faible : 3 mètres
+- Moyen : 5 mètres
+- Bon : 6 mètres
+- Très bon : 7 mètres
+- Maître : 8 mètres
+- Grand-maître : 9 mètres
+- Exceptionnel : 10 mètres",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+37,5,1,NULL,Murmures épiés,100,FALSE,"Flux : Élémentaire (vent)
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Fait appel à la mémoire de l’air pour entendre les bruits et les conversations ayant eu lieu dans un rayon de 2 mètres autour de l’emplacement de l’utilisateur lors de l’activation. Le porteur doit choisir à l’activation un moment précis jusqu’aux 24 heures précédentes.",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,Vêtements,,FALSE,0,NULL,NULL,FALSE
+38,5,1,NULL,Note surprise,50,FALSE,"Flux : Élémentaire (air)
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Lorsque l’arme entre en contact avec l’air et le déplace, une note musicale retentit immédiatement. Cette note surprend les adversaires, offrant donc l’initiative au porteur de l’arme musicale.
+Jet de sauvegarde : Intuition",FALSE,FALSE,NULL,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+39,5,1,NULL,Rapidité ,50,FALSE,"Flux : Élémentaire (air) + Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Réduit l’adhérence à l’air du corps et les inhibiteurs naturels du cerveau de l’utilisateur, lui permettant de doubler sa vitesse de course. Dure 10 minutes. L’utilisation en terrain accidenté nécessite un jet d’agilité.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+40,5,1,NULL,Support glacial,10,FALSE,"Flux : Élémentaire (eau)
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Produit sous les pieds du porteur une zone de glace (permet de marcher sur l’eau, de créer un piège glissant, etc).",FALSE,FALSE,NULL,Soutien,Chaussures et Bijou de cheville,,,FALSE,0,NULL,NULL,FALSE
+41,5,1,NULL,Vent messager,25,FALSE,"Flux : Élémentaire (vent)
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Permet de faire transporter un message par une brise jusqu’à un destinataire désigné, même si celui-ci est éloigné. Le message se délivre à l’instant où la brise rejoint la cible et ne peut pas être écouté de nouveau. Le message ne peut pas être entendu par quelqu’un d’autre que la cible désignée.",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+42,5,1,NULL,Vision thermique,50,FALSE,"Précision support : Objet en contact avec la tête (bijou, casque, chapeau, etc)
+Flux : Élémentaire (feu)
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Vision thermique sur 15 mètres autour du porteur.",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,Armures,Vêtements,FALSE,0,NULL,NULL,FALSE
+43,5,1,NULL,Lueur ,50,FALSE,"Flux : Élémentaire (lumière)
+Coût en énergie : Faible à Moyen
+Utilisation : Active ou Passive
+Effet : Génère une lueur dont on peut varier l’intensité et la couleur.",FALSE,FALSE,NULL,Esthétique,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+44,5,2,NULL,Baiser mortel,100,FALSE,"Flux : Destruction
+Coût en énergie : Très faible
+Utilisation : Active
+Effet : Permet par un baiser d'absorber l'énergie d'un être pensant afin de restaurer sa propre énergie. Peut provoquer la mort.
+Jet de sauvegarde : Résistance",FALSE,FALSE,NULL,Offensif,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+45,5,2,NULL,Brouille-sens ,400,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Produit une pulsation énergétique autour d’une cible qui brouille ses 5 sens pendant 15 minutes / 3 tours, lui infligeant -1 rang en Perception.
+Jet de sauvegarde : Résistance",FALSE,FALSE,NULL,Offensif,Tout objet,,,TRUE,0,NULL,NULL,FALSE
+46,5,2,NULL,Contrôle mental,100,FALSE,"Flux : Mental
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Permet de prendre le contrôle d'une créature à l'esprit faible (animal, simple d'esprit, être à la force mentale inférieure ou égale à faible).
+Jet de sauvegarde : Force mentale",FALSE,FALSE,NULL,Offensif,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+47,5,2,NULL,Déshydratation ,150,FALSE,"Flux : Élémentaire (eau)
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Les blessures infligées à la cible s’accompagnent d’un dessèchement immédiat des tissus lésés infligeant une douleur terrible à la victime. Ces blessures demandent plus d’énergie pour être soignées (une blessure légère demandera l’équivalent d’une blessure moyenne, etc).
+Jet de sauvegarde : Force mentale (pour la douleur)",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+48,5,2,NULL,Effroi ,300,FALSE,"Flux : Mental
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Produit une pointe d’énergie qui est projetée dans le cerveau des spectateurs, distordant leurs sentiments en une peur effroyable. Paralyse la cible pendant 1 à 3 tours.
+Jet de sauvegarde : Force mentale",FALSE,FALSE,NULL,Offensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+49,5,2,NULL,Nécrose ,350,FALSE,"Précision support : Arme de corps à corps tranchante et/ou perforante
+Flux : Destruction
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Inverse les effets habituels de l’énergie magique brute pour qu’elle cause la mort plutôt que la vie. Le contact de cette énergie (quand une blessure est infligée) cause 1 blessure légère par tour et réduit les effets des sorts et glyphes de soin de moitié pendant 4 tours.
+Jet de sauvegarde : Résistance",FALSE,FALSE,NULL,Offensif,Armes,,,TRUE,0,NULL,NULL,FALSE
+50,5,2,NULL,Paralysie mineure,50,FALSE,"Précision support : Arme de corps à corps tranchante et/ou perforante
+Flux : Altération
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Ralentit énormément le flot d’énergie concentré dans l’arme et le relâche dans le corps de la cible au moment de la blessure. Le flot statique paralyse le membre blessé. La paralysie disparaît si la blessure est guérie.
+Jet de sauvegarde : Résistance",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+51,5,2,NULL,Paralysie supérieure,150,FALSE,"Précision support : Arme de corps à corps tranchante et/ou perforante
+Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Ralentit énormément le flot d’énergie concentré dans l’arme et le relâche dans le corps de la cible au moment de la blessure. Le flot statique paralyse le corps entier. La paralysie disparaît si la blessure est guérie.
+Jet de sauvegarde : Résistance",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+52,5,2,NULL,Poison ,100,FALSE,"Précision support : Arme, Objet en contact avec l’arme, Objet divers
+Flux : Nature
+Coût en énergie : Variable
+Utilisation : Active
+Effet : Création d’un poison dont les caractéristiques (effet, durée, activation) sont à définir à l’achat.",FALSE,FALSE,NULL,Offensif,Armes,Bijoux et accessoires,,FALSE,0,NULL,NULL,TRUE
+53,5,2,NULL,Tueur d’elfes,500,FALSE,"Flux : Destruction
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Toute blessure infligée à un elfe devient une blessure grave. Incompatible avec tueur de vampires, de sainnûr ou d’humains. Ne peut pas être placé dans le même carquois qu’une flèche portant tueur de vampires, de sainnûr, ou d’humains si appliqué à des flèches.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+54,5,2,NULL,Tueur d’humains,500,FALSE,"Flux : Destruction
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Toute blessure infligée à un humain devient une blessure grave. Incompatible avec tueur d’elfes, de vampires ou de sainnûr. Ne peut pas être placé dans le même carquois qu’une flèche portant tueur d’elfes, de vampires, ou de sainnûr si appliqué à des flèches.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+55,5,2,NULL,Tueur de sainnûr,500,FALSE,"Flux : Destruction
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Toute blessure infligée à un sainnûr devient une blessure grave. Incompatible avec tueur d’elfes, de vampires ou d’humains. Ne peut pas être placé dans le même carquois qu’une flèche portant tueur d’elfes, de vampires, ou d’humains si appliqué à des flèches.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+56,5,2,NULL,Tueur de vampires,500,FALSE,"Flux : Destruction
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Toute blessure infligée à un vampire devient une blessure grave. Incompatible avec tueur d’elfes, de sainnûr ou d’humains. Ne peut pas être placé dans le même carquois qu’une flèche portant tueur d’elfes, de sainnûr, ou d’humains si appliqué à des flèches.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+57,5,2,NULL,Animosité,100,FALSE,"Flux : Mental
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Attire l'hostilité des ennemis. Inconsciemment, les adversaires seront plus promptes à attaquer le porteur du glyphe qu’une autre personne. Le support doit être exposé.
+Jet de sauvegarde : Force mentale",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+58,5,2,NULL,Appropriation,100,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : L’arme absorbe le sang de son porteur ou d’une victime afin de s’allonger ou de s’épaissir (au choix de l’utilisateur).",FALSE,FALSE,NULL,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+59,5,2,NULL,Change-mensonge,200,FALSE,"Flux : Mental
+Coût en énergie : Très faible
+Utilisation : Active
+Effet : Sur activation, permet de faire croire à une cible que ce qu’elle vient d’entendre n’est qu’un pur mensonge.
+Jet de sauvegarde : Charisme (de la personne dont on travestit les propos) ou Force mentale (de la personne ciblée).",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+60,5,2,NULL,Mensonge ,300,FALSE,"Flux : Illusion
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Diminue la perspicacité de l’interlocuteur du porteur, de sorte que celui-ci ne détecte pas les mensonges énoncés par le porteur.
+Jet de sauvegarde : Spirites du hibou, pouvoirs baptistraux",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+61,5,2,NULL,Soins cadavériques,100,FALSE,"Flux : Guérison
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Permet d’utiliser un cadavre afin de se soigner en convertissant la chair, le sang et les os en énergie de guérison. Le cadavre doit être frais (24h) et peut soigner l’équivalent d’une blessure moyenne. Utilisation une fois par jour.",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+62,5,3,NULL,Déplacement,500,FALSE,"Flux : Protection
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Contre tout effet de paralysie, blocage et ralentissement pendant 5 minutes / 1 tour d’intrigue.",FALSE,FALSE,NULL,Défensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+63,5,3,NULL,Détection,200,FALSE,"Flux : Erudition
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Dans un rayon de 5 mètres, toute intention négative à l’égard du porteur lui est signalée par un son ou une sensation de son choix (à définir à l’achat).
+Jet de Sauvegarde : Protection mentale / Glyphe de dissimulation d’intentions",FALSE,FALSE,NULL,Défensif,Tout objet,,,FALSE,0,NULL,NULL,TRUE
+64,5,3,NULL,Dissipation ,300,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Dissipe un piège magique ou un piège physique dans un périmètre de 5 mètres de l'utilisateur quand celui-ci pose l’objet sur le sol. Une seule utilisation par jour.",FALSE,FALSE,NULL,Défensif,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+65,5,3,NULL,Impalpable bouclier,300,FALSE,"Flux : Protection
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Forme un bouclier magique venant bloquer un coup, la protection est de puissance égale à la caractéristique endurance du porteur (moyen = coup faible, très bon = coup moyen, grand-maître = coup lourd).",FALSE,FALSE,NULL,Défensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+66,5,3,NULL,Morsure caduque ,200,FALSE,"Flux : Protection
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Protège le porteur des morsures et griffures animales. Ne protège pas contre les dragons.",FALSE,FALSE,NULL,Défensif,Armures,,,FALSE,0,NULL,NULL,FALSE
+67,5,3,NULL,Poigne sans failles,200,FALSE,"Flux : Protection
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Impossibilité de désarmer l’utilisateur.",FALSE,FALSE,NULL,Défensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+68,5,3,NULL,Retraite ,150,FALSE,"Flux : Déplacement
+Coût en énergie : Faible
+Utilisation : Active
+Effet : À l'activation, le porteur est déplacé de 10 mètres en arrière pour ne pas être dans la mêlée. (Ne permet pas d'esquiver un coup mais bel et bien de se replacer). (Ne permet pas de traverser des obstacles). (Pensez à vérifier que ce n’est pas du vide derrière vous, la chute pourrait être rude).",FALSE,FALSE,NULL,Défensif,Armures,Chaussures et Bijou de cheville,Vêtements,FALSE,0,NULL,NULL,FALSE
+69,5,3,NULL,Frappe accélérée,200,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Concentre l’énergie pour retirer le blocage naturel du cerveau sur les capacités physiques de l’utilisateur qui voit sa vitesse de frappe augmenter (prise d’initiative OU 1 coup supplémentaire sur le tour au choix). Néanmoins, il doit réussir à se contrôler pour être efficace (jet de coordination réussi avant toute attaque).",FALSE,FALSE,NULL,Offensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+70,5,3,NULL,Reflet ,100,FALSE,"Flux : Illusion
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Fait apparaître un reflet de la lame sous un angle différent de celui utilisé par le porteur pour attaquer, permet de surprendre la cible en lui infligeant -10 à un jet de parade avec arme, magie ou bouclier.
+Jet de sauvegarde : Perception ou Intuition",FALSE,FALSE,NULL,Offensif,Armes,,,TRUE,0,NULL,NULL,FALSE
+71,5,3,NULL,Vendetta ,500,FALSE,"Flux : Energie
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Si le porteur est blessé en combat, l’objet provoquera une explosion dont la puissance est proportionnelle à la gravité de la blessure infligée (blessure légère = sort niveau moyen, blessure moyenne = sort niveau très bon, blessure lourde = sort niveau grand-maître). Cette explosion est dangereuse uniquement pour celui qui a causé la blessure et n'endommage aucunement l’objet. L'effet s'activera à la première blessure reçue. Utilisation maximale 1 fois par jour.",FALSE,FALSE,NULL,Offensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+72,5,3,NULL,Accès ,100,FALSE,"Flux : Déplacement
+Coût en énergie : Très faible
+Utilisation : Passive
+Effet : Permet l’accès à un lieu (pièce, maison, lieu précis, etc.) ou à un objet (malle, capsule, boîte, etc.) appartenant au porteur. Fait office de « clé ». L’objet ou le lieu ne s’ouvre que sur présentation du glyphe.
+Jet de sauvegarde : Magie, Annulation de glyphes.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+73,5,3,NULL,Adaptabilité ,20,FALSE,"Flux : Altération
+Coût en énergie : Très faible
+Utilisation : Passive
+Effet : Permet au support de suivre la croissance du porteur et de s'adapter à sa taille.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+74,5,3,NULL,Catharsis ,150,FALSE,"Flux : Guérison
+Coût en énergie : Moyen à Supérieur
+Utilisation : Active
+Effet : Utilisé sur une cible, celle-ci est immédiatement libérée d’un effet mental agressif (contrôle, folie, phobie, peur, illusion mentale). 1 usage tous les 2 tours.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+75,5,3,NULL,Cicatrisation ambrée,150,FALSE,"Flux : Guérison
+Coût en énergie : Moyen à Conséquent
+Utilisation : Passive
+Effet : Le sang qui s’écoule des blessures du porteur est transformé en ambre, de sorte à colmater les plaies et éviter une hémorragie.",FALSE,FALSE,NULL,Soutien,Vêtements,,,FALSE,0,NULL,NULL,FALSE
+76,5,3,NULL,Correction sensorielle ,300,FALSE,"Flux : Altération
+Coût en énergie : Très faible
+Utilisation : Passive
+Effet : Permet de réparer un sens défectueux chez le porteur. L’objet glyphé doit être en lien avec le sens à réparer.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+77,5,3,NULL,Courage ,150,FALSE,"Flux : Protection
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Octroie +5 aux jets de dés de Force mentale pour toutes les personnes présentes alliées dans un rayon de 5 mètres.",FALSE,FALSE,NULL,Soutien,Tout objet,,,TRUE,0,NULL,NULL,FALSE
+78,5,3,NULL,Détection des pièges,150,FALSE,"Flux : Erudition
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Semelles dotées d’une rune enchantée pour avertir son porteur qu’il s’apprête à marcher sur un piège magique ou non magique, permettant à celui-ci d’arrêter son pas, s’il est en train de marcher (ne fonctionne pas sur un pas de course qui ne laisse pas le temps au porteur de réagir).",FALSE,FALSE,NULL,Soutien,Chaussures et Bijou de cheville,,,FALSE,0,NULL,NULL,FALSE
+79,5,3,NULL,Dictée ,50,FALSE,"Support : Parchemin, Livre, Objet apparenté
+Flux : Altération
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Peut contenir un message que l'on dicte. Puis lorsque le message est délivré, en effleurant le support du message, il peut être dicté oralement à son destinataire.",FALSE,FALSE,NULL,Soutien,Objet divers,,,FALSE,0,NULL,NULL,FALSE
+80,5,3,NULL,Disparition du support,400,FALSE,"Flux : Altération
+Coût en énergie : Faible à Moyen (en fonction de l’objet, fixé à l’achat)
+Utilisation : Active ou Passive (décidée à l’achat)
+Effet : Rend la cible invisible.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+81,5,3,NULL,Fausse-mort ,150,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Permet de prendre l’apparence d’un cadavre et de cacher ses signes vitaux, y compris ses vibrations baptistrales pendant 1 journée.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+82,5,3,NULL,Fidélité ,50,FALSE,"Flux : Animation
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Rend l’objet inutilisable par qui que ce soit d'autre que son véritable propriétaire et ne peut pas blesser ce dernier. La façon dont l’objet devient inutilisable doit être déterminée à l’achat.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,TRUE
+83,5,3,NULL,Glyphes indétectables,200,FALSE,"Flux : Altération
+Utilisation : Passive
+Effet : Rend les glyphes de l’objet enchanté, ou des objets qu’il contient, indétectables par toute autre personne que son propriétaire légitime.
+Jet de sauvegarde : Destruction de l’objet",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+84,5,3,NULL,Inattention ,50,FALSE,"Flux : Illusion
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Tisse une illusion visuelle s’adaptant à l’observateur et qui fait paraître l’utilisateur plus faible et insignifiant qu’il ne l’est réellement. Si un adversaire a le choix entre deux cibles, il choisira la cible qui n’est pas le porteur. Permet également d’éviter les suspicions et méfiances.",FALSE,FALSE,NULL,Soutien,Armures,Vêtements,Bijoux et accessoires,FALSE,0,NULL,NULL,FALSE
+85,5,3,NULL,Légèreté ,20,FALSE,"Flux : Altération
+Coût en énergie : Très faible
+Utilisation : Passive
+Effet : Permet de rendre le support extrêmement léger.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+86,5,3,NULL,Localisation impossible,200,FALSE,"Flux : Érudition
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Empêche toute localisation du porteur, quelles que soient les méthodes utilisées.",FALSE,FALSE,NULL,Soutien,Vêtements,Bijoux et accessoires,,FALSE,0,NULL,NULL,FALSE
+87,5,3,NULL,Matérialisation ,100,FALSE,"Flux : Invocation
+Coût en énergie : Variable
+Utilisation : Active
+Effet : Au repos, l’objet est éthéré et ne peut subir aucun dégât physique. Quand son porteur active le glyphe, l’objet devient matériel et le porteur peut user de ses propriétés. L’objet est alors vulnérable aux dégâts physiques.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+88,5,3,NULL,Pas du chat,150,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Annule totalement le bruit des pas du porteur, le rendant plus discret (+5 aux jets de furtivité).",FALSE,FALSE,112,Soutien,Chaussures et Bijou de cheville,,,FALSE,0,NULL,NULL,FALSE
+89,5,3,NULL,Perception ,50,FALSE,"Précision support : Gants, Bijou de bras
+Flux : Erudition
+Coût en énergie : Très faible
+Utilisation : Active
+Effet : Permet de connaître le contenu d’une boîte, d’un coffre, d’une bourse, etc. Le contenant ne doit pas avoir un volume plus grand que 2 mètres cubes.",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,Armures,Vêtements,FALSE,0,NULL,NULL,FALSE
+90,5,3,NULL,Poigne divine,250,FALSE,"Précision support : Arme à deux mains
+Flux : Altération
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : L’arme à deux mains peut se manier avec la légèreté et la simplicité d’une arme à une main. Le porteur peut donc manier deux armes à deux mains en même temps si les deux armes sont ainsi glyphées.",FALSE,FALSE,NULL,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+91,5,3,NULL,Précision ,300,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Permet de viser plus facilement les points faibles de son adversaire (+5 aux jets d’attaque).",FALSE,FALSE,439,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+92,5,3,NULL,Puissante mélodie,10,FALSE,"Précision support : Instrument de musique
+Flux : Altération
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Augmente la portée d’une musique de 20 mètres en renforçant le son et la justesse des notes.",FALSE,FALSE,NULL,Soutien,Objets Divers,,,FALSE,0,NULL,NULL,FALSE
+93,5,3,NULL,Rechargement autonome,150,FALSE,"Précision support : Carquois, Arbalète, Feutonnerre
+Flux : Invocation
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Invoque de nouvelles munitions dès que l’objet est vide.",FALSE,FALSE,NULL,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+94,5,3,NULL,Retour ,50,FALSE,"Flux : Déplacement
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Permet à l’objet d’apparaître dans la main de son propriétaire par un simple appel mental. L’objet doit se trouver à moins de 100 mètres de l’utilisateur. Un seul utilisateur peut appeler l’objet.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+95,5,3,NULL,Sans fond,100,FALSE,"Précision support : Tout objet de type contenant
+Flux : Altération
+Utilisation : Passive
+Effet : L’objet est capable de contenir tout ce que vous souhaitez, sans souci de taille, de place ni de poids. Le contenu doit toutefois pouvoir entrer par l’ouverture du contenant.
+Jet de sauvegarde : Destruction de l’objet",FALSE,FALSE,NULL,Soutien,Objets Divers,,,FALSE,0,NULL,NULL,FALSE
+96,5,3,NULL,Secret inférieur,20,FALSE,"Précision support : Parchemin, Livre, Objet apparenté
+Flux : Altération
+Coût en énergie : Faible
+Utilisation : Active (par mot de passe)
+Effet : Tout texte qui y est écrit ne peut être lu qu’une fois le mot de passe donné, mot de passe défini par le propriétaire originel.",FALSE,FALSE,NULL,Soutien,Objets Divers,,,FALSE,0,NULL,NULL,FALSE
+97,5,3,NULL,Secret supérieur,75,FALSE,"Précision support : Parchemin, Livre, Objet apparenté
+Flux : Altération
+Coût en énergie : Faible
+Utilisation : Active (par contact)
+Effet : Ne peut s'ouvrir que sous la main de son propriétaire ou de son destinataire. Pour reconnaître ce dernier, l’objet devra donc avoir déjà eu un contact avec le destinataire.",FALSE,FALSE,NULL,Soutien,Objets Divers,,,FALSE,0,NULL,NULL,FALSE
+98,5,3,NULL,Sérénité ,100,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Produit une aura calmante lorsque l’objet est visible, permettant d’augmenter la concentration (+5 à un jet de dés pour une action).",FALSE,FALSE,439,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+99,5,3,NULL,Silence ,100,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Le support ne produit plus le moindre son.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+100,5,3,NULL,Silence parfait ,400,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : A l'activation du glyphe, le porteur ne produit plus le moindre son, hormis la parole et ses dérivés (+1 rang de Furtivité pendant 1 heure / 2 tours d’intrigue).",FALSE,FALSE,58,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+101,5,3,NULL,Solidité ,200,FALSE,"Flux : Altération
+Coût en énergie : Variable (dépend de l’objet et de l’utilisation)
+Utilisation : Passive
+Effet : L’objet devient incassable et inaltérable.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+102,5,3,NULL,Stabilité ,20,FALSE,"Flux : Altération
+Coût en énergie : Très faible
+Utilisation : Active
+Effet : Permet de s’ancrer au sol et de ne pas tomber. Il devient difficile de renverser le porteur.
+Jet de sauvegarde : Force",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+103,5,3,NULL,Stoïcisme ,200,FALSE,"Flux : Protection
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Permet de rendre son porteur particulièrement résistant à la douleur, quelle que soit sa source.",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+104,5,3,NULL,Trajectoire préservée,100,FALSE,"Précision support : Arme de trait, Arme de jet
+Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Produit une aura qui entoure le projectile et lui permet d’ignorer les aléas climatiques pouvant nuire à sa précision (annule tous les malus climatiques lors de l’attaque).",FALSE,FALSE,NULL,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+105,5,3,NULL,Coloration ,10,FALSE,"Flux : Altération
+Coût en énergie : Très faible
+Utilisation : Passive
+Effet : Permet de changer la couleur de l’objet glyphé (arme, armure) ou d’une partie du corps du porteur (cheveux, écailles, peau, cheveux).",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+106,5,3,NULL,Tissu Métamorphose,50,FALSE,"Flux : Altération
+Coût en énergie : Très faible
+Utilisation : Active
+Effet : Le vêtement prend l'apparence désirée par le porteur. Le temps nécessaire pour la métamorphose augmente (jusqu’à 1h) en fonction de la complexité demandée.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+107,5,4,NULL,Absorption ,200,FALSE,"Flux : Protection
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : L’énergie des sorts offensifs de puissance jusque Moyen est absorbée par l’objet et transmise au porteur.",FALSE,FALSE,NULL,Défensif,Armures,,,FALSE,0,NULL,NULL,FALSE
+108,5,4,NULL,Cauchemar ,300,FALSE,"Flux : Illusion
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Fait apparaître pour les seuls yeux de la cible une image de ce que son coeur craint le plus au monde. Si elle n’est pas rompue, l’illusion dure 10 minutes. Pendant ces 10 minutes, la cible est inactive et vulnérable, contemplant fixement l’illusion et oubliant le monde alentour.
+Jet de sauvegarde : Intuition",FALSE,FALSE,NULL,Défensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+109,5,4,NULL,Cercle de pacifisme,300,FALSE,"Précision support : Tout sauf arme
+Flux : Protection
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Création d’un cercle de 5 mètres de rayon autour de la cible dans lequel tous les individus, porteur compris, ne peuvent pas en venir aux armes. Dure 10 minutes.
+Jet de sauvegarde : Résistance magique",FALSE,FALSE,NULL,Défensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+110,5,4,NULL,Choc ,200,FALSE,"Flux : Energie
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Lorsqu’un coup est subi, produit un choc d’énergie qui repousse l’agresseur sur 3 mètres.
+Jet de sauvegarde : Résistance physique",FALSE,FALSE,NULL,Défensif,Armures,,,FALSE,0,NULL,NULL,FALSE
+111,5,4,NULL,Désir oublié,300,FALSE,"Flux : Illusion
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Fait apparaître pour les seuls yeux de la cible une image de ce que son coeur désire le plus au monde. Si elle n’est pas rompue, l’illusion dure 10 minutes. Pendant ces 10 minutes, la cible est inactive et vulnérable, contemplant fixement l’illusion et oubliant le monde alentour.
+Jet de sauvegarde : Intuition",FALSE,FALSE,NULL,Défensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+112,5,4,NULL,Invisibilité temporaire,300,FALSE,"Flux : Illusion
+Coût en énergie : Moyen
+Utilisation : Active (le porteur doit tourner sur lui-même pour activer l’invisibilité)
+Effet : Permet au porteur de se rendre invisible. Cela ne permet pas de disparaître véritablement : le porteur ne perd pas sa consistance physique. L'invisibilité prend fin soit si le porteur le décide, en effectuant le mouvement inverse, soit s’il est touché d'une quelconque façon (toucher physique direct, magique, à distance..), soit au bout d'une heure / 2 tours d'intrigue.
+Jet de sauvegarde : Contact",FALSE,FALSE,NULL,Défensif,Vêtements,,,FALSE,0,NULL,NULL,FALSE
+113,5,4,NULL,Miroir ,200,FALSE,"Précision support : Armures, Bouclier
+Flux : Protection
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Produit une distorsion énergétique proche de la surface de l’objet. Lorsqu’un effet produit par de l’énergie (arme invoquée, arme élémentaire, arme d’énergie, etc) entre en contact avec cette distorsion, il est renvoyé vers son créateur.
+Jet de sauvegarde : Coordination",FALSE,FALSE,NULL,Défensif,Armures,Armes,,FALSE,0,NULL,NULL,FALSE
+114,5,4,NULL,Persiflage ,200,FALSE,"Flux : Mental
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : À l’activation du glyphe par la pensée, l’arme ou le bijou se met à provoquer verbalement la personne ciblée ou l’adversaire, pour lui insuffler de la colère. Si celui-ci manque son Jet de Force mentale, il obtient un -10 sur les jets d’expertise dans l’arme qu’il manie à cet instant, pendant 30 minutes / 2 tours d’intrigue.
+Jet de sauvegarde : Force mentale",FALSE,FALSE,NULL,Défensif,Armes,Bijoux et accessoires,,TRUE,0,NULL,NULL,FALSE
+115,5,4,NULL,Propriété draconique,100,FALSE,"Flux : Destruction
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Le support provoque de terribles souffrances lorsque touché par quiconque autre que son propriétaire.
+Jet de sauvegarde : Résistance",FALSE,FALSE,NULL,Défensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+116,5,4,NULL,Régénération ,200,FALSE,"Flux : Guérison
+Coût en énergie : Variable
+Utilisation : Passive
+Effet : Lorsqu’une blessure est subie, elle est automatiquement guérie moyennant une énergie équivalente à la gravité de la blessure. Ne prend pas en compte les réserves d’énergie du porteur.",FALSE,FALSE,NULL,Défensif,Armures,,,FALSE,0,NULL,NULL,FALSE
+117,5,4,NULL,Brouillage ,400,FALSE,"Flux : Energie ou Contrôle
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Dans un rayon de 3 mètres, tous les Esprit-Liés, à l’exception de celui du porteur, deviennent confus et leurs effets sont atténués (Perte de 10% d’efficacité).",FALSE,FALSE,NULL,Offensif,Bijoux et accessoires,,,TRUE,0,NULL,NULL,FALSE
+118,5,4,NULL,Contre-glyphe,300,FALSE,"Flux : Energie ou Contrôle
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Permet d’annuler les effets d’un glyphe pendant 10 minutes / 2 tours. Le porteur doit énoncer quel glyphe doit être annulé et fournir l’énergie nécessaire pour le contrecarrer. Ne fonctionne que sur un glyphe à la fois.",FALSE,FALSE,NULL,Offensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+119,5,4,NULL,Désactivation ,500,FALSE,"Flux : Energie ou Contrôle
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Désactive tous les glyphes de la cible et lui rend une quantité égale d’énergie. Les glyphes se réactivent un à un progressivement sur les 24 prochaines heures.",FALSE,FALSE,NULL,Offensif,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+120,5,4,NULL,Énergie pure ,500,FALSE,"Précision support : Toute arme (sauf arme de trait et projectiles ou arme contondante)
+Flux : Energie
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : La partie blessante de l’arme (ex : lame, pic de la lance, tissu du fouet, etc.) devient pure énergie et brille lorsque le glyphe est activé. Dans cet état, elle peut briser, couper ou blesser n’importe quoi (écailles de dragon comprises). Cependant, elle puise énormément d’énergie chez le porteur qui ne peut le maintenir dans cet état pour plus d’un court instant (1 à 3 tours sur jet de Résistance) sans risquer la perte de conscience ou la mort.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+121,5,4,NULL,Filament d’apathie ,250,FALSE,"Flux : Mental
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Le corps de l’arme se transforme en filament d’énergie qui n’inflige plus de blessures physiques mais provoque une profonde langueur et torpeur chez la victime touchée. Au bout de 3 coups réussis, la victime est vidée de son envie de se battre et de se défendre.
+Jet de sauvegarde : Force mentale",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+122,5,4,NULL,Secousse ,100,FALSE,"Flux : Energie
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Le porteur provoque une explosion magique en frappant le sol, équivalente à sa force physique. Tous les individus dans une zone de 3 mètres perdent l’équilibre.
+Jet de sauvegarde : Coordination",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+123,5,4,NULL,Traits animaux ,200,FALSE,"Précision support : Arme de trait
+Flux : Invocation
+Coût en énergie : Variable
+Utilisation : Active
+Effet : La flèche tirée par l’arme glyphée se transforme en animal avant l’impact. L’animal ainsi invoqué dure 1 minute avant de disparaître. Un seul animal possible, au choix lors de l'achat.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,TRUE
+124,5,4,NULL,Vide ,300,FALSE,"Flux : Energie
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Crée un morceau de vide énergétique capable d’absorber la magie sur la trajectoire de l’arme. Le timing est particulièrement important.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+125,5,4,NULL,Absorption d’énergie,500,FALSE,"Flux : Energie
+Coût en énergie : Variable
+Utilisation : Active
+Effet : L’énergie du porteur peut être emmagasinée dans le bijou pour être ensuite retransmise plus tard au porteur ou un autre être vivant. Cela permet d’effacer en partie la fatigue physique et magique. Peut absorber l’équivalent énergétique d’un sort moyen par don.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+126,5,4,NULL,Contrôle par l’esprit,500,FALSE,"Flux : Animation
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : L’arme bouge par la volonté de son utilisateur, sans que celui-ci ait besoin de bouger. L’utilisateur doit effectuer des jets de Force mentale à la place d’Expertise pour savoir si les attaques touchent.",FALSE,FALSE,NULL,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+127,5,4,NULL,Désir profond ,100,FALSE,"Précision support : Tout objet pouvant pointer une direction
+Flux : Animation
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Montre la direction de ce que le porteur désire le plus.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+128,5,4,NULL,Détection du mensonge,300,FALSE,"Flux : Mental
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Permet de déceler qu’une personne, dont la Force mentale est inférieure à la sienne, ment. Ne permet pas de connaître la vérité, toutefois.
+Jet de sauvegarde : Sort ou Dissimulation par glyphe",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+129,5,4,NULL,Diagnostic ,200,FALSE,"Précision support : Gant, Bijou
+Flux : Guérison
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : En touchant le corps de la cible, permet de détecter toute maladie, blessure ou autre atteinte physique, afin de savoir de quoi souffre la cible.",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,Vêtements,Armures,FALSE,0,NULL,NULL,FALSE
+130,5,4,NULL,Efficacité - Epées,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang de compétence dans l’Expertise en Epées. L’effet ne peut pas être cumulé.",FALSE,FALSE,14,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+131,5,4,NULL,Efficacité - Dagues et Poignards,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang de compétence dans l’Expertise en Dagues et Poignards. L’effet ne peut pas être cumulé.",FALSE,FALSE,15,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+132,5,4,NULL,Efficacité - Armes d'hast,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang de compétence dans l’Expertise en Armes d'hast. L’effet ne peut pas être cumulé.",FALSE,FALSE,16,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+133,5,4,NULL,Efficacité - Armes contondantes,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang de compétence dans l’Expertise en Armes contondantes. L’effet ne peut pas être cumulé.",FALSE,FALSE,17,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+134,5,4,NULL,Efficacité - Haches,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang de compétence dans l’Expertise en Haches. L’effet ne peut pas être cumulé.",FALSE,FALSE,18,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+135,5,4,NULL,Efficacité - Fouets,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang de compétence dans l’Expertise en Fouets. L’effet ne peut pas être cumulé.",FALSE,FALSE,19,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+136,5,4,NULL,Efficacité - Armes de jet,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang de compétence dans l’Expertise en Armes de jet. L’effet ne peut pas être cumulé.",FALSE,FALSE,20,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+137,5,4,NULL,Efficacité - Boucliers,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang de compétence dans l’Expertise en Boucliers. L’effet ne peut pas être cumulé.",FALSE,FALSE,21,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+138,5,4,NULL,Efficacité - Armes de Trait,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang de compétence dans l’Expertise en Armes de Trait. L’effet ne peut pas être cumulé.",FALSE,FALSE,22,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+139,5,4,NULL,Efficacité - Pugilat,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang de compétence dans l’Expertise en Pugilat. L’effet ne peut pas être cumulé.",FALSE,FALSE,23,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+140,5,4,NULL,Flot d’énergie ,300,FALSE,"Flux : Energie
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Le porteur reçoit un flot d’énergie (équivalent à un sort niveau maître) lorsqu’il a épuisé ses réserves magiques ou qu’il s’apprête à perdre connaissance. L’effet désactive les glyphes sur l’objet. 1 utilisation par RP ou Intrigue.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+141,5,4,NULL,Forme chérie,200,FALSE,"Flux : Illusion
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Permet au porteur de prendre l'apparence de l'être le plus cher aux yeux de tous ceux qui l'observent. Dure 1 heure.",FALSE,FALSE,NULL,Soutien,Vêtements,Bijoux et accessoires,,FALSE,0,NULL,NULL,FALSE
+142,5,4,NULL,Grâce de l’Impératrice,500,FALSE,"Flux : Mental
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Béni par l’""Impératrice” dont la splendeur n’est plus à prouver, l’utilisateur du glyphe paraît plus beau, et a tendance à plus facilement capter l’attention aux yeux de ceux qui ne sont pas avertis des subtilités magiques (effet nul sur les personnages dont la compétence Magie est supérieure ou égale à “Bon”).",FALSE,FALSE,NULL,Soutien,Armures,Bijoux et accessoires,,FALSE,0,NULL,NULL,FALSE
+143,5,4,NULL,Grâce des Esprits,250,FALSE,"Précision support : Tout sauf arme
+Flux : Altération
+Coût en énergie : Faible à Moyen
+Utilisation : Passive
+Effet : Une fois par jour, le glyphe permet d'atténuer une suppression ou un blocage de lien d'Esprits-Liés, en une perte d'un rang (les spirites de niveau 1 esquivent la suppression ou le blocage totalement).",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+144,5,4,NULL,"Inëkorro, la voie de l’or",500,FALSE,"Flux : Mental
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : L’utilisateur sacrifie une somme monétaire (PO de sa cagnotte) afin de provoquer un effet bénéfique sur sa prochaine action en jeu (à la discrétion du MJ pour l’effet exact, à décider en fonction de la somme sacrifiée, qui ne peut dépasser 100 PO). Ne peut être utilisé qu’une fois tous les deux tours.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+145,5,4,NULL,Magie dissimulée,50,FALSE,"Flux : Illusion
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : L’énergie magique et l’empreinte du porteur sont dissimulées aux individus de puissance magique égale ou inférieure du porteur.",FALSE,FALSE,NULL,Soutien,Vêtements,Bijoux et accessoires,,FALSE,0,NULL,NULL,FALSE
+146,5,4,NULL,"Mémoire de neige, ""Inkaruya""",50,FALSE,"Précision support : Bijou, Gants
+Flux : Érudition
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Parfois, les traces de pas se voient recouvertes de neige. À l'activation, ce glyphe permet à son porteur de distinguer ces traces comme si elles étaient encore présentes, si elles datent de moins d'une journée.",FALSE,FALSE,NULL,Soutien,Vêtements,Armures,Bijoux et accessoires,FALSE,0,NULL,NULL,FALSE
+147,5,4,NULL,Message secret ,100,FALSE,"Précision support : Châle, Etole, Foulard
+Flux : Érudition
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Quand son possesseur susurre un message destiné à une personne précise, et un seul message à la fois, à ce foulard, personne ne pourra l'écouter autre que la personne concernée, quand elle sera en possession de ce foulard à son tour. Si le foulard est détruit, le message est irrémédiablement perdu.
+Jet de sauvegarde : Destruction de l’objet",FALSE,FALSE,NULL,Soutien,Vêtements,,,FALSE,0,NULL,NULL,FALSE
+148,5,4,NULL,Modulation ,50,FALSE,"Flux : Construction
+Coût en énergie : Variable
+Utilisation : Active
+Effet : L’arme glyphée peut être transformée pour devenir n’importe quelle arme physique. Si le porteur attaque avec, lorsqu’elle a changé d’apparence, son attaque utilisera le domaine d’expertise de l’apparence de l’arme (exemple : une épée est transformée en lance. Son porteur attaque. Le jet de dés se fera sur son expertise de la lance).",FALSE,FALSE,NULL,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+149,5,4,NULL,Passemuraille ,100,FALSE,"Précision support : Bijou, Gants
+Flux : Altération
+Coût en énergie : Variable
+Utilisation : Active
+Effet : En touchant un mur ou une barrière avec l’objet glyphé en passemuraille, le glyphe permet de créer un passage. Le passage créé par l’objet mesure 90cm de large et 2 mètres de haut maximum, la taille dépendant de la puissance du lanceur. Il demeure tant que l’objet glyphé est en contact avec la surface (l’utilisateur tenant la pierre doit donc garder le contact avec le mur ou la barrière tout en se déplaçant).
+Il ne peut créer de passage que dans les murs de matières et non dans les murs magiques.",FALSE,FALSE,NULL,Soutien,Armures,Vêtements,Bijoux et accessoires,FALSE,0,NULL,NULL,FALSE
+150,5,4,NULL,Pensée volage,500,FALSE,"Flux : Mental
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : A l’activation en fixant sa cible, le porteur peut lui faire oublier une pensée. La pensée ""volée"" ne peut-être qu’une pensée immédiate, telle une parole que la personne allait dire, ou une intention immédiate. Ce ne peut être une pensée trop profonde ou un souvenir trop ancré.
+Une seule utilisation sur 2 heures / 3 tours d’intrigue.
+Jet de sauvegarde : Force mentale",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+151,5,4,NULL,Perfectionnement - Force,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Force. Une seule augmentation par caractéristique.",FALSE,FALSE,1,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+152,5,4,NULL,Perfectionnement - Endurance,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Endurance. Une seule augmentation par caractéristique.",FALSE,FALSE,2,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+153,5,4,NULL,Perfectionnement - Coordination,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Coordination. Une seule augmentation par caractéristique.",FALSE,FALSE,3,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+154,5,4,NULL,Perfectionnement - Furtivité,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Furtivité. Une seule augmentation par caractéristique.",FALSE,FALSE,4,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+155,5,4,NULL,Perfectionnement - Perception,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Perception. Une seule augmentation par caractéristique.",FALSE,FALSE,5,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+156,5,4,NULL,Perfectionnement - Force mentale,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Force mentale. Une seule augmentation par caractéristique.",FALSE,FALSE,6,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+157,5,4,NULL,Perfectionnement - Education,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Education. Une seule augmentation par caractéristique.",FALSE,FALSE,7,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+158,5,4,NULL,Perfectionnement - Charisme,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Charisme. Une seule augmentation par caractéristique.",FALSE,FALSE,8,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+159,5,4,NULL,Perfectionnement - Intuition,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Intuition. Une seule augmentation par caractéristique.",FALSE,FALSE,9,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+160,5,4,NULL,Perfectionnement - Chance / Espérance,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Chance / Espérance. Une seule augmentation par caractéristique.",FALSE,FALSE,10,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+161,5,4,NULL,Perfectionnement - Résistance physique,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Résistance physique. Une seule augmentation par caractéristique.",FALSE,FALSE,11,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+162,5,4,NULL,Perfectionnement - Résistance magique,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Résistance magique. Une seule augmentation par caractéristique.",FALSE,FALSE,12,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+163,5,4,NULL,Perfectionnement - Magie,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Magie. Une seule augmentation par caractéristique.",FALSE,FALSE,13,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+164,5,4,NULL,Perfectionnement - Epées,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Expertise en Epées. Une seule augmentation par caractéristique.",FALSE,FALSE,14,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+165,5,4,NULL,Perfectionnement - Dagues et poignards,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Expertise en Dagues et Poignards. Une seule augmentation par caractéristique.",FALSE,FALSE,15,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+166,5,4,NULL,Perfectionnement - Armes d'hast,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Expertise en Armes d'hast. Une seule augmentation par caractéristique.",FALSE,FALSE,16,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+167,5,4,NULL,Perfectionnement - Armes contondantes,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Expertise en Armes contondantes. Une seule augmentation par caractéristique.",FALSE,FALSE,17,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+168,5,4,NULL,Perfectionnement - Haches,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Expertise en Haches. Une seule augmentation par caractéristique.",FALSE,FALSE,18,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+169,5,4,NULL,Perfectionnement - Fouets,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Expertise en Fouets. Une seule augmentation par caractéristique.",FALSE,FALSE,19,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+170,5,4,NULL,Perfectionnement - Armes de jet,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Expertise en Armes de jet. Une seule augmentation par caractéristique.",FALSE,FALSE,20,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+171,5,4,NULL,Perfectionnement - Boucliers,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Expertise en Boucliers. Une seule augmentation par caractéristique.",FALSE,FALSE,21,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+172,5,4,NULL,Perfectionnement - Armes de Trait,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Expertise en Armes de Trait. Une seule augmentation par caractéristique.",FALSE,FALSE,22,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+173,5,4,NULL,Perfectionnement - Pugilat,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Expertise en Pugilat. Une seule augmentation par caractéristique.",FALSE,FALSE,23,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+174,5,4,NULL,Perfectionnement - Habilité,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Habilité. Une seule augmentation par caractéristique.",FALSE,FALSE,24,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+175,5,4,NULL,Perfectionnement - Navigation,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Navigation. Une seule augmentation par caractéristique.",FALSE,FALSE,25,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+176,5,4,NULL,Perfectionnement - Equitation,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Equitation. Une seule augmentation par caractéristique.",FALSE,FALSE,26,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+177,5,4,NULL,Perfectionnement - Dressage,500,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Donne +1 rang dans la caractéristique Dressage. Une seule augmentation par caractéristique.",FALSE,FALSE,27,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+178,5,4,NULL,Puissance de la famille ,300,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Lorsqu’il est activé, diminue d’un rang toutes les blessures subies par le porteur tant que lui et son parent vampirique sont ensemble dans un rayon de 5m. Dure 1h/3 tours d’intrigue.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+179,5,4,NULL,Respiration Aquatique,50,FALSE,"Précision support : Bijou, Foulard
+Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Transforme temporairement le système respiratoire pour faire pousser des branchies et ainsi permettre de respirer sous l’eau. Dure 30 minutes.",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,Vêtements,,FALSE,0,NULL,NULL,FALSE
+180,5,4,NULL,Rêve ,150,FALSE,"Flux : Mental
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Permet, en compagnie d’une personne consentante, de plonger dans un rêve malléable par le propriétaire de l’objet. Le monde créé reste irréel et n’a pas d’impact physique sur les rêveurs.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+181,5,4,NULL,Secret gardé,200,FALSE,"Précision support : Châle, Etole, Foulard
+Flux : Érudition
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Quand son possesseur (attention pas forcément son porteur...) susurre un de ses secrets, et un seul, à ce foulard, personne ne pourra plus le lui arracher, de quelque manière que ce soit. A moins de détruire le foulard.
+Jet de sauvegarde : Destruction de l’objet",FALSE,FALSE,NULL,Soutien,Vêtements,,,FALSE,0,NULL,NULL,FALSE
+182,5,4,NULL,Souffle spirituel,500,FALSE,"Flux : Altération
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Augmente d’un niveau l'Esprit-Lié du porteur, lui permettant d’accéder aux nouveaux effets. Sur un niveau 3, ses effets seront améliorés. Utilisable 1 fois par jour pendant 1 heure au maximum.
+/!\ Agit uniquement inRP et n'est donc pas pris en compte dans les achats HRP comme les boutiques /!\",FALSE,FALSE,453,Soutien,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+183,5,4,NULL,Soulagement ,200,FALSE,"Flux : Energie
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Les sorts de niveaux Très faible, Faible et Moyen ne coûtent que la moitié de leur valeur énergétique initiale. Permet de lancer deux sorts de ces niveaux en 1 tour pour les mages sans malus.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+184,5,4,NULL,Soulagement supérieur,400,FALSE,"Flux : Energie
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Les sorts jusqu’au niveau Maître inclus ne coûtent que la moitié de leur valeur énergétique initiale. Permet de lancer deux sorts de ces niveaux en 1 tour sans malus.",FALSE,FALSE,NULL,Soutien,Tout objet,,,FALSE,0,NULL,NULL,FALSE
+185,5,4,NULL,Soutien de l'esprit,700,FALSE,"Flux : Mental
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Renforce la puissance des sorts liés à la branche mystique, ainsi que des glyphes, des objets ou des sorts uniques liés à l'esprit (bonus +10 aux jets lors de leur utilisation).",FALSE,FALSE,440,Soutien,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+186,5,4,NULL,Taille moindre,50,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Permet de réduire pendant 1 heure au maximum sa taille jusqu’à celle d’une petite souris. S’active et s’annule par la pensée. 
+Utilisable 1 fois par jour.",FALSE,FALSE,NULL,Soutien,Vêtements,Bijoux et accessoires,,FALSE,0,NULL,NULL,FALSE
+187,5,4,NULL,Traduction ,300,FALSE,"Flux : Érudition
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Permet de discuter, d’écrire et de lire dans toutes les langues, sans avoir besoin de les avoir apprises. La fluidité de l’échange dépend de la complexité du langage.",FALSE,FALSE,NULL,Soutien,Bijoux et accessoires,,,FALSE,0,NULL,NULL,FALSE
+188,5,5,NULL,Cirage ,200,FALSE,"Utilisation : Passive
+Effet : Traitement d’une surface avec de l’huile de lin sur un seul côté afin de le rendre hydrofuge et résistant. Augmente la durabilité du produit aux conditions climatiques (+5 aux jets de Résistance).",FALSE,FALSE,146,Défensif,Armures,Bijoux et accessoires,,FALSE,0,NULL,NULL,FALSE
+189,5,5,NULL,Conditionnement d’armure,180,FALSE,"Précision support : Armure moyenne ou lourde
+Utilisation : Passive
+Effet : Une série de petites modifications destinées à rendre l’armure bien moins inconfortable pour son propriétaire (+5 aux jets de Coordination). L’objet ne peut pas être utilisé de façon optimale par qui que ce soit d’autre après l’application de cette amélioration (-5 aux jets de Coordination pour quiconque autre que son propriétaire).",FALSE,FALSE,111,Défensif,Armures,,,FALSE,0,NULL,NULL,FALSE
+190,5,5,NULL,Cuir bouilli ,180,FALSE,"Précision support : Armure moyenne
+Utilisation : Passive
+Effet : Le cuir est trempé dans de l’eau bouillante afin de le rendre plus dur, puis, lorsqu’il est encore assez souple pour être manipulé, des écailles y sont fixées pour en augmenter la protection fournie (+5 aux jets d’Endurance).",FALSE,FALSE,110,Défensif,Armures,,,FALSE,0,NULL,NULL,FALSE
+191,5,5,NULL,Effet Miroir ,100,FALSE,"Précision support : Bouclier
+Utilisation : Passive.
+Effet : Effet permanent par application d’une couche d’étain et d’argent mêlés polie. L’utilisateur doit manier le bouclier de telle façon à le placer pour réfléchir les rayons du soleil. Le bouclier reflète alors les rayons du soleil et éblouit l’adversaire.",FALSE,FALSE,NULL,Défensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+192,5,5,NULL,Ignifugation ,200,FALSE,"Utilisation : Passive
+Effet : Traitement d’une surface avec des minéraux afin de la rendre ignifuge et résistante. Augmente la durabilité du produit aux conditions climatiques (+5 aux jets d’Endurance) et à l’élément Feu (atténuation d’un rang des dégâts au flux élémentaire Feu).",FALSE,FALSE,137,Défensif,Armures,Bijoux et accessoires,,FALSE,0,NULL,NULL,FALSE
+193,5,5,NULL,Isolation ,100,FALSE,"Précision support : Sac à Pyrolites
+Utilisation : Passive
+Effet : Fabriquée à partir du basalte, une laine de roche est appliquée comme doublure entre deux morceaux de cuir souples cirés, afin d’isoler le sac des effets de la chaleur ainsi que des chocs. Cette amélioration rend les pyrolites moins dangereuses à transporter.",FALSE,FALSE,NULL,Défensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+194,5,5,NULL,Jaque de tissu ,180,FALSE,"Précision support : Armure légère
+Utilisation : Passive
+Effet : Une multicouche de tissus, solidement cousus ensemble, avec du bourrage de lin ou de crin de cheval entre chaque épaisseur, afin d’augmenter la protection sans ôter de sa légèreté ou de sa souplesse (+5 aux jets d’Endurance).",FALSE,FALSE,110,Défensif,Armures,,,FALSE,0,NULL,NULL,FALSE
+195,5,5,NULL,Mousquetons ,80,FALSE,"Précision support : Gants
+Utilisation : Active
+Effet : La pièce d’armure est modifiée de sorte à ce que des mousquetons puissent être déployés et reliés à la garde de toute arme. Permet de garder solidement cette dernière en main et rend le désarmement quasiment impossible",FALSE,FALSE,NULL,Défensif,Armures,Vêtements,,FALSE,0,NULL,NULL,FALSE
+196,5,5,NULL,Optimisation du bombage ,180,FALSE,"Précision support : Armure lourde
+Utilisation : Passive
+Effet : Les pièces de métal sont retravaillées, de sorte à mieux dévier l’énergie cinétique des coups et à se déformer bien moins facilement, et offrent ainsi une protection confortable contre tout type d’arme (+5 aux jets d’Endurance).",FALSE,FALSE,110,Défensif,Armures,,,FALSE,0,NULL,NULL,FALSE
+197,5,5,NULL,Renforcement de phalanges,120,FALSE,"Précision support : Gants
+Utilisation : Passive
+Effet : Des plaques de métal sont forgées sur les gants, habilement travaillées pour ne pas gêner les articulations. Cette amélioration offre notamment une meilleure protection pour les armures de cuir et de tissus.",FALSE,FALSE,NULL,Défensif,Armures,Vêtements,,FALSE,0,NULL,NULL,FALSE
+198,5,5,NULL,Targe éventail ,200,FALSE,"Précision support : Brassards
+Utilisation : Active
+Effet : Bijou de technologie almaréenne, cette amélioration confère plusieurs lamelles en acier superposables, repliées contre l’avant-bras lorsque le mécanisme est désactivé. Une fois ce dernier enclenché, les lamelles se déploient pour former un disque protecteur, de la taille d’une targe, avec les même propriétés défensives.",FALSE,FALSE,NULL,Défensif,Armures,,,FALSE,0,NULL,NULL,FALSE
+199,5,5,NULL,Tissu moderne,400,FALSE,"Précision support : Tissu
+Utilisation : Passive
+Effet : Une méthode complexe de tissage des fibres, doublées avec des fils de métal, afin de rendre le tissu particulièrement résistant aux attaques tranchantes de toutes sortes (baisse d’un cran toutes les blessures même létales) sans pour autant encombrer le vêtement ou l’armure.",FALSE,FALSE,NULL,Défensif,Armures,Vêtements,,FALSE,0,NULL,NULL,FALSE
+200,5,5,NULL,Arbalète alpine ,100,FALSE,"Précision support : Arbalète de poing, Arbalète
+Utilisation : Active
+Effet : Modification d’arbalète permettant d’enclencher un carreau lesté de trois crochets et relié à une fine corde (5 mètres), qui elle-même est étroitement roulée dans un compartiment sous la crosse. La corde permet de soutenir le poids d’un adulte lambda. Un moulinet et une poulie dans la crosse permettent d’aider à l’ascension.”",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+201,5,5,NULL,Baïonnette pliante ,250,FALSE,"Précision support : Feutonnerre, Long-Feutonnerre
+Utilisation : Active
+Effet : Lame de trente centimètres montée sur un ingénieux système almaréen qui peut se plier ou se déplier sous le canon. Permet d’utiliser l’arme en combat de corps à corps (+1 en Expertise d’Arme d’hast) sans autre malus.",FALSE,FALSE,70,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+202,5,5,NULL,Baïonnette simple,150,FALSE,"Précision support : Long-Feutonnerre
+Utilisation : Passive
+Effet : Lame fixe de trente centimètres vissée en dessous du canon. Permet d’utiliser le Long Feutonnerre en combat de corps à corps. Malheureusement, le fusil devient plus lourd et peu maniable (nécessite Bon en Force et en Arme de Trait).",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+203,5,5,NULL,Barillet à carreaux ,600,FALSE,"Précision support : Arbalète de poing, Arbalète
+Utilisation : Active
+Effet : Modification d’arbalète sous la forme d’une série d’engrenages, permettant de recharger plus vite les carreaux à l’aide d’un moulinet. Ce barillet de confection almaréenne peut contenir jusqu’à six projectiles qu’il est possible de tirer deux fois par tour d’intrigue sans malus.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+204,5,5,NULL,Consolidation artisanale,180,FALSE,"Précision support : Arme contondante
+Utilisation : Passive
+Effet : L’alliance d’une technique lyssienne pour traiter le bois avec le savoir-faire de la forge glacernoise permet de rendre les armes plus lourdes (-5 Rapidité - n'est pas un malus en caractéristique mais fait perdre l'initiative) et plus dures, infligeant de ce fait davantage de dégâts contondants (+5 aux jets en Expertise Armes contondantes).",FALSE,FALSE,125,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+205,5,5,NULL,Double canon,400,FALSE,"Précision support : Feutonnerre
+Utilisation : Passive
+Effet : Incrustation d’un deuxième canon avec des systèmes de chargement et de mise à feu indépendants. Permet de pouvoir tirer deux fois par tour d’intrigue, sans malus et sans avoir à recharger.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+206,5,5,NULL,Embouts de harpon ,180,FALSE,"Précision support : Carquois
+Utilisation : Passive
+Effet : Héritage longuement peaufiné par les Lyssiens, ces pointes de flèches ou ces carreaux possèdent un crochet vicieux permettant aux projectiles de s’accrocher fermement à leur cible.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+207,5,5,NULL,Équilibrage ,180,FALSE,"Précision support : Arme de jet
+Utilisation : Passive
+Effet : Technique qui permet d’optimiser la pénétration de l’air et rend les lancers plus faciles, réduisant ainsi la dépense d’énergie (+5 aux jets d’Endurance).",FALSE,FALSE,137,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+208,5,5,NULL,Équilibrage affiné - Epées,320,FALSE,"Utilisation : Passive
+Effet : Technique de forge d’arme permettant d’équilibrer l’arme de façon très harmonieuse et ainsi de grandement faciliter son maniement pour les novices (+1 dans l’Expertise en Epées). Jusqu’au niveau Très bon maximum dans l’Expertise.",FALSE,FALSE,14,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+209,5,5,NULL,Équilibrage affiné - Dagues et Poignards,320,FALSE,"Utilisation : Passive
+Effet : Technique de forge d’arme permettant d’équilibrer l’arme de façon très harmonieuse et ainsi de grandement faciliter son maniement pour les novices (+1 dans l’Expertise en Dagues et Poignards). Jusqu’au niveau Très bon maximum dans l’Expertise.",FALSE,FALSE,15,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+210,5,5,NULL,Équilibrage affiné - Armes d'hast,320,FALSE,"Utilisation : Passive
+Effet : Technique de forge d’arme permettant d’équilibrer l’arme de façon très harmonieuse et ainsi de grandement faciliter son maniement pour les novices (+1 dans l’Expertise en Armes d'hast). Jusqu’au niveau Très bon maximum dans l’Expertise.",FALSE,FALSE,16,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+211,5,5,NULL,Équilibrage affiné - Armes contondantes,320,FALSE,"Utilisation : Passive
+Effet : Technique de forge d’arme permettant d’équilibrer l’arme de façon très harmonieuse et ainsi de grandement faciliter son maniement pour les novices (+1 dans l’Expertise en Armes contondantes). Jusqu’au niveau Très bon maximum dans l’Expertise.",FALSE,FALSE,17,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+212,5,5,NULL,Équilibrage affiné - Haches,320,FALSE,"Utilisation : Passive
+Effet : Technique de forge d’arme permettant d’équilibrer l’arme de façon très harmonieuse et ainsi de grandement faciliter son maniement pour les novices (+1 dans l’Expertise en Haches). Jusqu’au niveau Très bon maximum dans l’Expertise.",FALSE,FALSE,18,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+213,5,5,NULL,Équilibrage affiné - Fouets,320,FALSE,"Utilisation : Passive
+Effet : Technique de forge d’arme permettant d’équilibrer l’arme de façon très harmonieuse et ainsi de grandement faciliter son maniement pour les novices (+1 dans l’Expertise en Fouets). Jusqu’au niveau Très bon maximum dans l’Expertise.",FALSE,FALSE,19,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+214,5,5,NULL,Équilibrage affiné - Armes de jet,320,FALSE,"Utilisation : Passive
+Effet : Technique de forge d’arme permettant d’équilibrer l’arme de façon très harmonieuse et ainsi de grandement faciliter son maniement pour les novices (+1 dans l’Expertise en Armes de jet). Jusqu’au niveau Très bon maximum dans l’Expertise.",FALSE,FALSE,20,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+215,5,5,NULL,Équilibrage affiné - Boucliers,320,FALSE,"Utilisation : Passive
+Effet : Technique de forge d’arme permettant d’équilibrer l’arme de façon très harmonieuse et ainsi de grandement faciliter son maniement pour les novices (+1 dans l’Expertise en Boucliers). Jusqu’au niveau Très bon maximum dans l’Expertise.",FALSE,FALSE,21,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+216,5,5,NULL,Équilibrage affiné - Armes de Trait,320,FALSE,"Utilisation : Passive
+Effet : Technique de forge d’arme permettant d’équilibrer l’arme de façon très harmonieuse et ainsi de grandement faciliter son maniement pour les novices (+1 dans l’Expertise en Armes de Trait). Jusqu’au niveau Très bon maximum dans l’Expertise.",FALSE,FALSE,22,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+217,5,5,NULL,Équilibrage affiné - Pugilat,320,FALSE,"Utilisation : Passive
+Effet : Technique de forge d’arme permettant d’équilibrer l’arme de façon très harmonieuse et ainsi de grandement faciliter son maniement pour les novices (+1 dans l’Expertise en Pugilat). Jusqu’au niveau Très bon maximum dans l’Expertise.",FALSE,FALSE,23,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+218,5,5,NULL,Gouttière ,300,FALSE,"Précision support : Arme tranchante
+Utilisation : Passive
+Effet : Partie creusée sur la lame, réduisant son poids sans affecter sa résistance. L’arme cause ainsi davantage de dégâts et crée une hémorragie même après un coup d’estoc (une blessure légère devient automatiquement une blessure moyenne).",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+219,5,5,NULL,Lame cachée ,120,FALSE,"Précision support : Bottes et Protection d’avant-bras
+Utilisation : Active
+Effet : Le mécanisme est incorporé dans la doublure des avant-bras ou le talon des bottes. Avec le bon mouvement, une petite lame d’acier se révèle par une fente habilement dissimulée jusque-là et peut s’utiliser en combat à mains nues.",FALSE,FALSE,NULL,Offensif,Armures,Vêtements,Chaussures et Bijou de cheville,FALSE,0,NULL,NULL,FALSE
+220,5,5,NULL,Lame vive ,50,FALSE,"Précision support : Arme de jet, Arme tranchante
+Utilisation : Passive
+Effet : Permet aux lames aiguisées de s’enfoncer plus profondément que la normale. Augmente la gravité de la blessure infligée d'un rang.
+Jet de sauvegarde : Résistance physique",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+221,5,5,NULL,Lance disque,400,FALSE,"Précision support : Arbalète de poing, Arbalète
+Utilisation : Active
+Effet : Une lourde modification à apposer sur une arbalète pour changer son mécanisme. Les carreaux sont remplacés par des disques acérés qui, au lieu d’être chargés manuellement, se trouvent dans un chargeur situé sous l’arme. Les dégâts sur les armures légères et moyennes sont augmentés (la blessure légère devient automatiquement une blessure moyenne) et il n’est pas nécessaire de recharger entre chaque tir.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+222,5,5,NULL,Longue portée,320,FALSE,"Précision support : Long-Feutonnerre
+Utilisation : Passive
+Effet : Incrustation d’une longue vue miniature, mais néanmoins efficace, sur le dos de l’arme. Le grossissement des lentilles permet une vision plus précise lors de son utilisation (+1 rang en Perception).",FALSE,FALSE,59,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+223,5,5,NULL,Mécanisme sournois,400,FALSE,"Précision support : Arme de jet, Dague et poignard courts (la lame ne fait jamais plus de 15 cm)
+Utilisation : Passive si choix d’un mécanisme automatique ou Active si choix d’un mécanisme à l’activation par le joueur
+Effet : Une fois planté dans la chair, le mécanisme dans la lame déploie de petites ailettes dans la chair, de telle sorte que retirer l’arme du corps est terriblement douloureux… mais la garder aussi car le tranchant de la lame planté en soi ne fait jamais du bien.
+Jet de sauvegarde : Résistance physique",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+224,5,5,NULL,Méthode d’aiguisage mécanique,300,FALSE,"Précision support : Épée, Lance, Dague, Hache
+Utilisation : Passive
+Effet : Le fil tranchant des lames ainsi aiguisées devient particulièrement redoutable et inflige des dégâts plus importants (la blessure légère devient automatiquement une blessure moyenne).",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+225,5,5,NULL,Méthode de graissage avancé,250,FALSE,"Précision support : Arc, Arbalète
+Utilisation : Passive
+Effet : Ce traitement spécial appliqué aux cordes les empêche de se détendre ou de rompre.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+226,5,5,NULL,Méthode de trempage avancé,250,FALSE,"Précision support : Toute lame
+Utilisation : Passive
+Effet : Les armes ainsi traitées ne s’émoussent plus et ne peuvent plus se briser.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+227,5,5,NULL,Optimisation Industrielle,180,FALSE,"Précision support : Arme tranchante, Arme d’estoc
+Utilisation : Passive
+Effet : Technique de forge qui diminue la résistance à l’air lors des attaques. L’arme devient plus aisée à manier (+5 en Rapidité : n'est pas un bonus en caractéristique mais offre l'initiative).",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+228,5,5,NULL,Pénétration d’armure,50,FALSE,"Précision support : Arme de jet, Arme tranchante
+Utilisation : Passive
+Effet : Permet de percer sans difficulté les armures jusqu’aux armures de type intermédiaire.
+Jet de sauvegarde : Bonus à la résistance physique de l’armure",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+229,5,5,NULL,Perce-écaille,200,FALSE,"Précision support : Toute arme pouvant donner des coups d’estoc, Grappin
+Utilisation : passive
+Effet : Inspiré directement de la perce-maille capable de passer au travers de la protection fine des côtes d'armures, la forme des armes et leur résistance ont été spécialement conçues pour passer au travers des écailles, à l'endroit plus fragile de leurs jointures. Il s'agit souvent de reformer la lame d'estoc avec une griffe, un croc ou un écaille tranchante d'un dragon déjà mort afin de s'attaquer à celles de ceux encore en vie. La force nécessaire pour transpercer totalement l'écaille dépend de l'endroit frappé et de l'âge du dragon. Il ne permet néanmoins que de planter l'arme et non de trancher.",FALSE,FALSE,NULL,Offensif,Armes,Bijoux et accessoires,,FALSE,0,NULL,NULL,FALSE
+230,5,5,NULL,Piques ,100,FALSE,"Précision support : Arme contondante
+Utilisation : Passive
+Effet : En plus de faire des dégâts contondants, les piques/clous sur l’extrémité de l’arme occasionnent des dégâts perforants (les dégâts gagnent 1 rang de gravité).",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+231,5,5,NULL,Pointes / carreaux à fioles ,230,FALSE,"Précision support : Carquois
+Utilisation : Active
+Effet : Faites de verre avec de délicates armatures de fer, ces fioles peuvent contenir une dose unique de poison (liquide ou poudre). Leur fragilité les rend difficiles à transporter, mais lors de l’impact elles diffusent efficacement leur contenant.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+232,5,5,NULL,Pointes / carreaux explosifs,280,FALSE,"Précision support : Carquois
+Utilisation : Active
+Effet : La pointe du carreau ou la pointe de flèche est creuse, de sorte à pouvoir y mettre une petite dose de poudre de pyrolite, ainsi qu’un revêtement en silex. Lors de l’impact, les étincelles créées mettent le feu à la poudre et peuvent créer une petite explosion capable d’étourdir, voire de tuer.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+233,5,5,NULL,Pointes / carreaux inflammables ,200,FALSE,"Précision support : Carquois
+Utilisation : Active
+Effet : Les pointes de flèches sont enroulées de fines bandes de lin imbibées de poix pour une combustion plus lente. Les carreaux sont parcourus de rigoles comblées par de la résine pour une combustion plus rapide, mais qui se dispersera moins lors de sa trajectoire à haute vélocité.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+234,5,5,NULL,Poison ,200,FALSE,"Précision support : Épingle, Fourreau
+Utilisation : Passive
+Effet : Le bijou ou le fourreau d’une arme est un écrin dans lequel on y met un poison défini à l’achat. L’épingle ou la lame de l’arme est alors imprégnée du poison et son prochain coup ou sa piqûre aura l’effet du poison (pendant 10 minutes ou 2 tours d’intrigue). Pour renouveler, il faut ranger l’épingle dans son écrin ou l’arme dans son fourreau pour qu’elle s’enduise à nouveau.
+Jet de sauvegarde : Résistance physique",FALSE,FALSE,NULL,Offensif,Armes,Bijoux et accessoires,,FALSE,0,NULL,NULL,TRUE
+235,5,5,NULL,Pyrolites de Thorium,350,FALSE,"Précision support : Sac à Pyrolites
+Utilisation : Active
+Effet : Légèrement plus lourdes que des pyrolites normales, ces pyrolites sont recouvertes d’un fin maillage de Thorium et ont pour principe de créer un empoisonnement, qui affecte temporairement le contrôle du flux de la cible (-1 rang en Magie).",FALSE,FALSE,NULL,Offensif,Armes,,,TRUE,0,NULL,NULL,FALSE
+236,5,5,NULL,Pyrolites empoisonnées ,220,FALSE,"Précision support : Sac à Pyrolites
+Utilisation : Active
+Effet : Un peu plus légères que des pyrolites normales, elles ont été évidées puis remplies d’une résine noire caoutchouteuse et poreuse. Lorsque les pyrolites sont plongées dans n’importe quel poison liquide, la résine s’en imbibe et est ensuite capable de le diffuser dans la plaie de la victime.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+237,5,5,NULL,Réservoir à huile,250,FALSE,"Précision support : Arme d’hast, Hache
+Utilisation : Active
+Effet : Ajoute sur la base de la lame un minuscule compartiment ignifuge, dans lequel il est possible de charger une fiole d’huile animale (usage unique) rechargeable. Un délicat mécanisme, activable par un bouton sur le manche, permet de créer une étincelle qui enflammera l’huile sur toute la longueur de la lame. Inflige des dégâts élémentaires de feu (niveau moyen) pendant un tour. Attention aux éclaboussures !",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+238,5,5,NULL,Réservoir à poison ,250,FALSE,"Précision support : Arme tranchante
+Utilisation : Active
+Effet : Ajoute sur la base de la lame un minuscule compartiment, dans lequel il est possible de charger une dose de poison (usage unique) rechargeable. Le réservoir est ouvert de trous qui permettent de répandre le poison sur la lame tout entière.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+239,5,5,NULL,Réservoir à Térébenthe ,600,FALSE,"Précision support : Toute arme (sauf couteau de lancer, javelin, etc)
+Utilisation : Active
+Effet : L’arme modifiée est dotée d’un petit réservoir contenant de la térébenthe (résine d’arbre hautement inflammable), habilement dissimulé dans la garde. Une fois le mécanisme activé, la térébenthe coule et se fixe sur la plupart des surfaces tranchantes ou contondantes. Une simple étincelle, dans le mécanisme, enflamme l’huile végétale et inflige des dégâts élémentaires (niveau Très bon) pendant deux tours d’intrigue.",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+240,5,5,NULL,Saignement ,150,FALSE,"Utilisation : Passive
+Effet : Effet permanent par application d’un enduit particulier empêchant ou retardant la coagulation. Ces blessures sont plus longues à être soignées et demandent plus d’énergie (une blessure légère demandera l’équivalent d’une blessure moyenne, etc).
+Jet de sauvegarde : Résistance physique",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+241,5,5,NULL,Supplément de pointes ,120,FALSE,"Précision support : Armure moyenne ou lourde
+Utilisation : Passive
+Effet : Des pointes de fer, soudées sur l’armure, infligent des dégâts (blessure légère) à l’opposant lors de confrontations sous les compétences de pugilat ou combat à mains nues.",FALSE,FALSE,NULL,Offensif,Armures,,,FALSE,0,NULL,NULL,FALSE
+242,5,5,NULL,Supplément de pointes (caparaçon) ,150,FALSE,"Précision support : Cheval, Monture légendaire, Dragon
+Utilisation : Passive
+Effet : Des pointes de fer, soudées au harnachement de la monture, infligent des dégâts supplémentaires (blessure légère) à tout opposant percuté lors d’une charge.",FALSE,FALSE,NULL,Offensif,Animalerie et Dragonerie,,,FALSE,0,NULL,NULL,FALSE
+243,5,5,NULL,Système de poulies,200,FALSE,"Précision support : Arc
+Utilisation : Passive
+Effet : Confère un bonus en dégâts (passe automatiquement une blessure légère en blessure moyenne) ainsi qu’une plus grande portée (+100 mètres), mais rend en contrepartie l’arc lourd et encombrant, réduisant ainsi sa maniabilité (nécessite un niveau Très bon en Arme de trait).",FALSE,FALSE,NULL,Offensif,Armes,,,FALSE,0,NULL,NULL,FALSE
+244,5,5,NULL,Désarmement impossible ,100,FALSE,"Utilisation : Passive
+Effet : Il est impossible de désarmer le porteur.",FALSE,FALSE,NULL,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+245,5,5,NULL,Esthétisme ,400,FALSE,"Précision support : Armure, Bouclier, Vêtement
+Utilisation : Passive
+Effet : Un art délicat qui consiste à graver ou peindre des symboles et dessins sur les armures et les boucliers, afin d’inspirer la terreur aux adversaires ayant une Force mentale inférieure à celle du porteur.
+Jet de sauvegarde : Force mentale",FALSE,FALSE,NULL,Soutien,Armes,Armures,Vêtements,FALSE,0,NULL,NULL,FALSE
+246,5,5,NULL,Lamentations ,250,FALSE,"Précision support : Arme contondante, Fouet
+Utilisation : Active
+Effet : Par un savoir-faire musical et le travail habile du bois ou du cuir, l’arme est dotée d’orifices, qui produisent, au maniement de cette dernière, des sifflements à basse fréquence capables de déconcentrer et de déstabiliser l’adversaire (-5 aux jets en Perception et Coordination).",FALSE,FALSE,NULL,Soutien,Armes,,,TRUE,0,NULL,NULL,FALSE
+247,5,5,NULL,Parade,200,FALSE,"Précisions support : Toute arme pouvant parer une attaque
+Utilisation : Active (parer avec cette arme)
+Effet : La confection sur-mesure rend la parade solide. Augmente la MR de 10 points si un coup est paré avec cette arme.",FALSE,FALSE,440,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+248,5,5,NULL,Peinture / Gravure / Broderie,120,FALSE,"Précisions support : Armure, Bouclier, Vêtement
+Utilisation : Passive
+Effet : Emblème de famille, peintures tribales ou encore gravures. Cette amélioration inspire le courage. Réduit les effets de Peur et d’Intimidation pour le porteur et ses alliés (5 mètres d’effet). Confère un bonus (+5 aux jets) en Force mentale.",FALSE,FALSE,114,Soutien,Armures,Armes,Vêtements,FALSE,0,NULL,NULL,FALSE
+249,5,5,NULL,Perce-oreille,50,FALSE,"Précisions support : Instrument de musique
+Utilisation : Passive
+Effet : Système ingénieux modifiant la caractéristique et la hauteur d’un son musical d’un instrument de musique, se plaçant sur le pavillon ou sur les cordes vers un des sillets. Il permet alors d’augmenter la portée d’un instrument de musique. Cela permet de doubler la portée d’un effet, même magique, que convolent les vibrations musicales.",FALSE,FALSE,NULL,Soutien,Objets Divers,,,FALSE,0,NULL,NULL,FALSE
+250,5,5,NULL,Semelles silencieuses,100,FALSE,"Utilisation : Passive
+Effet : Les semelles sont faites dans un cuir mou et souple, épousant la forme du pied, destiné à rendre parfaitement silencieux le bruit des pas (semelles très douloureuses pour une marche longue ou sur un sol escarpé - utilisées principalement en intérieur pour commettre un larcin).",FALSE,FALSE,NULL,Soutien,Chaussures et Bijou de cheville,,,FALSE,0,NULL,NULL,FALSE
+251,5,5,NULL,Trépied amovible,320,FALSE,"Précision support : Long-Feutonnerre
+Utilisation : Passive
+Effet : Le support de base est modifié de sorte à posséder un socle amovible sur un ingénieux système almaréen reproduisant une articulation : la lourde bille de métal pivote dans l’étui, ce qui permet à l’arme d’ajuster ses tirs, sans avoir à repositionner l’arme à chaque fois (+1 rang en Expertise d’Arme de trait).",FALSE,FALSE,22,Soutien,Armes,,,FALSE,0,NULL,NULL,FALSE
+252,5,5,NULL,Voiles troublants,280,FALSE,"Utilisation : Active
+Effet : Les voiles chatoyants faussent la perception de l’adversaire quant à la portée exacte du support et peuvent le distraire lors des parades ou des esquives (-1 rang dans l’Expertise d’arme de la cible).
+Jet de sauvegarde : Perception",FALSE,FALSE,NULL,Soutien,Armes,,,TRUE,0,NULL,NULL,FALSE
+253,5,5,NULL,Renfort de coque,50,FALSE,"La coque du navire est renforcée avec une essence de bois issu d’un croisement entre l’Azobe et le Moabi sur lequel est appliquée une laque visant à traiter le bois et améliorer sa résistance à l’humidité.
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+254,5,5,NULL,Harpon,75,FALSE,"Baliste plus ou moins large située à la proue du navire pouvant tirer des projectiles de grande taille, reliée par des cordages au navire.
+
+Uniquement disponible pour Goélette, Brick, Frégate et Navire de ligne.
+Empêche l’amélioration canon de proue, canon de flammes et canon catapulte.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+255,5,5,NULL,Éperon,100,FALSE,"Pointe renforcée située à la proue du bateau faite de bois et d’adamantine pouvant servir à éperonner les navires et briser la glace.
+
+Uniquement disponible pour Brick, Frégate et Navire de ligne.
+N’empêche aucune autre amélioration",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+256,5,5,NULL,Entreposage de barils explosifs,100,FALSE,"Entreposage situé à la poupe du navire dans lequel sont entreposés des barils explosifs. Conçu pour être largué par-dessus bord par l’arrière du navire afin de ralentir les poursuivants inattentifs dont la coque viendrait percuter le baril.
+
+Uniquement disponible pour Brick, Frégate et Navire de ligne.
+Empêche les améliorations canon de poupe et entreposage de barils d’huiles inflammables.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+257,5,5,NULL,Entreposage de barils d’huiles inflammables,100,FALSE,"Entreposage situé à la poupe du navire dans lequel sont entreposés des barils d’huile inflammable. Conçu pour que son contenu soit déversé par l’arrière du navire afin de créer une couche d’huile à la surface de l’eau que l’on enflamme ensuite afin de piéger les poursuivants dans les flammes, occasionnant ainsi des dégâts par la création d’un incendie, ce qui permet de s’échapper plus facilement.
+
+Uniquement disponible pour Brick, Frégate et Navire de ligne.
+Empêche les améliorations canon de poupe et entreposage de barils explosifs.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+258,5,5,NULL,Corbeau,100,FALSE,"Le corbeau est un système d’abordage, une passerelle dépliable placée à l’avant du bateau. Au bout de celle-ci se trouve un large épieu pouvant  transpercer le pont du navire abordé de sorte à maintenir la passerelle et assurer sa stabilité, mais également corser le dégagement de ce dernier.
+
+Uniquement disponible pour Brick, Frégate et Navire de ligne.
+Empêche l'amélioration canon catapulte, harpon et canon de flammes.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+259,5,1,NULL,Bras de golems,50,FALSE,"Un glyphe trouvé dans les tréfonds de Cordont. Apposé à divers endroits de la coque, il permet de faire apparaitre des bras de Golem depuis la coque, qui agissent comme des ""pattes"" pour le navire, lui permettant de se déplacer sur terre. Ne peut être utilisé pour combattre. Nécessite de manoeuvrer le navire, et ramer, comme en mer
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+260,5,1,NULL,Coursevent,90,FALSE,"Des glyphes sont apposées sur les mâts du navire qui lui permet de se déplacer plus rapidement grâce au vent dans ses voiles.
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+261,5,1,NULL,Canon de proue,100,FALSE,"Deux armes marines sont installées à la proue du navire. Elles permettent de tirer des projectiles magiques en face.
+
+Uniquement disponible pour Goélette, Brick, Frégate et Navire de ligne.
+Empêche l’amélioration harpon, canon de flammes et canon catapulte.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+262,5,1,NULL,Canon de flammes,120,FALSE,"Deux armes marines sont installées à la proue du navire. Elles crachent une large et longue langue de flamme à l’avant du navire.
+
+Uniquement disponible pour Brick, Frégate et Navire de ligne.
+Empêche l’amélioration harpon, canon de proue et canon catapulte.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+263,5,1,NULL,Projectiles explosifs,140,FALSE,"Renforce les capacités offensives des armes marines. Au moment du contact, les projectiles magiques tirés produisent une explosion augmentant les dégâts causés.
+
+Uniquement disponible pour Goélette, Brick, Frégate et Navire de ligne.
+N’empêche aucune amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+264,5,1,NULL,Brume,150,FALSE,"Fait s’élever une brume magique entourant le navire permettant de mieux se dissimuler (+5). La brume ne nuit pas au navire glyphé comme si elle n’existait pas, mais nuit aux autres. Les attaques ennemies subiront un malus (-5). Peut être dissipée par de grands vents et dure plusieurs minutes (3 tours).
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,439,,Navires,,,FALSE,0,NULL,NULL,FALSE
+265,5,1,NULL,Canon catapulte,170,FALSE,"Une arme marine est installée à la proue du navire sur le pont. Elle permet d’effectuer des tirs de projectiles magiques indirects avec une trajectoire courbe en forme de cloche.
+
+Uniquement disponible pour Brick, Frégate et Navire de ligne.
+Empêche l’amélioration harpon et canon de proue et canon de flammes.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+266,5,1,NULL,Invocation des vents,200,FALSE,"Permet une fois par jour de créer assez de vent pour faire avancer le navire, même lorsqu'aucun vent ne souffle. Cela dure une heure.
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+267,5,2,NULL,Cannibalisme nautique,100,FALSE,"Le navire se répare en partie tout seul en aspirant les morceaux de bois provenant d’autres navires (qui ont subi des dommages, ont été détruits ou se sont échoués). Amène à zéro le coût d’entretien.
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,1,NULL,FALSE
+268,5,2,NULL,Esclavagisme nautique,100,FALSE,"Dans les cales du navire est installée une gemme rouge funeste sertie de glyphe noirâtre. Tous les membres d’équipage portent un collier serti d’une gemme semblable autour du cou. Ils sont dès lors liés à ce navire, ils en deviennent l’esclave. Amène à zéro le coût de l’équipage.
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,1,FALSE
+269,5,2,NULL,Terreur des mers,130,FALSE,"Le navire est décoré de motifs terrifiants renforcés par magie, l'effet est similaire au glyphe d'Effroi.
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+270,5,2,NULL,Figure de proue hurlante,130,FALSE,"Une figure de proue à la forme d'une horrible mégère. Lorsqu'un adversaire est à proximité, elle pousse un cri strident qui étourdit les équipages autres que celui du bateau. Une utilisation par jour.
+
+Uniquement disponible pour Brick, Frégate et Navire de ligne.
+Empêche l’amélioration harpon et canon de proue et canon de flammes.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+271,5,3,NULL,Maniabilité,90,FALSE,"Des glyphes sont apposées sur la coque du navire qui lui permet de glisser plus aisément sur l’eau le rendant plus maniable.
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+272,5,3,NULL,Insubmersible,90,FALSE,"Le navire, lorsqu’il est retourné sur le dos, que ce soit dû à une tempête, une lame de fond ou même une collision, se remet à l’endroit.
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+273,5,3,NULL,Figure de proue d'alerte,130,FALSE,"Apposée sur la proue d’un navire, elle permet à la sculpture de s’animer pour prévenir l’équipage des dangers. En présence de créatures marines dangereuses (magiques ou non) , la proue se mettra à chanter joyeusement. En présence d’un navire ennemi, elle sifflera une chanson. Son sifflement et sa voix ressemblent à un juste milieu entre le son d’une flûte et celui d’une voix de femme. Afin de permettre à la proue de discerner les alliés des ennemis, il faut aller les lui dire, tout simplement. Ainsi, si vous déclarez à la proue que tout les navires Séléniens elle sifflera en présence de tous les navires séléniens, mais vous pouvez aussi déclarer un navire, une race ou un capitaine en particulier comme ennemi.
+
+La proue doit être nourrie et entretenue de compliments et de bienveillance. Plus vous la séduisez, plus elle sera efficace à reconnaître les ennemis de loin. N’hésitez pas à venir lui chuchoter des mots doux souvent, elle vous récompensera d’un rire doux et féminin
+
+Uniquement disponible pour Brick, Frégate et Navire de ligne.
+Empêche l’amélioration harpon et canon de proue et canon de flammes.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+274,5,4,NULL,Maquette,150,FALSE,"Permet de faire rapetisser grandement la taille du navire afin que ce dernier ressemble à une maquette. [condition : aucune personne ne doit se trouver à bord à ce moment-là. Utilisable sur l'eau. Une maquette est trop grande pour être rangée dans une poche].
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+275,5,4,NULL,Charge navale,200,FALSE,"Permet au navire de subir une accélération violente de cinq secondes lui permettant de réaliser une charge.
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+276,5,4,NULL,Légèreté céleste,200,FALSE,"Des glyphes magiques sont apposées sur le navire, qui devient d'une grande légèreté et sur les voiles, qui se gonflent, lui permettant de voler à une hauteur d’une dizaine de mètres de haut et pendant une durée de 1 heure par jour maximum.
+
+Disponible sur tout navire.
+N’empêche aucune autre amélioration.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+277,5,4,NULL,Vieux loup de mer,400,FALSE,Donne +1 de compétence navigation lorsque le capitaine est à la barre du navire. L’effet ne peut pas être cumulé. Effet permanent.,FALSE,FALSE,25,,Navires,,,FALSE,0,NULL,NULL,FALSE
+278,5,4,NULL,Beau-Parleur,400,FALSE,"Le glyphe donne un semblant de conscience au bateau qui est alors capable de parler (il ne s’agit pas d’une conscience de type légendaire). Il peut alors répondre aux questions de son capitaine. Ce peut être par exemple des questions sur le temps qu’il fait, sur les obstacles qui arrivent, ou sur l'emplacement des membres d'équipage, ou toute autre question que souhaite le capitaine. Personne ne peut affirmer toutefois que les réponses sont toujours exactes ou que le bateau puisse y répondre. Le bateau peut être d’humeur frileuse et son capitaine a tout intérêt à le bichonner s’il veut de réelles réponses. Il peut aussi se mettre à chanter sur ordre du capitaine ou insulter celui que le capitaine désignera. Ou le capitaine lui-même, allez savoir.",FALSE,FALSE,NULL,,Navires,,,FALSE,0,NULL,NULL,FALSE
+279,6,5,NULL,Épée-fouet,0,FALSE,"Utilisation : Active
+Effet : L’arme est composée de plusieurs sections reliées par un fil métallique passant en leur milieu. Elle peut être ainsi déployée d’une secousse sous sa forme d'épée-fouet, lui accordant une allonge légèrement plus grande, ainsi que la souplesse d’un fouet.
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+280,6,1,NULL,Élément changeant,0,FALSE,"Flux : Elémentaire (variable)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Ajoute des dégâts et effets élémentaires sur une arme. L’élément change automatiquement en fonction de l’île où le porteur se trouve. N’immunise pas l’utilisateur à l’élément de son arme. Si l’essence de l’élément n’est pas présent, le glyphe ne fonctionnera pas.
+- Keet-Tiamat & Tiamat : Terre
+- Néthéril : Feu
+- Calastin : Vent
+- Nyn-Tiamat : Eau
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+281,6,5,NULL,Décolle-écaille,0,FALSE,"Utilisation : Passive
+Effet : Fabriquée jadis par les almaréens pour combattre les dragons,  la forme très spéciale de sa lame permet de se glisser sous une écaille et de l’arracher pour créer une faiblesse dans la carapace draconique.
+Amélioration rare
+Prérequis : Expertise en Epée Très bon minimum + Ethnie almaréenne, ou Delimar ou bonne justification RP impliquant le savoir-faire almaréen.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+282,6,2,NULL,Poison (hallucinatoire),0,FALSE,"Flux : Nature
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Création d’un poison lent et insidieux, dont les effets ne se manifestent que plusieurs heures plus tard, provoquant des visions de plus en plus fortes et de plus en plus cauchemardesques, en puisant dans les pires peurs de la cible. Une simple éraflure suffit à distiller le poison.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+283,6,4,NULL,Croyance divine,0,FALSE,"Flux : Mental
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Quand elle est sortie de son fourreau, la lame luit d’une aura de foi qui touche tous les alliés du porteur partageant sa foi dans un périmètre de 5 mètres (+1 rang de Espérance/chance pour chacun pendant 1 heure / 2 tours d’intrigue).
+Glyphe rare",FALSE,FALSE,NULL,,,,,TRUE,0,NULL,NULL,FALSE
+284,6,4,NULL,Repentir,0,FALSE,"Flux : Guérison
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Lorsqu’elle blesse un adversaire, si celui-ci se rend et demande pardon au porteur, et si le porteur lui accorde sa grâce, la blessure se soigne d’elle-même comme un acte de foi.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+285,6,5,NULL,Maitrise adaptable,0,FALSE,"Utilisation : Passive
+Effet : L'arme peut être maniée en expertise Dagues/Poignards ou Pugilat.
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+286,6,1,NULL,Arme élémentaire de Glace,0,FALSE,"Flux : Elémentaire (glace)
+Coût en énergie : Conséquent
+Utilisation : Passive ou Active
+Effet : Ajoute des dégâts et effets élémentaires de glace sur une arme. Il n’est pas possible d’avoir plusieurs éléments sur une même arme. N’immunise pas l’utilisateur à l’élément de son arme. Si l’essence de l’élément n’est pas présent, le glyphe ne fonctionnera pas.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+287,6,1,NULL,Arme élémentaire de Feu,0,FALSE,"Flux : Elémentaire (feu)
+Coût en énergie : Conséquent
+Utilisation : Passive ou Active
+Effet : Ajoute des dégâts et effets élémentaires de feu sur une arme. Il n’est pas possible d’avoir plusieurs éléments sur une même arme. N’immunise pas l’utilisateur à l’élément de son arme. Si l’essence de l’élément n’est pas présent, le glyphe ne fonctionnera pas.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+288,6,2,NULL,Cavaliers de la grande Sorgue,0,FALSE,"Flux : Illusion
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : A l’activation tout en fauchant devant soi, la faux fait apparaître quatre cavaliers montés sur de sombres chevaux qui cavalent en direction de la cible visée pour lui foncer dessus. Il s'agit uniquement d'une illusion.
+Jet de sauvegarde : Perception
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+289,6,3,NULL,L’art de la mante,0,FALSE,"Flux : Construction
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : L’arme est convertible, pouvant prendre la forme de deux faucilles ou d’une faux de bataille complète.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+290,6,4,NULL,Tranchant sacré,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : La gravité de la blessure infligée dépend d’un jet de Chance/Espérance et non d’un jet d’Expertise.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+291,6,1,NULL,Arme élémentaire de Foudre,0,FALSE,"Flux : Elémentaire (feu)
+Coût en énergie : Conséquent
+Utilisation : Passive ou Active
+Effet : Ajoute des dégâts et effets élémentaires de foudre sur une arme. Il n’est pas possible d’avoir plusieurs éléments sur une même arme. N’immunise pas l’utilisateur à l’élément de son arme. Si l’essence de l’élément n’est pas présent, le glyphe ne fonctionnera pas.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+292,6,5,NULL,Tir de pointes,0,FALSE,"Utilisation : Active
+Effet : En appuyant sur le bouton situé sur le manche, les pointes qui ornent la tête de l'arme sont expulsées à grande vitesse.
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+293,6,4,NULL,Nouvelles pointes,0,FALSE,"Flux : Construction
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Lorsque les pointes sont tirées, ce glyphe permet de les remplacer aussitôt par de nouvelles. Une utilisation par heure / une fois par tour.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+294,6,2,NULL,Lame de sang,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Chaque blessure infligée par la lame l’abreuve de puissance. Elle gagne les bonus suivants ci-dessous. L’apport de puissance dure une heure.
+1 blessure moyenne infligée = Tranche l’acier aisément
+2 blessures moyennes infligées = Tranche le mithril aisément
+3 blessures moyennes infligées = Tranche les alliages dotés de résistance
+4 blessures moyennes infligées = Tranche les écailles de dragon
+Prérequis : Expertise en Armes contondantes à Bon minimum
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+295,6,1,NULL,Frappe éblouissante,0,FALSE,"Flux : Elémentaire (feu/lumière)
+Coût en énergie : Conséquent
+Utilisation : Passive ou Active
+Effet : Un coup porté avec un niveau de Force supérieure ou égale à Très bon provoque une explosion de lumière vers la cible, éblouissant une personne peu avertie pendant un court instant (5 minutes / 1 tour d'intrigue).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+296,6,4,NULL,Augmentation des dégâts contondants,0,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Tous les coups portés avec le marteau causent des dégâts accrus. Une blessure qui deTRUEt être légère devient moyenne.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+297,6,4,NULL,Facilité d'emploi,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Passive 
+Effet : Le marteau semble très léger et bien équilibré entre les mains du porteur, donne +1 niveau dans l'Expertise de l'arme.
+Glyphe rare",FALSE,FALSE,17,,,,,FALSE,0,NULL,NULL,FALSE
+298,6,5,NULL,Égide de la Foi,0,FALSE,"Utilisation : Active
+Effet : Une fois par jour, le porteur peut accomplir une action en utilisant sa caractéristique “Espérance/chance” plutôt que la caractéristique normale. Il doit dans ce cas prier selon son culte pendant son action en s’inspirant des gravures de son bâton (en intrigue, il doit le signaler à son MJ).
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+299,6,3,NULL,Serpent jumeau,0,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Lorsque la bolas touche sa cible, les lanières de cuir se mettent à bouger afin de s'enrouler au mieux autour de la cible et de parfaire son immobilisation.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+300,6,4,NULL,Traits animaux - Vipères,0,FALSE,"Flux : Invocation
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : La flèche tirée par l’arme glyphée se transforme en vipères avant l’impact. L’animal ainsi invoqué dure 1 minute avant de disparaître.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+301,6,2,NULL,Sang,0,FALSE,"Flux : Mental
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Plus l’arc fait de victime et plus il prend une teinte rouge vif qui effraie les ennemis du porteur : ils peuvent abandonner le combat sur un jet de Force mentale échoué. 
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+302,6,2,NULL,Annulation d’armure,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen 
+Utilisation : Passive
+Effet : Permet d’ignorer les armures physiques et d’infliger des blessures comme si la cible n’était pas protégée.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+303,6,3,NULL,Chaîne grappin,0,FALSE,"Flux : Altération
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : Au niveau des phalanges du gant, les griffes, au nombre de trois et en forme de pointes, peuvent se transformer en véritables grappins.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+304,6,3,NULL,Chaîne magique,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Les griffes peuvent être projetées vers l'endroit visé et sont reliées au gant par des chaînes magiques qui peuvent supporter le poids de deux hommes. 
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+305,6,5,NULL,Têtes mécanisées,0,FALSE,"Utilisation : Active
+Effet : Système permettant d’actionner mécaniquement chacune des têtes qui peuvent se refermer sur la cible.
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+306,6,5,NULL,Adaptation du serpent,0,FALSE,"Utilisation : Active
+Effet : Permet à l’utilisateur d’adapter son arme en fonction des situations. Elle devient plus ou moins extensive par une simple pression sur les mécanismes situées sur le manche.
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+307,6,2,NULL,Tentacules,0,FALSE,"Flux : Animation
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Sur la volonté du porteur, les lanières prennent vie et viennent enlacer leur cible dans une étreinte robuste quand elles parviennent à le toucher.
+Jet de sauvegarde : Résistance physique
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+308,6,2,NULL,Fourbes épines,0,FALSE,"Flux : Mental
+Coût en énergie : Moyen 
+Utilisation : Passive
+Effet : Quand les épines blessent une cible, elle lui injecte un poison paralysant sa volonté, lui faisant subir un malus de -1 rang en Force mentale.
+Glyphe rare",FALSE,FALSE,NULL,,,,,TRUE,0,NULL,NULL,FALSE
+309,6,4,NULL,Animation,0,FALSE,"Flux : Animation
+Coût en énergie : Faible 
+Utilisation : Pssive
+Effet : Anime les serpents sculptés qui peuvent attaquer et mordre.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+310,6,1,NULL,Aveuglement,0,FALSE,"Flux : Elémentaire (lumière)
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : L’incrustation centrale produit une lumière vive qui peut aveugler l’adversaire (sur jet de Résistance physique) et l’empêcher d’agir pendant le tour.
+Jet de sauvegarde : Résistance physique
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+311,6,5,NULL,Evasion du feu,0,FALSE,"Utilisation : Passive
+Effet : La forme ronde et la couche de métal résistante au feu permettent au porteur de se protéger efficacement contre le feu, et en particulier celui des dragons, en évacuant sur les côtés les flammes meurtrières (immunisé pendant deux tours consécutifs si caché derrière).
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+312,6,5,NULL,Refroidissement rapide,0,FALSE,"Utilisation : Passive
+Effet : Le métal protecteur redevient très rapidement froid (en un tour hors du contact direct avec les flammes) permettant de se protéger à nouveau avec “Evasion du feu”.
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+313,6,5,NULL,"Noir, c’est noir",0,FALSE,"Utilisation : Passive
+Effet : Les teintes sombres, parfaitement sélectionnées pour se déplacer dans les ombres, permettent à son porteur d’être plus discret… Trop même. Il est parfois obligé de signaler sa présence pour qu’on le remarque au milieu des ténèbres (+1 rang en Furtivité).
+Amélioration rare",FALSE,FALSE,4,,,,,FALSE,0,NULL,NULL,FALSE
+314,6,5,NULL,Près du corps,0,FALSE,"Utilisation : Passive
+Effet : Avoir des vêtements si près du corps, sans risque de frottement de tissus, rend les mouvements du porteur silencieux.
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+315,6,1,NULL,Armure élémentaire de Foudre,0,FALSE,"Flux : Élémentaire (foudre)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Produit un effet élémentaire de foudre, lorsque le support reçoit un coup. N’immunise pas le porteur à la foudre. ",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+316,6,5,NULL,Forteresse,0,FALSE,"Utilisation : Passive
+Effet : Cette armure est blindée. Augmente la résistance physique du porteur d'un rang (+1 rang de Résistance physique).
+Amélioration rare",FALSE,FALSE,11,,,,,FALSE,0,NULL,NULL,FALSE
+317,6,5,NULL,Épuisement,0,FALSE,"Utilisation : Passive
+Effet : Ah oui, y’a pas à dire, cette armure est blindée. Inflige de la fatigue à celui qui frappe l'armure du porteur, à raison d'une perte d'un rang d'Endurance par coup porté.
+Amélioration rare",FALSE,FALSE,NULL,,,,,TRUE,0,NULL,NULL,FALSE
+318,6,5,NULL,Résistance de fer,0,FALSE,"Utilisation : Passive
+Effet : Augmente d’un rang la Résistance physique.
+Amélioration rare",FALSE,FALSE,11,,,,,FALSE,0,NULL,NULL,FALSE
+319,6,1,NULL,Envolée naturelle,0,FALSE,"Flux : Nature
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Les voiles des manches et du drapé des jambes deviennent des centaines de petites phalènes délicates, contrôlées par le porteur du vêtement. Leur durée dépend de la puissance de la magie du porteur (2 minutes pour un Très faible mage et 1 heure pour un Exceptionnel).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+320,6,4,NULL,Muse incarnée,0,FALSE,"Flux : Mental
+Coût en énergie : Faible 
+Utilisation : Passive
+Effet : Inspire l’art et le romantisme à ceux qui contemplent le vêtement, leur donnant l’impulsion de créer, de produire quelle que soit la discipline artistique, même pour les plus timides. Ils seront bien moins prompts à la violence, ou elle se caractérisera par des productions d’art plutôt qu’une attaque.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+321,6,1,NULL,Feux colorés,0,FALSE,"Flux : Elémentaire (feu/lumière) et Mental
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : Lorsque le porteur tourne sur lui-même, la parure produit l’équivalent d’un feu d’artifice miniature tout autour de lui, causant chez les spectateurs adverses une fascination émerveillée qui leur retire l’initiative et inflige un malus à l’esquive de 10 points.
+Glyphe rare",FALSE,FALSE,NULL,,,,,TRUE,0,NULL,NULL,FALSE
+322,6,4,NULL,Appel de la grande illusion,0,FALSE,"Flux : Puissance des Esprits-Liés
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Lorsque plusieurs porteurs (au moins 3) de parures de la fête activent le glyphe ensemble, ils tissent un lien entre chaque glyphe pour produire une illusion de grande ampleur, qui ne peut être brisée que par une Perception de niveau Grand-maître minimum.
+Jet de sauvegarde : Perception de niveau Grand-maître minimum
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+323,6,3,NULL,Rugissement furieux,0,FALSE,"Flux : Puissance des Esprits-Liés
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : A l’activation, la gueule du lion produit un rugissement qui surprend les adversaires et leur fait perdre l’initiative.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+324,6,5,NULL,Lames dansantes,0,FALSE,"Utilisation : Active
+Effet : Des lames sont fixées sur le vêtement, qui peut donc être utilisé comme arme (jet de dés sur compétence de combat à mains nues).
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+325,6,4,NULL,Transe,0,FALSE,"Flux : Mental
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Permet d'aider à entrer en transe, que ce soit la transe méditative ou la transe vampirique, et permet d’améliorer la concentration nécessaire à cet art. Permet d’atteindre un état méditatif ou de transe plus poussé, jusqu’à un état de dépassement de soi rarement rencontré.
+Très prisé par les vampires adeptes des magies touchant à la psyché.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+326,6,3,NULL,Possession du lombric,0,FALSE,"Flux : Puissance des Esprit-Liés
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Pendant 5 minutes /1 tour d’intrigue, le corps du porteur devient totalement souple et malléable, pouvant se tordre sans causer la moindre blessure ni la moindre douleur.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+327,6,3,NULL,Tissu “vivant”,0,FALSE,"Flux : Animation
+Coût en énergie : Moyen
+Utilisation : Passive ou Active
+Effet : Le tissu bouge constamment, comme si le vent était toujours pris dans l’étoffe. Si le porteur se retrouve menacé, les bandes de tissu s’animent violemment autour du porteur, saisissant tout à leur portée. L’effet peut être stoppé par le porteur ou bien lorsque la bande de tissu en question est sectionnée. Les bouts de tissu tranchés continuent de s’agiter quelques secondes avant de s’immobiliser.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+328,6,3,NULL,Voiles amovibles,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Les manches de tissu grandissent et s’allongent jusqu’à devenir des voiles de navire (maximum frégate), qui permettent de remplacer des voiles endommagées, par exemple, ou d’augmenter un peu la vitesse du navire et sa maniabilité.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+329,6,1,NULL,Peau d’écailles,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Lorsque le glyphe s’active, la peau du porteur devient des écailles de serpent, amoindrissant les dégâts subis d’un rang.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+330,6,3,NULL,Planeur,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Les surfaces sous les bras et les articulations des jambes durcissent comme sur un écureuil volant pour permettre au porteur de planer.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+331,6,4,NULL,Lumière impérissable,0,FALSE,"Flux : Protection
+Coût en énergie : Faible à Conséquent 
+Utilisation : Active
+Effet : Tous les alliés sont protégés pendant 2 tours d'intrigue contre les effets du flux d’Illusion. La puissance de cette protection dépend de la puissance de l’utilisateur (si l’utilisateur est mage exceptionnel, il protègera contre les sorts jusqu’au rang exceptionnel, par exemple).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+332,6,5,NULL,Résistance,0,FALSE,"Utilisation : Passive
+Effet : Le tissu possède la résistance d’une armure de mailles de mithril (armure de maille).
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+333,6,1,NULL,Protection élémentaire - Feu,0,FALSE,"Flux : Élémentaire (feu)
+Coût en énergie : Moyen
+Utilisation : Passive ou Active
+Effet : Produit une résistance au feu (réduction des dégâts de feu de moitié).",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+334,6,4,NULL,Passe-passe,0,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Active
+Effet : D’une simple flexion du poignet, un objet que le possesseur tient dans sa main gantée disparaît (à condition qu’il ne pèse pas plus de 20 kg et qu’il soit possible de le tenir à une main). L’objet affecté est placé en état d’animation suspendue et de taille si réduite qu’il devient impossible de le voir à l’œil nu. Il est stocké dans un repli de la paume du gant. Tant qu’il est rangé, l’objet a un poids négligeable.
+Par la suite, il suffit que le personnage claque des doigts (toujours de la main gantée) pour que l’objet réapparaisse. Un tel gant ne permet de ranger qu’un seul objet à la fois.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+335,6,3,NULL,L'assurance de la catin,0,FALSE,"Flux : Mental
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : Lorsque le porteur parvient à toucher la peau de sa cible, il met les sens de cette dernière en émoi, la rendant plus réceptive aux charmes (effet rp).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+336,6,3,NULL,L'assurance de l'assassin,0,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Le gant absorbe le sang qui s'échapperait de la blessure de la victime. Très pratique lorsqu'on veut éviter de laisser des traces.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+337,6,4,NULL,L'assurance du voleur,0,FALSE,"Flux : Illusion
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Crée une illusion venant faire disparaître l'objet tenu en main. Très pratique pour le voleur qui se ferait prendre la main dans le sac (dure 10 minutes ou 1 tour d’intrigue).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+338,6,3,NULL,Transformation utile,0,FALSE,"Flux : Altération
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : Le tissu du foulard devient une corde de navire que le porteur peut utiliser.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+339,6,3,NULL,Plumeacier,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : À l’activation, transforme les plumes de la coiffe en dagues d’acier de lancer.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+340,6,3,NULL,Arme de tissu,0,FALSE,"Flux : Construction
+Coût en énergie : Moyen à Conséquent
+Utilisation : Active
+Effet : À l’activation, le tissu devient une arme au choix du porteur, ayant tous les attributs d’une arme classique.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+341,6,1,NULL,Sable hilarant,0,FALSE,"Flux : Elémentaire (sable)
+Coût en énergie : Faible
+Utilisation : Active
+Effet : A l’activation, produit un sable hilarant qui se répand sur un rayon de 3 mètres. Toute personne qui en respire se met à rire sans pouvoir s’arrêter, sauf sur jet de Résistance physique réussi (20 minutes ou 2 tours d’intrigue).
+Jet de sauvegarde : Résistance physique 
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+342,6,3,NULL,Transformation sinistre,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : La langue du porteur devient longue et large comme un tentacule, rouge et très souple. Possède une force de niveau Très bon. Dure 10 minutes / 2 tours d’intrigue.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+343,6,4,NULL,Absorption de puissance,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Vole 1 rang de Magie à une victime touchée pendant 1 tour d’intrigue.
+Glyphe rare",FALSE,FALSE,NULL,,,,,TRUE,0,NULL,NULL,FALSE
+344,6,3,NULL,Comme sur des semelles plates,0,FALSE,"Flux : Altération
+Coût en énergie : Faible 
+Utilisation : Passive
+Effet : Les escarpins ont été enchantés pour être confortables et donner l’impression de marcher avec des semelles plates. Ce confort ! On peut même courir sans avoir l’air d’avoir un balai mal placé ! 
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+345,6,3,NULL,Chemin saint,0,FALSE,"Flux : Erudition
+Coût en énergie : Faible à Moyen
+Utilisation : Active
+Effet : Le porteur retrouve toujours son chemin, même lorsqu’il est perdu en terre inconnue. Il lui suffit de penser à sa destination et faire confiance à sa foi (néanmoins, 1 fois sur 10, comme tout bon GPS, il arrive que le chemin à emprunter soit plus escarpé qu’il ne le deTRUEt).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+346,6,5,NULL,Augmentation de l'Équitation,0,FALSE,"Utilisation : Passive
+Effet : Augmentation de l'Équitation (+1 rang) facilitée par une ergonomie de conception, destinée à la pratique de l’équitation.
+Amélioration rare",FALSE,FALSE,26,,,,,FALSE,0,NULL,NULL,FALSE
+347,6,1,NULL,Nageur habile,0,FALSE,"Flux : Elémentaire (eau)
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Permet de nager facilement sans considération du courant. 
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+348,6,1,NULL,L’attaque du requin,0,FALSE,"Flux : Elémentaire (eau)
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Augmente la vitesse de nage et permet notamment de se propulser hors de l’eau et d’effectuer ainsi un saut important.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+349,6,3,NULL,Liquéfaction d’ambre,0,FALSE,"Flux : Guérison
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : L'ambre redevient sève et permet de colmater une blessure ou de ralentir un poison (notamment le venin de vampire).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+350,6,2,NULL,Acidité charnelle,0,FALSE,"Flux : Nature
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Utilisé sur un vampire, l’ambre est un poison qui ronge les chairs comme de l'acide.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+351,6,4,NULL,Vibration d’ambre,0,FALSE,"Flux : Protection
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : Lorsque le porteur souffre, il peut envoyer un message d’alerte à la personne de son choix en lui indiquant sa position à l’instant T.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+352,6,3,NULL,Voix enchanteresse,0,FALSE,"Flux : Altération
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : Module subtilement la voix du porteur pour la rendre plus harmonieuse et agréable à l’oreille.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+353,6,2,NULL,Contrainte,0,FALSE,"Flux : Altération et Destruction
+Coût en énergie : Moyen
+Utilisation : Passive
+Effet : Une fois le collier mis autour du cou d’une personne, seul celui qui l'a imposé à un être peut le lui retirer. Le porteur ne peut plus utiliser aucune forme de magie et peut être soumis à une douleur atroce à tout instant, où qu'il se trouve. Douleur qui peut le tuer, idéal pour châtier un prisonnier évadé.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+354,6,4,NULL,Partage de chaleur,0,FALSE,"Flux : Nature
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Permet de partager avec efficacité sa chaleur avec un porteur d'amulette identique.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+355,6,4,NULL,Renfort vital,0,FALSE,"Flux : Guérison
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : L’objet se brise sur la volonté du porteur pour lui rendre pleinement son énergie et soigner toutes ses blessures. Usage unique
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+356,6,2,NULL,Domination,0,FALSE,"Flux : Mental
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : En serrant le poing, déploie une aura intimidant les personnes d’une Force mentale inférieure ou égale à Bon, forçant les personnes affectées à ne pas contredire son interlocuteur. Utilisable deux fois par jour.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+357,6,3,NULL,Force brute,0,FALSE,"Flux : Destruction
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Une fois par jour, le porteur de l’anneau peut fermer le poing et le tendre en direction d’une cible. Une force soudaine, prenant la forme d’une tête de bélier, est alors projetée contre celle-ci.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+358,6,3,NULL,Communication,0,FALSE,"Flux : Mental
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Permet de communiquer entre porteurs d’une même paire d'anneaux des murmures. (Toujours achetés par paire. Chaque anneau est distinct et possède le glyphe de communication. Tout autre glyphe doit être acheté séparément, c'est-à-dire pour que les deux anneaux aient le même glyphe celui-ci doit être acheté deux fois).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+359,6,1,NULL,Carte impalpable,0,FALSE,"Flux : Erudition
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : Invoque une carte sur l’écusson indiquant les 4 points cardinaux et sommairement les environs immédiats.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+360,6,4,NULL,Monde idéal,0,FALSE,"Flux : Illusion
+Coût en énergie : Moyen à Conséquent 
+Utilisation : Active
+Effet : Permet à son porteur de s'immerger lui-même (ou une autre personne consentante) dans le monde idéal selon le porteur de l'anneau. Cela dure une heure, à chaque fois.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+361,6,4,NULL,Soins et énergie,0,FALSE,"Flux : Guérison
+Coût en énergie : Moyen à Conséquent 
+Utilisation : Active
+Effet : Une fois par jour, permet de rendre au porteur son énergie et de soigner ses blessures en fonction de son niveau d'Éducation.
+Moyen ou moins : Toutes ses blessures légères
+Bon et Très bon : Toutes ses blessures lourdes et légères
+Maître et plus : Toutes ses blessures quelle qu'en soit la gravité, y compris mortelles
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+362,6,2,NULL,Ombre tentaculaire,0,FALSE,"Flux : Elémentaire (ombre)
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Son porteur peut faire apparaître des tentacules d'ombre qui se jettent sur la cible pour l'assaillir.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+363,6,3,NULL,Ouïe délicate,0,FALSE,"Flux : Altération
+Coût en énergie : Faible 
+Utilisation : Passive
+Effet : Bloque les sorts et glyphes basés sur le son ou usant de chants.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+364,6,3,NULL,Hérédité vampirique,0,FALSE,"Flux : Erudition
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Permet au porteur de faire connaître son affiliation à une famille et à un clan du Triumvirat à ceux qui observent le sceau. Le sceau ne donne que des informations réelles et ne peut pas mentir. Les sceaux de la famille, puis du clan, apparaissent successivement à la place de la gravure initiale de l'objet.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+365,6,5,NULL,Poison (angoisse),0,FALSE,"Utilisation : Passive
+Effet : Le bijou est un écrin dans lequel on y met un poison d’angoisse. L’épingle est imprégnée du poison et sa piqûre instille une sourde angoisse dans le cœur de la victime (perte de 2 rangs de Force mentale pendant 10 minutes ou 2 tours d’intrigue). Pour le renouveler, il faut ranger l’épingle dans son écrin pour qu’elle s’enduise à nouveau.
+Jet de sauvegarde : Résistance physique (Un jet de Résistance physique réussi peut dissiper cet effet).",FALSE,FALSE,NULL,,,,,TRUE,0,NULL,NULL,FALSE
+366,6,5,NULL,Poison (euphorie),0,FALSE,"Utilisation : Passive
+Effet : Le bijou est un écrin dans lequel on y met un poison euphorisant. L’épingle est imprégnée du poison et sa piqûre instille une délicieuse chaleur, ravivant la bonne humeur et la bonté de la victime (pendant 10 minutes ou 2 tours d’intrigue). Pour le renouveler, il faut ranger l’épingle dans son écrin pour qu’elle s’enduise à nouveau.
+Jet de sauvegarde : Résistance physique (Un jet de Résistance physique réussi peut dissiper cet effet).",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+367,6,5,NULL,Poison (paralysie),0,FALSE,"Utilisation : Passive
+Effet : Le bijou est un écrin dans lequel on y met un poison paralysant. L’épingle est imprégnée du poison et sa piqûre paralyse les gestes de sa victime (perte de 2 rangs de Coordination pendant 10 minutes ou 2 tours d’intrigue). Pour le renouveler, il faut ranger l’épingle dans son écrin pour qu’elle s’enduise à nouveau.
+Jet de sauvegarde : Résistance physique (Un jet de Résistance physique réussi peut dissiper cet effet).",FALSE,FALSE,NULL,,,,,TRUE,0,NULL,NULL,FALSE
+368,6,4,NULL,Réceptacle vibratoire,0,FALSE,"Flux : Magie Baptistrale
+Coût en énergie : Moyen
+Utilisation : Active ou Passive
+Effet : Permet d'enfermer une vibration musicale appartenant à une personne, afin qu'elle résonne en permanence autour du porteur lorsque celui-ci met la gemme à l'air libre. Permet également d'enfermer une mauvaise vibration afin qu'elle ne trouble plus le porteur. Ne peut être porté que par un Baptistrel, à moins d'être offert par lui.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+369,6,3,NULL,Adaptation,0,FALSE,"Flux : Altération
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : S'adapte à toutes les serrures et permet d'ouvrir n'importe quelle porte.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+370,6,4,NULL,Communication,0,FALSE,"Flux : Invocation
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Les deux pierres jumelles permettent à leurs possesseurs de communiquer entre eux. Pour ce faire, la pierre doit être posée sur une surface plane, son détenteur se tenant devant elle, et doit être activée par un mot secret connu de ses seuls possesseurs. Apparaîtra alors, comme sortant du zircon, la projection brumeuse du détenteur de sa sœur jumelle, permettant ainsi aux deux personnes de communiquer entre elles. Elles peuvent se parler, mais pas se toucher. Les pierres fonctionnent quelle que soit la distance qui les sépare. La communication peut toutefois paraître brouillée parfois.
+Glyphe rare - Ne peut pas être enchantée par d’autres glyphes",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+371,6,4,NULL,Sagacité supérieure,0,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Elle confère à l'animal qui la porte une sagacité supérieure à celle de sa race. L'animal en question n'aura pas de pouvoir magique, il ne parlera pas, etc. Cependant, il sera en mesure d'effectuer des tâches plus complexes et de résoudre plus facilement des problèmes simples, comme aller chercher un objet lui étant inconnu ou se rendre à un endroit lui étant étranger. Cette pierre ne modifie pas la relation entre l'animal et vous. Un loup sauvage restera sauvage, il ne sera que plus malin.
+Ne fonctionne que sur les animaux.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+372,6,3,NULL,Messager ailé,0,FALSE,"Flux : Animation
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Contre une quantité moyenne d’énergie de l'utilisateur, l’oiseau s'anime et grossit jusqu'à la taille naturelle d’un sagittaire (125 cm d’envergure). Il peut alors servir pour porter des messages, voire de petits colis, en murmurant le nom du destinataire. Il reviendra ensuite au propriétaire avant de se retransformer en figurine.
+Glyphe rare ",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+373,6,4,NULL,Sanctuaire,0,FALSE,"Flux : Protection
+Coût en énergie : Faible à Moyen 
+Utilisation : Passive
+Effet : Permet de créer une sorte de sanctuaire d'un périmètre de 50 mètres, dans lequel le dragon à qui elle est destinée ne pourra être attaqué ou blessé, d'aucune façon que ce soit. A moins de détruire la statue, qui toutefois est dotée de savantes protections et d'une grande robustesse.
+Une utilisation par mois.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+374,6,4,NULL,Capture de sculpture,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen 
+Utilisation : Active et Passive
+Effet : Permet de capturer la sculpture d’une personne simplement en lui faisant toucher la statuette. Une fois la capture effectuée, la statuette prend la forme de la personne, dans tous les détails, jusqu’aux moindres rides (si elle en a) et au moindre drapé de ses vêtements, en une belle esquisse digne des grands maîtres de sculpture.
+Peut capturer jusque 5 sculptures : celles-ci s’alternent alors au hasard, disparaissant à l’aube pour en faire apparaître une différente au crépuscule.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+375,6,4,NULL,Arts oniriques,0,FALSE,"Flux : Mental
+Coût en énergie : Moyen à Conséquent 
+Utilisation : Active
+Effet : Le possesseur peut appeler l’une des sculptures capturées et ainsi insuffler à la personne qu’elle représente un rêve (ou un cauchemar). La personne réelle ne verra pas le possesseur, ne l’entendra pas non plus. Si la cible réussit un jet de Force mentale, elle peut éventuellement ressentir l’influence du possesseur sur son rêve ou cauchemar. Le rêve ou cauchemar peut avoir ensuite une incidence sur les pensées de la cible une fois éveillée, sous décision du MJ en intrigue ou accord du joueur cible sinon.
+Jet de sauvegarde : Force mentale
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+376,6,4,NULL,XXXX,0,FALSE,XXXXXXX,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+377,6,1,NULL,Accalmie,0,FALSE,"Flux : Elémentaire (eau)
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Calme les eaux agitées dans un rayon de 1km.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+378,6,1,NULL,Tempête,0,FALSE,"Flux : Elémentaire (eau)
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Fait appel aux puissances des vagues en les rendant plus fortes dans un rayon de 1km.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+379,6,4,NULL,Requins,0,FALSE,"Flux : Nature
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Attire une bande de requins (si l’utilisateur se trouve à un endroit où il y a des requins). Les requins appelés obéissent à l’utilisateur pour 1 heure.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+380,6,4,NULL,Paix marine,0,FALSE,"Flux : Nature
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Repousse les créatures marines autour pendant 1 heure.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+381,6,4,NULL,Transport,0,FALSE,"Flux : Déplacement
+Coût en énergie : Conséquent
+Utilisation : Active
+Effet : Permet le transport instantané d'un point de l’île à un autre, en fonction de la puissance magique de l'utilisateur. Plus long est le voyage, plus l'énergie utilisée est importante. Il faut que l’utilisateur connaisse l’endroit ou l’ait vu au moins une fois.
+Une seule utilisation par mois.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+382,6,1,NULL,Maîtrise de la lumière,0,FALSE,"Flux : Elémentaire (lumière)
+Coût en énergie : Faible
+Utilisation : Active
+Effet : Permet de contrôler la luminosité de l’environnement immédiat (5 mètres de rayon), de chasser les ombres alentour et de créer des rayons aveuglants.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+383,6,1,NULL,Tournoiement,0,FALSE,"Flux : Animation
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : Tourne autour du porteur une fois activée.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+384,6,1,NULL,Maîtrise des ombres,0,FALSE,"Flux : Elémentaire (ombres)
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : Permet de contrôler les ombres, de les animer et de les épaissir pour en draper l'utilisateur. Ne sert cependant pas à l'attaque, il s'agit d'un objet conçu dans un objectif de dissimulation.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+385,6,2,NULL,Maîtrise des poisons,0,FALSE,"Flux : Nature
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Permet de générer un type de poison, défini à l’achat, contre une quantité moyenne d'énergie.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,TRUE
+386,6,5,NULL,Prière de Néant,0,FALSE,"Utilisation : Active
+Effet : En récitant les prières de ce livre, le porteur accroît sa foi sur sa prochaine action (+1 rang en Espérance/chance).
+Amélioration rare",FALSE,FALSE,64,,,,,FALSE,0,NULL,NULL,FALSE
+387,6,4,NULL,Prend vie,0,FALSE,"Flux : Animation
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Quand il est plié sous la forme d’un animal ou d’un objet et que l'on souffle dessus, l'origami se transforme en l'animal ou l'objet qu'il représente. Avec ce papier on ne peut créer qu'un animal, et seulement un animal, de petite taille, ou un objet non magique. Quel que soit l'animal ou l'objet créé, il reste très sensible au feu.
+La transformation du papier dure jusqu'à ce que le créateur décide de lui rendre son apparence d’origami ou jusqu’à la mort du créateur. La transformation reste possible à loisir tant que l'origami n'est pas déplié. Le déplier abîme le papier et détruit ses pouvoirs.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+388,6,4,NULL,Soin puissant,0,FALSE,"Flux : Guérison
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Lance un sort de soin de niveau Très bon.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+389,6,4,NULL,Inépuisable,0,FALSE,"Flux : Altération
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Ces bâtons ont la particularité de ne pas TRUEment se consumer. Ne sont pas à usage unique donc.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+390,6,4,NULL,Concentration méditative,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Ces encens utilisés lors d’une transe méditative facilitent la concentration, quelle que soit la race. Avoir utilisé les bâtons d’encens donne un bonus dans les sortilèges de la branche mystique (+5 en jet de Magie pour ces sortilèges) pendant une journée.
+Leur utilisation doit être précisée au début de toute intrigue si le joueur veut bénéficier de son bonus pour une intrigue - Utilisable qu’une fois par mois, sous peine de dépendance forte (si abus, possibilité de répercussions sous décision MJ).
+Glyphe rare",FALSE,FALSE,148,,,,,FALSE,0,NULL,NULL,FALSE
+391,6,5,NULL,Mâchoire articulée,0,FALSE,"Utilisation : Active
+Effet : Une fine chaînette en métal est reliée aux mâchoires du grappin et court le long de la corde. En l’actionnant, il est possible de mieux adapter la prise du grappin. Réduit le risque des chutes (+10 aux jets pour une action l’utilisant).
+Amélioration rare",FALSE,FALSE,440,,,,,FALSE,0,NULL,NULL,FALSE
+392,6,3,NULL,Corde adaptative,0,FALSE,"Flux : Altération
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : Sa longueur s'adapte toujours aux besoins du moment.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+393,6,1,NULL,Abondance,0,FALSE,"Flux : Elémentaire (eau)
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Lorsqu'elle est vide, l’outre se remplit lentement d'eau pure.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+394,6,1,NULL,Flot alcoolisé,0,FALSE,"Flux : Elémentaire (alcool)
+Coût en énergie : Faible
+Utilisation : Passive
+Effet : Cette gourde est toujours remplie à ras-bord de la boisson alcoolisée préférée du possesseur de l'objet. Alcool à définir à l’achat.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+395,6,3,NULL,Stase,0,FALSE,"Flux : Altération
+Coût en énergie : Faible 
+Utilisation : Passive
+Effet : Tout objet rangé dans le contenant entre en stase et ne peut s'altérer tant qu'il reste à l'intérieur.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+396,6,3,NULL,Longue vision,0,FALSE,"Flux : Altération
+Coût en énergie : Faible 
+Utilisation : Active
+Effet : Permet de voir très loin, sur 500 mètres, malgré les obstacles physiques (forêts, collines...). Vous pouvez ne pas forcément voir tous les détails à portée maximale.
+Glyphe rare ",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+397,6,5,NULL,Dent creuse,0,FALSE,"Utilisation : Active
+Effet : Le croc du serpent est en fait creux et peut contenir un poison ou un remède au choix du possesseur de la dent (dose unique, à acheter en consommable). En serrant fort la dent contre celle en face, le possesseur déclenche le mécanisme d’ouverture qui déverse le contenu de la dent creuse dans la bouche. Il est également possible de se servir de la dent pour mordre quelqu’un et l’empoisonner, en fonction de l’emplacement de la dent…
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+398,6,4,NULL,Fontaine déployée,0,FALSE,"Flux : Construction
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Quand il est placé au sol et qu’un mage lui pose un doigt dessus, comme pour l’enfoncer un peu plus au sol, le chrysanthème s'étend pour devenir une fontaine avec un bassin de 2 mètres de diamètre.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+399,6,1,NULL,Eau potable,0,FALSE,"Flux : Elémentaire (eau)
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : La fontaine produit magiquement de l’eau potable. Elle peut être utilisée une fois par jour pour 20 personnes maximum. Si toute l'eau est enlevée du bassin, elle retourne sous forme de chrysantème en pierre.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+400,6,1,NULL,Lumière hypnotique,0,FALSE,"Flux : Elémentaire (lumière)
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : La lueur projetée par la lanterne est capable de capter l’attention des animaux et de certaines créatures du bestiaire, en détournant leur attention et en les éloignant de leur cible initiale (permet de gagner du temps pour trouver comment la tuer).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+401,6,1,NULL,Drain d’essence,0,FALSE,"Flux : Elémentaire (lumière)
+Coût en énergie : Moyen
+Utilisation : Active
+Effet : Focalise la lumière afin de créer un lien lumineux avec une cible, la lanterne viendra alors drainer son énergie vitale. 
+Jet de sauvegarde : Résistance magique
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+402,6,4,NULL,Appel du Nord,0,FALSE,"Flux : Invocation
+Coût en énergie : Moyen à Conséquent 
+Utilisation : Active
+Effet : Quand son possesseur souffle dedans, en priant le Nord de lui donner sa force, le cor invoque plusieurs guerriers humains luttant pour celui qui les a appelés (fait appel à un apparenté du sort d’Invocation Serviteur). Ne peut être utilisé qu’une fois par semaine.
+Il faut un jet de Espérance/chance pour savoir combien de guerriers le possesseur appelle. Il n’y a pas d’échec, un jet manqué ne fera appeler qu’un seul guerrier. Un jet réussi 2 guerriers. Une réussite critique 3 guerriers.
+Les guerriers ont la même Force et la même Endurance que le possesseur, et attaquent la cible désignée par le possesseur. Les guerriers restent une heure / 2 tours d’intrigue aux côtés du possesseur, à moins qu’ils ne reçoivent une blessure qui aurait été mortelle pour le possesseur.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+403,6,3,NULL,Ondes antérieures,0,FALSE,"Flux : Altération
+Coût en énergie : Moyen 
+Utilisation : Active
+Effet : Lorsque le glyphe “murmures épiés” est utilisé et que le musicien joue, il peut remplacer les notes jouées par la musique et le bruit qu’il entend. L’auditoire n’entend plus la musique, mais les vibrations des sons antérieurs.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+404,6,5,NULL,Imprégnation de parfum d'Attrait sulfureux,0,FALSE,"Effet : Ce pendentif a été imprégné d'un parfum d'Attrait sulfureux. Il en possède les caractéristiques et n'aura jamais besoin d'être réimprégné. L'effet n'est pas limité dans le temps, mais est moins spectaculaire  : il rend simplement le porteur plus attirant (bonus de +5 aux jets de Charisme).
+Amélioration rare",FALSE,FALSE,116,,,,,FALSE,0,NULL,NULL,FALSE
+405,6,6,NULL,Pied montagnard,0,FALSE,"Peut grimper en montagne et trouver des chemins que les autres montures ne peuvent emprunter, même très raides.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+406,6,6,NULL,Pied marin,0,FALSE,Peut combattre sans malus sur un navire.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+407,6,6,NULL,Vitesse,0,FALSE,Diminue tous les trajets d’un quart.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+408,6,6,NULL,Courage de l’humanité,0,FALSE,Offre un bonus de résistance à son maître contre tout effet de peur ou d’intimidation.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+409,6,6,NULL,Lié de la nature,0,FALSE,"La nature (faune et flore) est moins agressive contre le cavalier : s'il y a quelqu'un d'autre que le cavalier, il sera attaqué en premier.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+410,6,6,NULL,Apprentissage,0,FALSE,"La monture est capable d’apprendre à obéir à la voix de son maître uniquement, qui peut se passer de rennes.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+411,6,6,NULL,Protecteur,0,FALSE,Combat pour son maître même lorsque celui-ci ne le monte pas.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+412,6,6,NULL,Sens des affaires,0,FALSE,"La monture permet à son maître de raffiner d’un rang toute récompense qu’il receTRUEt en intrigue (un cristal de magie devient une rune, un rabais de 150 PO devient un rabais de 200 PO, etc).",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+413,6,6,NULL,Impact,0,FALSE,Augmente d’un rang les blessures infligées par l’arme du maître lors d’une charge (uniquement les armes de corps à corps).,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+414,6,6,NULL,Bât,0,FALSE,Le maître de l’animal peut emporter avec lui jusqu’à 5 armes ou armures qu’il pourra utiliser durant une intrigue / un RP en indiquant un changement de matériel dans ses réponses.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+415,6,6,NULL,Sensibilité magique,0,FALSE,Est entraîné à détecter de fortes concentrations de magie ou des distorsions dans la trame (+10 pts aux jets concernant l’analyse de la magie).,FALSE,FALSE,440,,,,,FALSE,0,NULL,NULL,FALSE
+416,6,6,NULL,L'épervier,0,FALSE,L'épervier peut aussi servir à des repérages de cibles ou de zones s'il est entraîné dans ce but.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+417,6,6,NULL,Faucon,0,FALSE,"Si son maître est attaqué, l'oiseau utilisera ses serres acérées pour le défendre, quitte à en perdre la vie.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+418,6,6,NULL,Singe,0,FALSE,"Excellent acrobate, il peut se faufiler presque n'importe où, même s'il n’est pas aussi intelligent qu’un humain, et n'accomplit pas des instructions trop compliquées…",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+419,6,6,NULL,Acrobate,0,FALSE,Bonus de +5 à la Coordination en exercice monté.,FALSE,FALSE,138,,,,,FALSE,0,NULL,NULL,FALSE
+420,6,6,NULL,Initiative,0,FALSE,Donne l’initiative au cavalier.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+421,6,6,NULL,Endurance du Nord,0,FALSE,Bonus de +10 à l’Endurance en combat monté.,FALSE,FALSE,191,,,,,FALSE,0,NULL,NULL,FALSE
+422,6,3,NULL,Monture rapide,0,FALSE,"Effet : Quand on les appose aux sabots d’une monture, ils lui confèrent un bonus de vitesse qui réduit le temps de trajet habituel d’un quart.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+423,6,3,NULL,Appel du maître,0,FALSE,"Effet : Produit des ultrasons pour appeler son animal. Les animaux sont dressés pour accourir au son particulier du sifflet de leur maître.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+424,6,3,NULL,Vigueur,0,FALSE,"Effet : Permet de limiter la transpiration de l’animal et de le revigorer, lui offrant quelques heures d'endurance supplémentaire.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+425,6,1,NULL,Zephyr,0,FALSE,"Effet : La monture qui en est équipée semble ne plus toucher le sol et donne l’impression de voler. Le cheval ne vole pas, mais il peut traverser les petites surfaces trop instables pour supporter son poids ou des petites surfaces comme l’eau ou la lave (surfaces de maximum 10 mètres de longueur). De plus, il ne laisse pas de trace et ne risque pas de déclencher les pièges à pression. Sa vitesse de déplacement est inchangée.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+426,6,6,NULL,Combat,0,FALSE,Bonus de +5 à l’Expertise d’arme principale (y compris magie) en combat monté.,FALSE,FALSE,439,,,,,FALSE,0,NULL,NULL,FALSE
+427,6,1,NULL,Chant des elfes,0,FALSE,"Sortie de son fourreau, un doux chant elfique très agréable à l'oreille semble s'en échapper. Il apaise le porteur, lui permettant de faire fi de sortilèges visant à ébranler son esprit. Toutefois cette douce musique n'est perceptible que par le porteur de l'épée. A l'inverse, lorsque la lame frappe violemment un objet solide (armure, bouclier, autre lame, etc.), un puissant hurlement strident qui couvre tout autre son s'en échappe.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+428,6,4,NULL,Bénédiction du Chien,0,FALSE,"Énergie des Esprits-Liés. Accorde +1 rang dans l’Expertise du porteur en présence de l’un de ses liens joués (PJ).
+Glyphe rare",FALSE,FALSE,437,,,,,FALSE,0,NULL,NULL,FALSE
+429,6,4,NULL,Frappe héroïque,0,FALSE,"Toute attaque réussie par le porteur lui permet de ré-attaquer dans le même tour. Il s’agit pour le MJ de relancer un autre dé sur la compétence épée uniquement.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+430,6,3,NULL,Fantôme d’acier,0,FALSE,"Tranche et résiste aussi bien que l’acier.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+431,6,4,NULL,Fête de Esprits,0,FALSE,"En se donnant entièrement à la foi aux Esprits-Liés, le porteur peut réussir automatiquement sa prochaine action (1 fois par RP/Intrigue).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+432,6,3,NULL,Bourgeon de puissance,0,FALSE,"La fleur du pommeau s’ouvre ou se ferme en fonction de la puissance magique restante au porteur.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+433,6,4,NULL,Ligature énergétique,0,FALSE,"Permet d’invoquer deux ‘familiers’ en même temps en ne dépensant le coût du sort qu’une seule fois.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+434,6,4,NULL,Expertise énergétique,0,FALSE,"Permet de prolonger un familier invoqué de 10 minutes.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+435,6,4,NULL,Puissance de la foi,0,FALSE,"La gravité des blessures dépend de la puissance de la foi du porteur au moment de la frappe :
+- Espérance / chance jusque Maître : augmente la gravité des blessures d’un rang.
+- Espérance / chance Grand-maître et Exceptionnel : augmente la gravité des blessures de deux rangs.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+436,6,4,NULL,Code de la foi,0,FALSE,"Si le porteur contrevient à sa foi, à son code de morale, le métal de la lame fond et vient fusionner avec le bras porteur, causant d’atroces souffrances et marquant l’hérétique à vie. 
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+437,6,4,NULL,Frappe miraculeuse,0,FALSE,"Une fois par jour, rectifie la trajectoire pour effectuer une réussite automatique indépendante de tout élément extérieur.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+438,6,4,NULL,Asservissement,0,FALSE,"En nouant l’essence d’une personne sur la dague, la personne cible devient l’esclave de quiconque tient la dague. Pour réussir à nouer l’essence d’une personne, il faut néanmoins une réussite de MR strictement supérieure à 66 en Éducation afin de comprendre l’essence en question et de la deviner. L’asservissement prend fin à l’annulation du glyphe, à la libération volontaire par le porteur de la dague, à la mort de la cible ou lors d’un jet de Résistance magique de MR strictement supérieure à 66.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+439,6,3,NULL,Marque de l’asservissement,0,FALSE,"Le nom de l’asservi apparaît sur la glace de la dague.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+440,6,4,NULL,Tranche-minerai,0,FALSE,"L’arme passe à travers le métal comme si c’était du beurre, il endommage donc gravement tout ce qui en est composé. En revanche il perce très difficilement tout ce qui est végétal.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+441,6,2,NULL,Condamnation émotionnelle,0,FALSE,"Si un coup de l’arme provoque une blessure, la victime est vidée de toutes ses émotions. Elle ne peut plus rien ressentir jusqu’à ce que le porteur de l’arme la relâche, que le glyphe soit annulé, qu’un spirite influant l’Esprit-Lié libère la victime ou qu’un guérisseur magique le fasse.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+442,6,4,NULL,Attirance éternelle,0,FALSE,"Si l’arme a fait une victime et qu’elle n’est pas libérée de la condamnation émotionnelle, le porteur de l’arme peut la traquer et la rejoindre malgré toutes les dissimulations. 
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+443,6,1,NULL,Protection du vent,0,FALSE,"Les sorts jusqu’au niveau Maître sont renvoyés vers le créateur sous la forme d’une bourrasque de puissance équivalente.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+444,6,1,NULL,Absorption de chaleur,0,FALSE,"Élémentaire (feu). Absorbe l’essence de feu magique ou naturel jusqu’à l’équivalent de trois sorts de niveau Maître.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+445,6,1,NULL,Expulsion de chaleur,0,FALSE,"Élémentaire (feu). Expulse la chaleur absorbée dans un souffle igné extrêmement brûlant qui grille l’air et transforme le sol en lave sur un rayon de 3 mètres.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+446,6,4,NULL,Rappel dans le temps,0,FALSE,"Transporte le porteur à l’endroit exact et dans l’état exact où il se trouvait au tour précédent (si des blessures ont été subies, elles disparaissent comme si elles n’avaient jamais eu lieu ; si elles ont été soignées, elles réapparaissent ; si des malus ou des bonus ont été posés, ils disparaissent également).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+447,6,1,NULL,Symbiose naturelle,0,FALSE,"L’arme permet à son porteur, par contact, de prendre possession d’un rayon de végétation de 10 mètres, d’un arbre, d’un familier végétal, etc. Il peut par exemple la faire bouger.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+448,6,4,NULL,Queue du singe,0,FALSE,"L’arme peut changer de forme, s’allonger, se rétrécir, se courber, afin de servir la volonté de son porteur.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+449,6,5,NULL,Perce-écailles,0,FALSE,"Capables de percer les écailles des dragons adultes.
+Amélioration rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+450,6,5,NULL,Pleurs des jeunes sacrifiés,0,FALSE,"Lorsque les flèches sont tirées, elles produisent un sifflement qui perturbe l’équilibre des dragons (-10 pts à toute action pendant le tour du tir).
+Amélioration rare",FALSE,FALSE,NULL,,,,,TRUE,0,NULL,NULL,FALSE
+451,6,3,NULL,Rappel,0,FALSE,"D'un appel mental, l'arme revient vers son propriétaire à la vitesse d'un cheval au galop. Elle ne s'arrête qu'à quelques centimètres de la main de son possesseur pour que ce dernier soit en mesure de la saisir sans se faire mal.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+452,6,3,NULL,Trajectoire corrigée,0,FALSE,"Lorsque l'arme est lancée sur une cible, elle corrige d'elle-même sa trajectoire afin de la toucher à coup sûr. Permet une réussite automatique à un jet de dé sur la compétence Expertise Arme de jet, une fois par jour / intrigue.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+453,6,4,NULL,Incapacité magique,0,FALSE,"Lorsque l’arc touche une cible, celle-ci devient incapable d’user de sa puissance magique (sorts + glyphes), pendant un temps déterminé par sa Résistance magique (allant de 1 tour à 3 tours d’intrigue). 
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+454,6,4,NULL,Mémoire sauvage,0,FALSE,"L’arme a le pouvoir d’absorber l’image, le comportement et les capacités d’une créature qu’elle a tuée précédemment. Elle peut absorber et stocker jusqu’à 3 créatures en même temps. (Il faut en faire une acquisition RP et le signaler dans le topic “Acquisition d’un animal sauvage”, même s’il n’est pas soumis aux mêmes limites que ceux dressés).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+455,6,4,NULL,Appel de la mémoire,0,FALSE,"L’arme a le pouvoir d’invoquer, par le tir d’une flèche de magie pure, l’image d’une créature qu’elle a auparavant absorbée. Cette créature est du même type que le sort ‘Familier’ du flux d’Invocation, et elle répond aux mêmes lois.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+456,6,4,NULL,Piétinement,0,FALSE,"En frappant le sol, l’arme fait apparaitre au-dessus de deux cibles un double d’elle-même venant s’abattre sur les cibles avant de se dissiper.
+Une utilisation tous les trois tours maximum.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+457,6,3,NULL,Brise-écorce,0,FALSE,"L’arme passe à travers du bois comme si c’était du beurre, il endommage donc gravement tout ce qui en est composé. En revanche, il perce très difficilement tout ce qui est minéral.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+458,6,3,NULL,Faim du Jonk,0,FALSE,"En plantant l’arme dans un arbre, l’arme en absorbe la sève et la transforme en énergie pour son porteur qui peut ainsi soigner ses blessures (un arbre = une blessure moyenne).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+459,6,4,NULL,Morphe draconique,0,FALSE,"Le dragon sculpté sur le casque prend la couleur de celui du dragonnier qui le porte. 
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+460,6,4,NULL,Absorption du soleil couchant,0,FALSE,"Absorbe de l'énergie magique au soleil couchant, capable de restaurer toute l'énergie du porteur. 
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+461,6,4,NULL,Invisibilité absolue,0,FALSE,"Invisibilité de 2 heures / 4 tours d’intrigue.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+462,6,2,NULL,Vengeance,0,FALSE,"Inflige à l'adversaire les mêmes blessures (physiques) qu'au porteur. 
+Jet de sauvegarde : Endurance
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+463,6,4,NULL,Dissipation de la vengeance,0,FALSE,"Annule tout glyphe de retour d’attaque (type vendetta, vengeance, armure élémentaire, etc...) dirigé contre le porteur de l’armure, lorsque celui-ci touche une cible porteuse d’un glyphe qui renvoie automatiquement l’attaque portée, sous quelque forme que ce soit. L’énergie magique est dissipée.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+464,6,4,NULL,Aura affaiblissante,0,FALSE,"Dans un rayon de 5 mètres, retire un rang d’Expertise à tous les adversaires.
+Glyphe rare",FALSE,FALSE,NULL,,,,,TRUE,0,NULL,NULL,FALSE
+465,6,3,NULL,Union elfique,0,FALSE,"Dans un rayon de 5 mètres, offre une protection similaire à une armure de mithril à tous les alliés.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+466,6,4,NULL,Leçon de l’ineffable,0,FALSE,"Permet d’échanger un glyphe de l’objet avec un glyphe d’un autre objet. L’échange dure pendant 2 tours d'intrigue avant de s’inverser automatiquement. Ne peut pas copier de glyphes légendaires.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+467,6,4,NULL,Chant des cétacés,0,FALSE,"Permet d’émettre un chant semblable à celui des baleines à bosse, qui interdit la violence à toute personne de Force mentale inférieure à celle du porteur autour de lui, pendant 10 minutes / 2 tours d’intrigue. S’annule immédiatement si le porteur fait preuve d’agressivité.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+468,6,4,NULL,Courroux des esprits,0,FALSE,"Le porteur de l’une de ces parures peut, par contact, inverser temporairement la bénédiction d’un Esprit-Lié de sa cible. Pendant 10 minutes / 2 tous d’intrigue, l’Esprit-Lié visé de la cible ne transmet plus une bénédiction mais une malédiction (ses pouvoirs, bonus, etc, sont inversés et deviennent des handicaps). Pendant cette durée, l’utilisateur de la parure n’est plus protégé par ses propres Esprits-Liés.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+469,6,4,NULL,Faire tomber les obstacles,0,FALSE,"Le porteur de l’ensemble de la grue peut accéder aux sorts jusqu’au niveau Moyen grâce à sa foi, même s’il ne possède aucune expertise magique. Au lieu de gestes clefs, le porteur doit prier pour lancer ses sorts. Au lieu d’être régulé par son Endurance, il est régulé par sa Force mentale (plus il use de sorts, plus il aura du mal à se concentrer et maintenir sa foi sur le moment).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+470,6,4,NULL,Écailles de dragon,0,FALSE,"Lorsque le porteur est ciblé par autrui par un sort de tout type, l'armure portée :
+- Bloque les sorts jusqu'au niveau Moyen à 100%
+- Bloque 50% des sorts de niveau Bon et Très bon
+- Bloque 25% des sorts de niveau Maître
+- Ne bloque pas les sorts de niveau Grand-maître ni de niveau Exceptionnel
+- Bloque les glyphes non draconiques
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+471,6,3,NULL,Indestructibilité,0,FALSE,"Le support ne peut être détruit, que ce soit par un procédé naturel ou par magie.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+472,6,4,NULL,Renvoi,0,FALSE,"Les propriétés magiques du cuir de dragon permettent de renvoyer les sortilèges à condition de pouvoir les toucher.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+473,6,4,NULL,Reflet anonyme,0,FALSE,"Lorsque le masque est porté, ceux qui l'observent verront apparaître, à la place du masque et du visage du porteur, le faciès d’une personne qui leur est connue. Seules de très hautes perceptions (maître et supérieur) pourront déceler la supercherie.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+474,6,4,NULL,Reflet de crainte,0,FALSE,"Lorsque le masque est porté, ceux qui l'observent y voient se refléter leurs pires terreurs. La résistance aux effets du masque se fait sur un jet de Force mentale. Les effets du masque se dissipent après 1 heure / 2 tours d’intrigue.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+475,6,4,NULL,Reflet dément,0,FALSE,"Lorsque le masque est porté, ceux qui l'observent deviennent temporairement fous (cette folie pouvant se traduire par un changement radical de comportement, des divagations ou autres). La résistance aux effets du masque se fait sur un jet de Force mentale. Les effets du masque se dissipent après 1 heure / 2 tours d’intrigue.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+476,6,4,NULL,Illusion de vie,0,FALSE,"Dissimule l'état de mort-vivant d'un vampire. Lorsqu'un Immortel porte ce bijou (il doit être en contact avec la peau ou les cheveux), sa peau paraît chaude au toucher et son odeur se voit altérée pour ressembler à celle d'un sang-chaud. Quelqu'un possédant la caractéristique de Perception d'un cran supérieure à la puissance magique du porteur pourra voir au travers du subterfuge, à condition de le vouloir. Il faudra donc deviner que le porteur est un vampire, avant d'essayer de passer outre le glyphe du bijou. Ce bijou ne dispense pas le porteur de faire attention à son comportement. S'il fait quelque chose de humainement impossible en le portant, il sera percé à jour.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+477,6,4,NULL,Absorption du mal (temporaire),0,FALSE,"Pendant 1 journée, absorbe le « mal » (selon le point de vue de l'utilisateur) contenu dans un être, pour le transférer dans le possesseur du bracelet. La cible et l’utilisateur doivent tous deux effectuer un jet de Force mentale pour savoir s’ils s’en sortent indemnes. Si un jet est raté, la personne devient temporairement la victime d’hallucination et de psychose durant toute la journée.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+478,6,4,NULL,Absorption du mal (définitive),0,FALSE,"Absorbe le « mal » (selon le point de vue de l'utilisateur) contenu dans un être, pour le transférer dans le possesseur du bracelet de façon permanente. La cible et l’utilisateur doivent tous deux effectuer un jet de Force mentale pour savoir s’ils s’en sortent indemnes. Si un jet est raté, la personne se voit infliger des séquelles psychologiques plus permanentes. Se fait avec accord de la cible.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+479,6,1,NULL,Absorption électrique,0,FALSE,"Absorbe l’énergie de la foudre magique et non magique. Stocke jusqu’à 3 sorts de niveau Maître ou équivalent.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+480,6,1,NULL,Répulsion électrique,0,FALSE,"Expulse l’énergie électrique absorbée au préalable.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+481,6,4,NULL,Regain énergétique,0,FALSE,"Transforme l’énergie électrique absorbée au préalable en l’équivalent énergétique pour le porteur.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+482,6,4,NULL,Promesse aux Esprits,0,FALSE,"Permet d'utiliser pendant 1 heure, une fois par jour, les pouvoirs du/des Esprit(s)-Lié(s) du binôme.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+483,6,4,NULL,Transformation,0,FALSE,"Permet de prendre l’apparence d’une personne en versant du sang de cette personne sur le cristal. Plus la transformation est éloignée de l'apparence initiale de l’utilisateur, plus il faut du temps pour se transformer, et le procédé est proportionnellement plus douloureux. La voix est également modifiée, mais pas les vêtements.
+Le cristal peut conserver le sang de 3 transformations à la fois et d'un maximum de 3 personnes différentes.
+La transformation prend jusqu'à 30 minutes selon les différences dans l'apparence pour se métamorphoser ou reprendre sa réelle apparence. Le temps maximal de métamorphose est de 1 heure / 2 tours d’intrigue. L'utilisateur peut enlever le cristal pour mettre fin à sa transformation à tout moment. La transformation prendra fin prématurément si le cristal est retiré de l'utilisateur ou si on en annule l'effet (sort, glyphe, etc).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+484,6,4,NULL,Le dragon se mord la queue,0,FALSE,"Quand le porteur subit une douleur physique ou morale, celui qui la lui a infligée la ressent en égale mesure OU quand le porteur inflige une douleur à une victime, il ressent cette douleur à égale mesure. L’inversion se fait par simple volonté.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+485,6,4,NULL,Insufflation de sentiment,0,FALSE,"Inspire un sentiment d’apaisement (apaisement mental tel que calmer la colère ou apaiser une peur) ou un sentiment de malaise (attiser une peur, un sentiment de danger, de mal être), selon le jet de Espérance/chance.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+486,6,4,NULL,Insufflation d’un mal physique,0,FALSE,"Apaise un mal physique (douleur, blessure), ou crée un mal physique (douleur, blessure), selon le jet de Espérance/chance. Un et un seul effet par utilisation.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+487,6,4,NULL,Création d’un cercle,0,FALSE,"Crée un cercle sanctuaire, dans lequel le possesseur du diamant ne peut être attaqué, ou crée un cercle prison, dans lequel la cible du diamant ne peut sortir. Dure 1 heure / 2 tours d’intrigue.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+488,6,4,NULL,Chemin sûr,0,FALSE,"Il suffit de lui souffler un point de départ et une destination et il donne à son possesseur le meilleur itinéraire pour rallier son but. Connaît tous les chemins de mémoire de bipèdes issus du vieux continent (hors Graärh donc).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+489,6,4,NULL,Grimoire du savoir,0,FALSE,"Permet d'obtenir toute réponse aux questions que l'on se pose sur le monde d'Ambarhùna, ou depuis peu sur le monde de Tiamarantia, en chuchotant sa question au livre. Les réponses seront toutefois des réponses issues de la mémoire elfique. Vous ne pourrez obtenir de réponses sur une personne en particulier ni sur ses secrets les plus profonds. Il s'agit de réponses sur des us et coutumes, sur l'histoire du continent ou des peuples.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+490,6,4,NULL,Possession légitime,0,FALSE,"Seul le possesseur officiel du livre peut le consulter. Ou toute personne ayant reçu l'autorisation formelle du possesseur.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+491,6,4,NULL,Nouvelles connaissances,0,FALSE,"Seules les parentés liées à la famille Serilleïel disparue étaient détentrices du savoir pour mettre à jour les connaissances du livre, jusqu’à la dernière génération des Estarus. Depuis, ce savoir a été transmis à chacun des détenteurs actuels : seuls eux peuvent mettre à jour les connaissances du livre. La mise à jour d'un livre suffit à mettre à jour les autres.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+492,6,4,NULL,Terrible guérison,0,FALSE,"Si l'on serre l’objet au creux de sa main, son utilisateur, même s'il est non mage, peut guérir en quelques secondes d'une blessure grave. Attention ! Ces soins sont extrêmement douloureux et nécessitent une volonté de fer pour être menés à terme (au moins Très bon en Force mentale). La douleur s'estompe complètement au bout de quelques minutes. Un usage sur une personne moins solide psychiquement entraînera une folie passagère (symptômes au choix de la victime).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+493,6,4,NULL,Vision,0,FALSE,"Montre à la demande du possesseur n’importe quelle personne vivante.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+494,6,4,NULL,Le capitaine,0,FALSE,"Permet de prendre le contrôle de la barre du navire sur lequel le porteur se trouve et ainsi de le diriger à sa convenance. Il faut néanmoins être de niveau Maître en Navigation pour pouvoir utiliser l’enchantement.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+495,6,4,NULL,Sanctuaire draconique,0,FALSE,"Cette statuette protège le lieu où elle sera posée et son possesseur quand il y est. Aucune action hostile, négative ou agression, ne pourra être commise envers ce dernier ou dans l'enceinte de ce lieu de manière générale, dans un périmètre de 20 mètres maximum. Si la statuette est détruite, la protection prend fin. Toutefois il pourrait être difficile de la détruire, étant donné qu'elle se trouve dans la zone de non agression...
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+496,6,4,NULL,Traître voeu,0,FALSE,"Offre à l’utilisateur la réalisation de l’un de ses souhaits une fois tous les trois mois (une fois par période), mais en échange, celui ayant reçu son souhait se verra infligé un évènement tragique dans la même période, d’ampleur égale au souhait ayant été réalisé (voeu à faire valider par le staff).
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+497,6,4,NULL,Bénédiction du Bourdon,0,FALSE,"Énergie des Esprits-Liés
+Fige le corps pendant 3 tours. Pendant ce temps, les blessures subies n’apparaissent pas, les malus n’apparaissent pas. Quand le temps octroyé se termine, l’utilisateur subit immédiatement toutes les blessures et tous les malus qu’il aurait dû encaisser auparavant. Permet de se battre sans entraves pendant plusieurs minutes.
+Glyphe rare",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+498,6,6,NULL,Intelligence,0,FALSE,Ne nécessite pas une gemme de vivacité pour être d’une intelligence supérieure.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+499,6,6,NULL,Course marine,0,FALSE,Peut marcher et galoper sur l’eau.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+500,6,6,NULL,Sensation de liberté,0,FALSE,Immunisée aux effets de peur/intimidation.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+501,6,6,NULL,Course du vent,0,FALSE,Les trajets sont tous réduits d’un tiers.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+502,6,6,NULL,Loyauté impérissable,0,FALSE,"Immunisé à tout effet visant à la détourner de son cavalier, la monture attaque avec violence celui qui voudrait s’y essayer.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+503,6,6,NULL,Héritage de Néant,0,FALSE,La monture ressent les fluctuations de la trame (+10 pts aux jets d’esquive de la magie lorsque monté).,FALSE,FALSE,440,,,,,FALSE,0,NULL,NULL,FALSE
+504,6,6,NULL,Dressage avancé,0,FALSE,La monture peut porter un engin de siège miniature.,FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+505,6,6,NULL,Traque des vampires,0,FALSE,"La monture est habituée à traquer les vampires et aura tendance à les repérer facilement, même dissimulés.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+506,6,6,NULL,Loyauté sans faille,0,FALSE,"La monture est immunisée à tout effet de peur, d’intimidation ou d’apaisement.",FALSE,FALSE,NULL,,,,,FALSE,0,NULL,NULL,FALSE
+507,6,6,NULL,Parfaite obéissance,0,FALSE,Toute manoeuvre effectuée sur une monture romantique est plus aisée pour la cavalière (équivaut à +1 rang en Équitation pour la cavalière).,FALSE,FALSE,80,,,,,FALSE,0,NULL,NULL,FALSE
+508,6,6,NULL,Héritage romantique,0,FALSE,Accorde + 1 rang en Charisme lorsqu’on monte sur son dos.,FALSE,FALSE,62,,,,,FALSE,0,NULL,NULL,FALSE

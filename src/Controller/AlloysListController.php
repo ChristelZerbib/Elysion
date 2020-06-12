@@ -30,7 +30,7 @@ class AlloysListController extends AbstractController
             $data = $this->getDoctrine()->getRepository(AlloysList::class)->search($data['recherche'], $data['type'], $data['support'], $data['order']);
         }
 
-        $alloys = $paginator->paginate($data, $request->query->getInt('page',1),10);
+        $alloys = $paginator->paginate($data, $request->query->getInt('page',1),20);
         return $this->render('alloys_list/index.html.twig', [
             'alloys_lists' => $alloys,
             'form' => $form->createView(),

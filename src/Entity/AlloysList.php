@@ -112,6 +112,11 @@ class AlloysList
      */
     private $effect_2;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $price;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -328,6 +333,18 @@ class AlloysList
     public function setEffect2(?BonusEffectsList $effect_2): self
     {
         $this->effect_2 = $effect_2;
+
+        return $this;
+    }
+
+    public function getPrice(): ?int
+    {
+        return $this->price;
+    }
+
+    public function setPrice(int $price): self
+    {
+        $this->price = $price;
 
         return $this;
     }

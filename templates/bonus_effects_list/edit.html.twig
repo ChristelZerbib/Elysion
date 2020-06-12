@@ -3,11 +3,12 @@
 {% block title %}Edit BonusEffectsList{% endblock %}
 
 {% block body %}
-    <h1>Edit BonusEffectsList</h1>
+    <h1>Modifier un bonus / malus / effet d'alliage</h1>
 
-    {{ include('bonus_effects_list/_form.html.twig', {'button_label': 'Update'}) }}
-
-    <a href="{{ path('bonus_effects_list_index') }}">back to list</a>
+    {{ include('bonus_effects_list/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+    <br>  
 
     {{ include('bonus_effects_list/_delete_form.html.twig') }}
+    <br>
+    <a  class="btn btn-dark text-info border-info btn-block" href="{{ path('bonus_effects_list_index') }}">Retour à la liste des bonnus / malus /effets</a>
 {% endblock %}

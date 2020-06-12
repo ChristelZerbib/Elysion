@@ -12,9 +12,10 @@
         {% endblock %}
 
 
-
+ 
         {% for alloys_list in alloys_lists %}
  
+        {% if alloys_list.bought is defined and alloys_list.bought == false %}
             <div class="card bg-dark border-info mb-3" data-type="{{ alloys_list.type }}" data-supp1= "{{ alloys_list.support }}" data-supp2= "{{ alloys_list.support2 }}" data-supp3= "{{ alloys_list.support3 }}" data-name="{{ alloys_list.name }}" data-name="{{ alloys_list.description }}">
                 <div class="card-header border-info text-info bold-title">
                     {{ alloys_list.name }}
@@ -41,22 +42,18 @@
 
                     {# description of the bonus and the effects #}
                     <div class="card-text text-light col-md-5 sup-type">
-                        {% set price = 0 %}
+                        
                         {% if alloys_list.bonus1.name is defined and alloys_list.support is not empty %}
                             <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus1.name }} :</span> {{ alloys_list.bonus1.description }} </span> <br/>
-                            {% set price = price + alloys_list.bonus1.rank.price %}
                         {% endif %}
                         {% if alloys_list.bonus2.name is defined and alloys_list.support is not empty %}
                             <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus2.name }} :</span> {{ alloys_list.bonus2.description }} </span> <br/>
-                            {% set price = price + alloys_list.bonus2.rank.price %}
                         {% endif %}
                         {% if alloys_list.bonus3.name is defined and alloys_list.support is not empty %}
                             <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus3.name }} :</span> {{ alloys_list.bonus3.description }} </span> <br/>
-                            {% set price = price + alloys_list.bonus3.rank.price %}
                         {% endif %}
                         {% if alloys_list.bonus4.name is defined and alloys_list.support is not empty %}
                             <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus4.name }} :</span> {{ alloys_list.bonus4.description }} </span><br/>
-                            {% set price = price + alloys_list.bonus4.rank.price %}
                         {% endif %}
 
                         {% if alloys_list.malus1.name is defined and alloys_list.support is not empty %}
@@ -71,11 +68,9 @@
                         
                         {% if alloys_list.effect1.name is defined and alloys_list.support is not empty %}
                             <br/><span class="effect"><span class="bold-title">Effet - {{ alloys_list.effect1.name }} :</span> {{ alloys_list.effect1.description }}</span> <br/>
-                            {% set price = price + alloys_list.effect1.rank.price %}
                         {% endif %}
                         {% if alloys_list.effect2.name is defined and alloys_list.support is not empty %}
                             <span class="effect"><span class="bold-title">Effet - {{ alloys_list.effect2.name }} :</span> {{ alloys_list.effect2.description }}</span> <br/>
-                            {% set price = price + alloys_list.effect2.rank.price %}
                         {% endif %}
 
                         
@@ -86,15 +81,25 @@
                         {% if is_granted('ROLE_ADMIN') %}   
                             <a href="{{ path('alloys_list_edit', {'id': alloys_list.id}) }}" class="btn btn-dark text-info border-info">Modifier</a>
                         {% endif %}
-                        <a href="#" class="btn btn-dark text-info border-info">Acheter pour {{ price }} PO</a>
+                        <a href="#" class="btn btn-dark text-info border-info">Acheter pour {{ alloys_list.price }} PO</a>
                     </div>
                 </div>
                   
             </div>
-     
+        {% endif %}
         {% else %}
             <p>Aucun alliage ne correspond.</p>
         {% endfor %}
    
-    {{ knp_pagination_render(alloys_lists) }}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {{ knp_pagination_render(alloys_lists, '@KnpPaginator/Pagination/twitter_bootstrap_v3_pagination.html.twig',
+                {
+                    'attr': {'class' : 'page-item justify-content-center'},
+                }
+            ) }}
+
+           
+        </ul>
+    </nav>
 {% endblock %}

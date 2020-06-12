@@ -1,4 +1,63 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    {{ form_label(form.name, 'Nom : ') }}
+    {{ form_widget(form.name) }}
+
+    {{ form_label(form.description, 'Description : ') }}
+    {{ form_widget(form.description) }}
+
+    {{ form_label(form.type, 'Type d\'alliage : ') }}
+    {{ form_widget(form.type) }}
+
+    {{ form_label(form.support, 'Supports : ') }}
+    {{ form_widget(form.support) }}
+    {{ form_widget(form.support_2) }}
+    {{ form_widget(form.support_3) }}
+
+    <div class="form-check form-check-inline">
+	    {{ form_widget(form.isunique) }}
+		{{ form_label(form.isunique, 'Alliage unique ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<div class="form-check form-check-inline">
+	    {{ form_widget(form.bought) }}
+	    {{ form_label(form.bought, 'Alliage possédé ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<div class="form-check form-check-inline">
+	    {{ form_widget(form.used) }}
+	    {{ form_label(form.used, 'Alliage équipé ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<br/>
+	{{ form_label(form.bonus_1, 'Bonus 1 : ') }}
+    {{ form_widget(form.bonus_1) }}
+
+    {{ form_label(form.bonus_2, 'Bonus 2 : ') }}
+    {{ form_widget(form.bonus_2) }}
+
+    {{ form_label(form.bonus_3, 'Bonus 3 : ') }}
+    {{ form_widget(form.bonus_3) }}
+
+    {{ form_label(form.bonus_4, 'Bonus 4 : ') }}
+    {{ form_widget(form.bonus_4) }}
+
+    {{ form_label(form.malus_1, 'Malus 1 : ') }}
+    {{ form_widget(form.malus_1) }}
+
+    {{ form_label(form.malus_2, 'Malus 2 : ') }}
+    {{ form_widget(form.malus_2) }}
+
+    {{ form_label(form.malus_3, 'Malus 3 : ') }}
+    {{ form_widget(form.malus_3) }}
+
+    {{ form_label(form.effect_1, 'Effet 1 : ') }}
+    {{ form_widget(form.effect_1) }}
+
+    {{ form_label(form.effect_2, 'Effect 2 : ') }}
+    {{ form_widget(form.effect_2) }}
+    <br/>
+    <button class="btn btn-dark text-info border-info btn-block">{{ button_label|default('Sauvegarder') }}</button>
 {{ form_end(form) }}

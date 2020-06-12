@@ -1,6 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 
-.text-ocean 
+.page-item .page-link, .text-ocean 
 {
 	color: #0C5460;
 }
@@ -76,4 +76,13 @@ body
 {
 	margin-top:7px;
 	margin-right: 7px;
+}
+
+.bonus-effect 
+{
+	margin-bottom: 2em;
+}
+
+.card-footer a {
+	color: #17A2B8;
 }

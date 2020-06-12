@@ -24,7 +24,7 @@ class BonusEffectsList
 
     /**
      * @ORM\ManyToOne(targetEntity=Ranks::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=false) 
      */
     private $rank;
 

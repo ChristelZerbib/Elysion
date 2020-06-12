@@ -1,37 +1,49 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}BonusEffectsList index{% endblock %}
 
 {% block body %}
     <h1>Bonus et effets d'alliages</h1>
+    {% block filters %}
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Nom</th>
-                <th>Description</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for bonus_effects_list in bonus_effects_lists %}
-            <tr>
-                <td>{{ bonus_effects_list.id }} ({{ bonus_effects_list.rank.type }} de rang {{ bonus_effects_list.rank.number }} : {{ bonus_effects_list.rank.price }} PO)</td>
-                <td>{{ bonus_effects_list.name }}</td>
-                <td>{{ bonus_effects_list.description }}</td>
-                <td>
-                    <a href="{{ path('bonus_effects_list_show', {'id': bonus_effects_list.id}) }}">Voir</a>
-                    <a href="{{ path('bonus_effects_list_edit', {'id': bonus_effects_list.id}) }}">Modifier</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="12">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+    {% endblock %}
 
-    <a href="{{ path('bonus_effects_list_new') }}">Create new</a>
+    <div class="row">
+ 
+    {% for bonus_effects_list in bonus_effects_lists %}
+ 
+        {% if bonus_effects_list.bought is defined and bonus_effects_list.bought == false %}
+            <div class="col-md-6 col-lg-4 w-100 card-group bonus-effect ">
+                <div class="card border-info" >
+                    <div class="card-header text-center text-info border-info bg-dark">
+                        
+                            {% if bonus_effects_list.rank.type is same as ("malus") %}
+                                <h5 class="card-title malus">{{ bonus_effects_list.name }}</h5>
+                                <h6 class="card-subtitle mb-2 malus">({{ bonus_effects_list.rank.type }} de rang {{ bonus_effects_list.rank.number }} : {{ bonus_effects_list.rank.price }} PO)</h6>
+                            {% elseif bonus_effects_list.rank.type is same as ("effet") %}
+                                <h5 class="card-title effect">{{ bonus_effects_list.name }}</h5>
+                                <h6 class="card-subtitle mb-2 effect">({{ bonus_effects_list.rank.type }} de rang {{ bonus_effects_list.rank.number }} : {{ bonus_effects_list.rank.price }} PO)</h6>
+                            {% else %}
+                                <h5 class="card-title bonus">{{ bonus_effects_list.name }}</h5>
+                                <h6 class="card-subtitle mb-2 bonus">({{ bonus_effects_list.rank.type }} de rang {{ bonus_effects_list.rank.number }} : {{ bonus_effects_list.rank.price }} PO)</h6>
+                            {% endif %}
+
+                        
+                    </div>
+                    <div class="card-body bg-secondary">
+                        <p class="card-text text-light">{{ bonus_effects_list.description }}</p>
+                    </div>
+                    <div class="card-footer text-center text-info border-info bg-dark">
+                        <a href="#" class="card-link">Ajouter à un alliage</a>
+                        <a href="{{ path('bonus_effects_list_edit', {'id': bonus_effects_list.id}) }}" class="card-link">Modifier</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endif %}
+    
+    {% else %}
+        <p>Aucun alliage ne correspond.</p>
+    {% endfor %}
+
+</div>
 {% endblock %}

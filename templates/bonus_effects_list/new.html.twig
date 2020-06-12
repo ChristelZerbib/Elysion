@@ -1,11 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New BonusEffectsList{% endblock %}
-
 {% block body %}
-    <h1>Create new BonusEffectsList</h1>
+    <h1>Créer un nouveau bonus / malus / effet d'alliage : </h1>
 
     {{ include('bonus_effects_list/_form.html.twig') }}
-
-    <a href="{{ path('bonus_effects_list_index') }}">back to list</a>
+    <br>
+    <a class="btn btn-dark text-info border-info btn-block" href="{{ path('bonus_effects_list_index') }}">Retour à la liste des bonus / malus / effets</a>
 {% endblock %}

@@ -63,7 +63,8 @@ class GlyphsList
 
     /**
      * @ORM\ManyToOne(targetEntity=Characters::class, inversedBy="glyph")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
+     * @ORM\Column(nullable=true)
      */
     private $characters;
 
@@ -81,6 +82,41 @@ class GlyphsList
      * @ORM\ManyToMany(targetEntity=UpFeature::class)
      */
     private $up_feature;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $special;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $support_2;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $support_3;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $evol_salary;
+
+    /**
+     * @ORM\Column(type="decimal", precision=2, scale=1, nullable=true)
+     */
+    private $evol_maintenance;
+
+    /**
+     * @ORM\Column(type="decimal", precision=2, scale=1, nullable=true)
+     */
+    private $evol_staff;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $personalization;
 
     public function __construct()
     {
@@ -245,6 +281,90 @@ class GlyphsList
         if ($this->up_feature->contains($upFeature)) {
             $this->up_feature->removeElement($upFeature);
         }
+
+        return $this;
+    }
+
+    public function getSpecial(): ?bool
+    {
+        return $this->special;
+    }
+
+    public function setSpecial(bool $special): self
+    {
+        $this->special = $special;
+
+        return $this;
+    }
+
+    public function getSupport2(): ?string
+    {
+        return $this->support_2;
+    }
+
+    public function setSupport2(?string $support_2): self
+    {
+        $this->support_2 = $support_2;
+
+        return $this;
+    }
+
+    public function getSupport3(): ?string
+    {
+        return $this->support_3;
+    }
+
+    public function setSupport3(?string $support_3): self
+    {
+        $this->support_3 = $support_3;
+
+        return $this;
+    }
+
+    public function getEvolSalary(): ?int
+    {
+        return $this->evol_salary;
+    }
+
+    public function setEvolSalary(int $evol_salary): self
+    {
+        $this->evol_salary = $evol_salary;
+
+        return $this;
+    }
+
+    public function getEvolMaintenance(): ?string
+    {
+        return $this->evol_maintenance;
+    }
+
+    public function setEvolMaintenance(?string $evol_maintenance): self
+    {
+        $this->evol_maintenance = $evol_maintenance;
+
+        return $this;
+    }
+
+    public function getEvolStaff(): ?string
+    {
+        return $this->evol_staff;
+    }
+
+    public function setEvolStaff(?string $evol_staff): self
+    {
+        $this->evol_staff = $evol_staff;
+
+        return $this;
+    }
+
+    public function getPersonalization(): ?bool
+    {
+        return $this->personalization;
+    }
+
+    public function setPersonalization(bool $personalization): self
+    {
+        $this->personalization = $personalization;
 
         return $this;
     }

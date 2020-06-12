@@ -58,5 +58,6 @@
 
     {{ form_label(form.effect_2, 'Effect 2 : ') }}
     {{ form_widget(form.effect_2) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    <br/>
+    <button class="btn btn-dark text-info border-info btn-block">{{ button_label|default('Sauvegarder') }}</button>
 {{ form_end(form) }}

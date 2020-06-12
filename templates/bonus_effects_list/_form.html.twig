@@ -1,4 +1,59 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+
+
+	{{ form_label(form.name, 'Nom : ') }}
+    {{ form_widget(form.name) }}
+
+    {{ form_label(form.description, 'Description : ') }}
+    {{ form_widget(form.description) }}
+
+    {{ form_label(form.rank, 'Type / Rang : ') }}
+    {{ form_widget(form.rank) }}
+
+    {{ form_label(form.add_glyph_place, 'Nombre d\'emplacements de glyphes supplémentaires : ') }}
+    {{ form_widget(form.add_glyph_place) }}
+
+    {{ form_label(form.evol_salary, 'Nombre de PO supplémentaires sur le salaire : ') }}
+    {{ form_widget(form.evol_salary) }}
+
+	{{ form_label(form.evol_maintenance, 'Modification du coût de maintenance : ') }}
+    {{ form_widget(form.evol_maintenance) }}
+	<small class="form-text text-muted">{{ form_help(form.evol_maintenance) }}</small>
+
+    {{ form_label(form.evol_staff, 'Modification du coût d\'équipage : ') }}
+    {{ form_widget(form.evol_staff) }}
+    <small class="form-text text-muted">{{ form_help(form.evol_staff) }}</small>
+
+    {{ form_label(form.up_feature, 'Augmentation de caractéristique : ') }}
+    {{ form_widget(form.up_feature) }}
+    <small class="form-text text-muted">{{ form_help(form.up_feature) }}</small>
+
+    <div class="form-check ">
+	    {{ form_widget(form.isunique) }}
+		{{ form_label(form.isunique, 'Bonus / malus / effet unique ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<div class="form-check ">
+	    {{ form_widget(form.israre) }}
+		{{ form_label(form.israre, 'Bonus / malus / effet rare ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<div class="form-check ">
+	    {{ form_widget(form.bought) }}
+	    {{ form_label(form.bought, 'Bonus / malus / effet possédé ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<div class="form-check ">
+	    {{ form_widget(form.special) }}
+	    {{ form_label(form.special, 'Effet spécial ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<br>
+
+    <button class="btn btn-dark text-info border-info btn-block">{{ button_label|default('Sauvegarder') }}</button>
 {{ form_end(form) }}
+  

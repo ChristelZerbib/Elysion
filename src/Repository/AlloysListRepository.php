@@ -16,12 +16,14 @@ class AlloysListRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, AlloysList::class);
+        parent::__construct($registry, AlloysList::class); 
     }
 
     public function search($recherche=null,$type=null,$support=null, $order='alpha')
     {
-        $qb = $this->createQueryBuilder('a');   
+        $qb = $this->createQueryBuilder('a');  
+        $qb->andWhere('a.bought = ?1'); 
+        $qb->setParameter(1, 0);
 
         if($recherche !== null){
             $qb->andWhere(
@@ -30,7 +32,45 @@ class AlloysListRepository extends ServiceEntityRepository
                     $qb->expr()->like('a.description', ':recherche')
                 )
             );
-            echo "name";
+            $qb->setParameter('recherche', '%'.addcslashes($recherche, '%_').'%');
+        } 
+
+        if($support !== null){
+            $qb->andWhere(
+                $qb->expr()->orX(
+                    $qb->expr()->eq('a.support', ':support'),
+                    $qb->expr()->eq('a.support_2', ':support'),
+                    $qb->expr()->eq('a.support_3', ':support')
+                )
+            );
+            $qb->setParameter('support', $support);
+        }
+
+        if($type !== null){
+            $qb->andWhere('a.type LIKE :type');
+            $qb->setParameter('type', $type);
+        }
+        
+        //choose order by price or alpha
+        if ($order == 'alpha'){
+            $qb->orderBy('a.name', 'ASC');
+        }else{
+            $qb->orderBy('a.price', 'ASC');            
+        }
+        return $qb->getQuery()->getResult();
+    }
+
+    public function searchadmin($recherche=null,$type=null,$support=null, $order='alpha')
+    {
+        $qb = $this->createQueryBuilder('a');  
+
+        if($recherche !== null){
+            $qb->andWhere(
+                $qb->expr()->orX(
+                    $qb->expr()->like('a.name', ':recherche'),
+                    $qb->expr()->like('a.description', ':recherche')
+                )
+            );
             $qb->setParameter('recherche', '%'.addcslashes($recherche, '%_').'%');
         } 
 

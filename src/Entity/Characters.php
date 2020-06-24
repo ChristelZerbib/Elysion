@@ -171,10 +171,6 @@ class Characters
      */
     private $ingredient;
 
-    /**
-     * @ORM\OneToMany(targetEntity=GlyphsList::class, mappedBy="characters")
-     */
-    private $glyph;
 
     /**
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="characters")
@@ -185,6 +181,11 @@ class Characters
      * @ORM\ManyToOne(targetEntity=Features::class)
      */
     private $bonus_ethnique;
+
+    /**
+     * @ORM\OneToMany(targetEntity=GlyphsList::class, mappedBy="characters")
+     */
+    private $glyphs;
 
     public function __construct()
     {
@@ -199,6 +200,7 @@ class Characters
         $this->title = new ArrayCollection();
         $this->ingredient = new ArrayCollection();
         $this->glyph = new ArrayCollection();
+        $this->glyphs = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -746,36 +748,6 @@ class Characters
         return $this;
     }
 
-    /**
-     * @return Collection|GlyphsList[]
-     */
-    public function getGlyph(): Collection
-    {
-        return $this->glyph;
-    }
-
-    public function addGlyph(GlyphsList $glyph): self
-    {
-        if (!$this->glyph->contains($glyph)) {
-            $this->glyph[] = $glyph;
-            $glyph->setCharacters($this);
-        }
-
-        return $this;
-    }
-
-    public function removeGlyph(GlyphsList $glyph): self
-    {
-        if ($this->glyph->contains($glyph)) {
-            $this->glyph->removeElement($glyph);
-            // set the owning side to null (unless already changed)
-            if ($glyph->getCharacters() === $this) {
-                $glyph->setCharacters(null);
-            }
-        }
-
-        return $this;
-    }
 
     public function getUser(): ?User
     {
@@ -797,6 +769,37 @@ class Characters
     public function setBonusEtnique(?BonusEthnique $bonus_etnique): self
     {
         $this->bonus_ethnique = $bonus_ethnique;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|GlyphsList[]
+     */
+    public function getGlyphs(): Collection
+    {
+        return $this->glyphs;
+    }
+
+    public function addGlyph(GlyphsList $glyph): self
+    {
+        if (!$this->glyphs->contains($glyph)) {
+            $this->glyphs[] = $glyph;
+            $glyph->setCharacters($this);
+        }
+
+        return $this;
+    }
+
+    public function removeGlyph(GlyphsList $glyph): self
+    {
+        if ($this->glyphs->contains($glyph)) {
+            $this->glyphs->removeElement($glyph);
+            // set the owning side to null (unless already changed)
+            if ($glyph->getCharacters() === $this) {
+                $glyph->setCharacters(null);
+            }
+        }
 
         return $this;
     }

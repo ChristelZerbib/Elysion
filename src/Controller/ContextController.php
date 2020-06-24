@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ContextController extends AbstractController
 {
     /**
-     * @Route("/elysion", name="accueil")
+     * @Route("/elysion/index", name="accueil")
      */
     public function index()
     {

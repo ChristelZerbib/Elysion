@@ -1,4 +1,78 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    {{ form_label(form.name, 'Nom : ') }}
+    {{ form_widget(form.name) }}
+
+    {{ form_label(form.description, 'Description : ') }}
+    {{ form_widget(form.description) }}
+
+    {{ form_label(form.price, 'Prix : ') }}
+    {{ form_widget(form.price) }}
+
+    {{ form_label(form.ingredient_type, 'Type de glyphe / amélioration : ') }}
+    {{ form_widget(form.ingredient_type) }}
+
+    {{ form_label(form.effect, 'Effet : ') }}
+    {{ form_widget(form.effect) }}
+
+    {{ form_label(form.support, 'Supports : ') }}
+    {{ form_widget(form.support) }}
+    {{ form_widget(form.support_2) }}
+    {{ form_widget(form.support_3) }}
+    <br/>
+
+    {{ form_label(form.evol_salary, 'Nombre de PO supplémentaires sur le salaire : ') }}
+    {{ form_widget(form.evol_salary) }}
+
+    {{ form_label(form.evol_maintenance, 'Modification du coût de maintenance : ') }}
+    {{ form_widget(form.evol_maintenance) }}
+	<small class="form-text text-muted">{{ form_help(form.evol_maintenance) }}</small>
+
+    {{ form_label(form.evol_staff, 'Modification du coût d\'équipage : ') }}
+    {{ form_widget(form.evol_staff) }}
+    <small class="form-text text-muted">{{ form_help(form.evol_staff) }}</small>
+
+    {{ form_label(form.up_feature, 'Augmentation de caractéristique : ') }}
+    {{ form_widget(form.up_feature) }}
+    <small class="form-text text-muted">{{ form_help(form.up_feature) }}</small>
+
+    {{ form_label(form.characters, 'Propriétaire : ') }}
+    {{ form_widget(form.characters) }}
+
+    {{ form_label(form.rarity, 'Rareté : ') }}
+    {{ form_widget(form.rarity) }}
+
+    <br>
+    <div class="form-check form-check-inline">
+	    {{ form_widget(form.isunique) }}
+		{{ form_label(form.isunique, 'Glyphe unique ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<div class="form-check form-check-inline">
+	    {{ form_widget(form.bought) }}
+	    {{ form_label(form.bought, 'Glyphe possédé ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<div class="form-check form-check-inline">
+	    {{ form_widget(form.used) }}
+	    {{ form_label(form.used, 'Glyphe équipé ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<div class="form-check form-check-inline">
+	    {{ form_widget(form.special) }}
+	    {{ form_label(form.special, 'Effet spécial ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<div class="form-check form-check-inline">
+	    {{ form_widget(form.personalization) }}
+	    {{ form_label(form.personalization, 'Personnalisation à l\'achat ', {
+	    'label_attr': {'class': 'form-check-label'}
+		}) }}
+	</div>
+	<br/>
+	<br>
+    <button class="btn btn-dark text-info border-info btn-block">{{ button_label|default('Sauvegarder') }}</button>
 {{ form_end(form) }}

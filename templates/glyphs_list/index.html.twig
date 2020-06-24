@@ -1,32 +1,99 @@
 {% extends 'base.html.twig' %}
 
-
-
 {% block body %}
     <h1>Glyphes et améliorations</h1>
-
+    {% block filters %}
+        {% include ("glyphs_list/_filters.html.twig") %}
+    {% endblock %}
+    <div class="row">
         {% for glyphs_list in glyphs_lists %}
 
+                <div class="col-md-6 w-100 card-group bonus-effect ">
+                    <div class="card border-info" >
+                
+                        <div class="card-header text-center border-info bg-dark text-info bold-title">
+
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-sm-2">
+                                    {% if glyphs_list.ingredienttype.id is same as (1) %}
+                                        <img src="{{ asset('/build/images/cristal.png')}}" alt="Glyphe Elémentaire" class="resize">
+                                    {% endif %}
+                                    {% if glyphs_list.ingredienttype.id is same as (2) %}
+                                        <img src="{{ asset('/build/images/gemme.png')}}" alt="Glyphe Funeste" class="resize">
+                                    {% endif %}
+                                    {% if glyphs_list.ingredienttype.id is same as (3) %}
+                                        <img src="{{ asset('/build/images/rune.png')}}" alt="Glyphe de Soutien" class="resize">
+                                    {% endif %}
+                                    {% if glyphs_list.ingredienttype.id is same as (4) %}
+                                        <img src="{{ asset('/build/images/artefact.png')}}" alt="Glyphe Draconique" class="resize">
+                                    {% endif %}
+                                    {% if glyphs_list.ingredienttype.id is same as (5) %}
+                                        <img src="{{ asset('/build/images/amelioration.png')}}" alt="Amélioration technologique" class="resize">
+                                    {% endif %}
+
+                                    
+                                </div>
+                                <div class="col-sm-10">
+                                    <h5 class="card-title">{{ glyphs_list.name }}</h5>
+                                    <h6 class="card-subtitles">
+                                        {{ glyphs_list.ingredienttype.type }} - 
+                                  
+
+                                        {% if glyphs_list.support is defined and glyphs_list.support is not empty %}
+                                            {{ glyphs_list.support }}
+                                        {% endif %}
+                                        {% if glyphs_list.support2 is defined and glyphs_list.support2 is not empty %}
+                                            , {{ glyphs_list.support2 }}
+                                        {% endif %}
+                                        {% if glyphs_list.support3 is defined and glyphs_list.support3 is not empty %}
+                                            , {{ glyphs_list.support3 }}
+                                        {% endif %}
+                                        {% if glyphs_list.effect is defined and glyphs_list.effect is not empty %}
+                                            - {{ glyphs_list.effect }} 
+                                        {% endif %}
+                                    
+                                    </h6>
+                                </div>
+                            </div>
+                            
+                            
+
+                        </div>
+                        <div class="card-body bg-secondary no-gutters justify-content-around">
+
+                           
+                                <p class="card-text text-light">{{ glyphs_list.description| nl2br }}</p>
+                       
+
+                        </div>
+
+                        <div class="card-footer text-center text-info bg-dark border-info">
+                            {% if is_granted('ROLE_ADMIN') %}   
+                                <a href="{{ path('glyphs_list_edit', {'id': glyphs_list.id}) }}" class="btn btn-dark text-info">Modifier</a>
+                            {% endif %}
+                            <a href="#" class="btn btn-dark text-info">Ajouter à un objet pour {{ glyphs_list.price }} PO</a>
+                            
+                        </div>
+                    </div>
+                </div> 
+
+            {% else %}
            
-            <div class="card bg-dark border-info mb-3">
+            Aucun glyphe ne correspond.
+              
+            {% endfor %}
 
-                <div class="card-header border-info text-info bold-title">
-                    {{ glyphs_list.name }}
-                </div>
-                <div class="card-body bg-secondary no-gutters row justify-content-around">
-            {{ glyphs_list.name }}{{ glyphs_list.price }}{{ glyphs_list.description }}{{ glyphs_list.effect }}{{ glyphs_list.support }}{{ glyphs_list.support2 }}{{ glyphs_list.support3 }}<
-                    <a href="{{ path('glyphs_list_show', {'id': glyphs_list.id}) }}">show</a>
-                    <a href="{{ path('glyphs_list_edit', {'id': glyphs_list.id}) }}">edit</a>
-                </div>
-            </div>
-       
+    </div>
+        
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {{ knp_pagination_render(glyphs_lists, '@KnpPaginator/Pagination/twitter_bootstrap_v3_pagination.html.twig',
+                {
+                    'attr': {'class' : 'page-item justify-content-center'},
+                }
+            ) }}
 
-     
-        {% else %}
-       
-        no records found<
-          
-        {% endfor %}
-
-    <a href="{{ path('glyphs_list_new') }}">Create new</a>
+           
+        </ul> 
+    </nav>
 {% endblock %}

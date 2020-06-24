@@ -19,6 +19,46 @@ class ObjectsListRepository extends ServiceEntityRepository
         parent::__construct($registry, ObjectsList::class);
     }
 
+     public function search($recherche=null,$type=null,$subtype=null,$shop=null, $order='alpha')
+        {
+            $qb = $this->createQueryBuilder('a');
+            $qb->join('a.subtype', 't');
+            $qb->andWhere('a.characters IS NULL'); 
+
+            if($recherche !== null){
+                $qb->andWhere(
+                    $qb->expr()->orX(
+                        $qb->expr()->like('a.name', ':recherche'),
+                        $qb->expr()->like('a.description', ':recherche')
+                    )
+                );
+                $qb->setParameter('recherche', '%'.addcslashes($recherche, '%_').'%');
+            } 
+
+            if($shop !== null){
+                $qb->andWhere('a.shop LIKE :shop');
+                $qb->setParameter('shop', $shop);
+            }
+
+            if($type !== null){
+                $qb->andWhere('t.type LIKE :type');
+                $qb->setParameter('type', $type);
+            }
+
+            if($subtype !== null){
+                $qb->andWhere('t.subtype LIKE :subtype');
+                $qb->setParameter('subtype', $subtype);
+            }
+            
+            //choose order by price or alpha
+            if ($order == 'alpha'){
+                $qb->orderBy('a.name', 'ASC');
+            }else{
+                $qb->orderBy('a.price', 'ASC');            
+            }
+            return $qb->getQuery()->getResult();
+        }
+
     // /**
     //  * @return ObjectsList[] Returns an array of ObjectsList objects
     //  */

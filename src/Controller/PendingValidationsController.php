@@ -11,12 +11,12 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/validations")
+ * @Route("/elysion/admin/validations")
  */
 class PendingValidationsController extends AbstractController
 {
     /**
-     * @Route("/", name="pending_validations_index", methods={"GET"})
+     * @Route("/index", name="pending_validations_index", methods={"GET"})
      */
     public function index(PendingValidationsRepository $pendingValidationsRepository): Response
     {

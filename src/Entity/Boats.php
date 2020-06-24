@@ -17,11 +17,6 @@ class Boats
      */
     private $id;
 
-    /**
-     * @ORM\OneToOne(targetEntity=ObjectsList::class, cascade={"persist", "remove"})
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $object;
 
     /**
      * @ORM\Column(type="integer")
@@ -38,21 +33,20 @@ class Boats
      */
     private $glyph_max;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=FeatureLevels::class)
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $required_skill;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $name;
+
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getObject(): ?ObjectsList
-    {
-        return $this->object;
-    }
-
-    public function setObject(ObjectsList $object): self
-    {
-        $this->object = $object;
-
-        return $this;
     }
 
     public function getMaintenance(): ?int
@@ -87,6 +81,30 @@ class Boats
     public function setSGlyphMax(int $glyph_max): self
     {
         $this->glyph_max = $glyph_max;
+
+        return $this;
+    }
+
+    public function getRequiredSkill(): ?FeatureLevels
+    {
+        return $this->required_skill;
+    }
+
+    public function setRequiredSkill(?FeatureLevels $required_skill): self
+    {
+        $this->required_skill = $required_skill;
+
+        return $this;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
 
         return $this;
     }

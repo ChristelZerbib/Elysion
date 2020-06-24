@@ -40,6 +40,12 @@ body
 	margin-bottom: 1em;
 }
 
+.btn-dark
+{
+	margin-top: 5px;
+	vertical-align : bottom;
+}
+
 /* alloys*/
 .sup-type
 {
@@ -85,4 +91,11 @@ body
 
 .card-footer a {
 	color: #17A2B8;
+}
+
+/* resize img */
+
+img.resize 
+{
+	max-width: 50px;
 }

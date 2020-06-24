@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit GlyphsList{% endblock %}
-
 {% block body %}
-    <h1>Edit GlyphsList</h1>
+    <h1>Modifier le glyphe ou l'amélioration</h1>
 
-    {{ include('glyphs_list/_form.html.twig', {'button_label': 'Update'}) }}
+    {{ include('glyphs_list/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+    <br> 
+	{{ include('glyphs_list/_delete_form.html.twig') }}
+	<br>
+    <a class="btn btn-dark text-info border-info btn-block" href="{{ path('glyphs_list_index') }}">Retour à la liste des glyphes et améliorations</a>
 
-    <a href="{{ path('glyphs_list_index') }}">back to list</a>
-
-    {{ include('glyphs_list/_delete_form.html.twig') }}
+    
 {% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New ObjectsList{% endblock %}
+
+{% block body %}
+    <h1>Create new ObjectsList</h1>
+
+    {{ include('objects_list/_form.html.twig') }}
+
+    <a href="{{ path('objects_list_index') }}">back to list</a>
+{% endblock %}

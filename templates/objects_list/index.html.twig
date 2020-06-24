@@ -1,0 +1,105 @@
+{% extends 'base.html.twig' %}
+
+    
+
+
+{% block body %}
+    <h1>Boutique des objets</h1>
+
+    {% block filters %}
+        {% include ("objects_list/_filters.html.twig") %}
+    {% endblock %}
+
+        {% for objects_list in objects_lists %}
+
+            <div class="card bg-dark border-info mb-3" data-type="{{ objects_list.subtype.type }}"  data-name="{{ objects_list.name }}" data-name="{{ objects_list.description }}" data-price="{{ objects_list.price }}" data-shop="{{ objects_list.shop }}" data-subtype="{{ objects_list.subtype.subtype }}">
+                <div class="card-header border-info text-info bold-title">
+                    {{ objects_list.name }}
+                </div>
+                <div class="card-body bg-secondary no-gutters row justify-content-around">
+ 
+
+                    {# description of the object #}
+                    <div class="card-text text-light col-12 sup-type">
+
+                        {{ objects_list.subtype.type }} : {{ objects_list.subtype.subtype }} - {{ objects_list.shop }}
+                    </div>
+                    <div class="card-text text-light col-md-5">{{ objects_list.description| nl2br }}
+                    </div>
+
+
+                    {# list of the glyphs #}
+                    <div class="card-text text-light col-md-5 sup-type">
+                        
+                        {% if objects_list.glyph1 is defined and objects_list.glyph1 is not empty %}
+                            <span class="bold-title">{{ objects_list.glyph1.ingredienttype.type }} - {{ objects_list.glyph1.name }} :</span> {{ objects_list.glyph1.description| nl2br  }} <br/>
+                        {% endif %}
+
+                        {% if objects_list.glyph2 is defined and objects_list.glyph2 is not empty %}
+                            <span class="bold-title">{{ objects_list.glyph2.ingredienttype.type }} - {{ objects_list.glyph2.name }} :</span> {{ objects_list.glyph2.description| nl2br  }} <br/>
+                        {% endif %}
+
+                        {% if objects_list.glyph3 is defined and objects_list.glyph3 is not empty %}
+                            <span class="bold-title">{{ objects_list.glyph3.ingredienttype.type }} - {{ objects_list.glyph3.name }} :</span> {{ objects_list.glyph3.description| nl2br  }} <br/>
+                        {% endif %}
+
+                        {% if objects_list.glyph4 is defined and objects_list.glyph4 is not empty %}
+                            <span class="bold-title">{{ objects_list.glyph4.ingredienttype.type }} - {{ objects_list.glyph4.name }} :</span> {{ objects_list.glyph4.description| nl2br  }} <br/>
+                        {% endif %}
+
+                        {% if objects_list.glyph5 is defined and objects_list.glyph5 is not empty %}
+                            <span class="bold-title">{{ objects_list.glyph5.ingredienttype.type }} - {{ objects_list.glyph5.name }} :</span> {{ objects_list.glyph5.description| nl2br  }} <br/>
+                        {% endif %}
+
+                        {% if objects_list.glyph6 is defined and objects_list.glyph6 is not empty %}
+                            <span class="bold-title">{{ objects_list.glyph6.ingredienttype.type }} - {{ objects_list.glyph6.name }} :</span> {{ objects_list.glyph6.description| nl2br  }} <br/>
+                        {% endif %}
+
+                        {% if objects_list.glyph7 is defined and objects_list.glyph7 is not empty %}
+                            <span class="bold-title">{{ objects_list.glyph7.ingredienttype.type }} - {{ objects_list.glyph7.name }} :</span> {{ objects_list.glyph7.description| nl2br  }} <br/>
+                        {% endif %}
+
+                        {% if objects_list.glyph8 is defined and objects_list.glyph8 is not empty %}
+                            <span class="bold-title">{{ objects_list.glyph8.ingredienttype.type }} - {{ objects_list.glyph8.name }} :</span> {{ objects_list.glyph8.description| nl2br  }} <br/>
+                        {% endif %}
+
+                        {% if objects_list.glyph9 is defined and objects_list.glyph9 is not empty %}
+                            <span class="bold-title">{{ objects_list.glyph9.ingredienttype.type }} - {{ objects_list.glyph9.name }} :</span> {{ objects_list.glyph9.description| nl2br  }} <br/>
+                        {% endif %}
+
+                        {% if objects_list.glyph10 is defined and objects_list.glyph10 is not empty %}
+                            <span class="bold-title">{{ objects_list.glyph10.ingredienttype.type }} - {{ objects_list.glyph10.name }} :</span> {{ objects_list.glyph10.description| nl2br  }} <br/>
+                        {% endif %}
+
+                        
+
+
+                    </div>
+                    <div class="card-text col-12 text-center">
+                        {% if is_granted('ROLE_ADMIN') %}   
+                            <a href="{{ path('objects_list_edit', {'id': objects_list.id}) }}" class="btn btn-dark text-info border-info">Modifier</a>
+                        {% endif %}
+                        <a href="#" class="btn btn-dark text-info border-info">Acheter pour {{ objects_list.price }} PO</a>
+                    </div>
+                </div>
+                  
+            </div>
+
+        {% else %}
+
+                <p>Aucun objet ne correspond. </p>
+
+        {% endfor %}
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {{ knp_pagination_render(objects_lists, '@KnpPaginator/Pagination/twitter_bootstrap_v3_pagination.html.twig',
+                {
+                    'attr': {'class' : 'page-item justify-content-center'},
+                }
+            ) }}
+
+           
+        </ul> 
+    </nav>
+{% endblock %}

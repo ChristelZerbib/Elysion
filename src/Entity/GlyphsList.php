@@ -12,6 +12,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class GlyphsList
 {
+
+    const EFFECTS = ["Défensif","Esthétique", "Offensif", "Soutien"
+    ];
+    const SUPPORTS = ["Armures", "Armes", "Bijoux et accessoires", "Vêtements", "Chaussures et bijou de cheville", "Navires","Animalerie et Dragonerie", "Objets Divers", "Projectiles", "Tout objet"
+    ];
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -61,12 +66,6 @@ class GlyphsList
      */
     private $used;
 
-    /**
-     * @ORM\ManyToOne(targetEntity=Characters::class, inversedBy="glyph")
-     * @ORM\JoinColumn(nullable=true)
-     * @ORM\Column(nullable=true)
-     */
-    private $characters;
 
     /**
      * @ORM\Column(type="string", length=50)
@@ -117,6 +116,11 @@ class GlyphsList
      * @ORM\Column(type="boolean")
      */
     private $personalization;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Characters::class, inversedBy="glyphs")
+     */
+    private $characters;
 
     public function __construct()
     {
@@ -226,17 +230,6 @@ class GlyphsList
         return $this;
     }
 
-    public function getCharacters(): ?Characters
-    {
-        return $this->characters;
-    }
-
-    public function setCharacters(?Characters $characters): self
-    {
-        $this->characters = $characters;
-
-        return $this;
-    }
 
     public function getEffect(): ?string
     {
@@ -262,7 +255,7 @@ class GlyphsList
         return $this;
     }
 
-    public function getUpFeature(): ?UpFeature
+    public function getUpFeature(): ?Collection
     {
         return $this->up_feature;
     }
@@ -365,6 +358,18 @@ class GlyphsList
     public function setPersonalization(bool $personalization): self
     {
         $this->personalization = $personalization;
+
+        return $this;
+    }
+
+    public function getCharacters(): ?Characters
+    {
+        return $this->characters;
+    }
+
+    public function setCharacters(?Characters $characters): self
+    {
+        $this->characters = $characters;
 
         return $this;
     }

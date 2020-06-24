@@ -13,12 +13,12 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 /**
- * @Route("utilisateurs")
+ * @Route("/elysion/utilisateurs")
  */
 class UserController extends AbstractController
 {
     /**
-     * @Route("/", name="user_index", methods={"GET"})
+     * @Route("/index", name="user_index", methods={"GET"})
      */
     public function index(UserRepository $userRepository): Response
     {

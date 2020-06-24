@@ -1,11 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New GlyphsList{% endblock %}
-
 {% block body %}
-    <h1>Create new GlyphsList</h1>
+    <h1>Créer un glyphe ou une amélioration : </h1>
 
     {{ include('glyphs_list/_form.html.twig') }}
-
-    <a href="{{ path('glyphs_list_index') }}">back to list</a>
+    <br>
+    <a class="btn btn-dark text-info border-info btn-block" href="{{ path('glyphs_list_index') }}">Retour à la liste des glyphes et améliorations</a>
 {% endblock %}

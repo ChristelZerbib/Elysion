@@ -1,62 +1,57 @@
-{% extends 'base.html.twig' %}
+{% extends 'base_admin.html.twig' %}
 
-{% block title %}BonusEffectsList{% endblock %}
 
 {% block body %}
-    <h1>BonusEffectsList</h1>
-
-    <table class="table">
+    <table class="table text-dark bg-secondary">
         <tbody>
-            <tr>
-                <th>Id</th>
+            <tr class="text-info bg-dark">
+                <th>Identifiant : </th>
                 <td>{{ bonus_effects_list.id }}</td>
             </tr>
-            <tr>
-                <th>Name</th>
+            <tr class="text-info bg-dark">
+                <th>Nom : </th>
                 <td>{{ bonus_effects_list.name }}</td>
             </tr>
             <tr>
-                <th>Isunique</th>
-                <td>{{ bonus_effects_list.isunique ? 'Yes' : 'No' }}</td>
-            </tr>
-            <tr>
-                <th>Israre</th>
-                <td>{{ bonus_effects_list.israre ? 'Yes' : 'No' }}</td>
-            </tr>
-            <tr>
-                <th>Description</th>
+                <th>Description : </th>
                 <td>{{ bonus_effects_list.description }}</td>
             </tr>
             <tr>
-                <th>Add_glyph_place</th>
+                <th>Bonus/effet unique ?</th>
+                <td>{{ bonus_effects_list.isunique ? 'Oui' : 'Non' }}</td>
+            </tr>
+            <tr>
+                <th>Rare ? </th>
+                <td>{{ bonus_effects_list.israre ? 'Oui' : 'Non' }}</td>
+            </tr>
+            <tr>
+                <th>Nonmbre de glyphe(s) supplémentaire(s) : </th>
                 <td>{{ bonus_effects_list.addGlyphPlace }}</td>
             </tr>
             <tr>
-                <th>Bought</th>
-                <td>{{ bonus_effects_list.bought ? 'Yes' : 'No' }}</td>
+                <th>Acheté ? </th>
+                <td>{{ bonus_effects_list.bought ? 'Oui' : 'Non' }}</td>
             </tr>
             <tr>
-                <th>Special</th>
-                <td>{{ bonus_effects_list.special ? 'Yes' : 'No' }}</td>
+                <th>Spécial ? </th>
+                <td>{{ bonus_effects_list.special ? 'Oui' : 'Non' }}</td>
             </tr>
             <tr>
-                <th>Evol_salary</th>
-                <td>{{ bonus_effects_list.evolSalary }}</td>
+                <th>Modification salaire :</th>
+                <td>{{ bonus_effects_list.evolSalary }} PO</td>
             </tr>
             <tr>
-                <th>Evol_maintenance</th>
+                <th>Modification du coût d'entretien du navire : </th>
                 <td>{{ bonus_effects_list.evolMaintenance }}</td>
             </tr>
             <tr>
-                <th>Evol_staff</th>
+                <th>Modification du coût d'équippage du navire :</th>
                 <td>{{ bonus_effects_list.evolStaff }}</td>
             </tr>
         </tbody>
     </table>
+    <a class="btn btn-dark text-info border-info btn-block" href="{{ path('bonus_effects_list_edit', {'id': bonus_effects_list.id}) }}">Modifier</a><br>
+    {{ include('bonus_effects_list/_delete_form.html.twig') }} <br>
+    <a class="btn btn-dark text-info border-info btn-block" href="{{ path('bonus_effects_list_admin') }}">Retour à la liste</a><br>
 
-    <a href="{{ path('bonus_effects_list_index') }}">back to list</a>
-
-    <a href="{{ path('bonus_effects_list_edit', {'id': bonus_effects_list.id}) }}">edit</a>
-
-    {{ include('bonus_effects_list/_delete_form.html.twig') }}
 {% endblock %}

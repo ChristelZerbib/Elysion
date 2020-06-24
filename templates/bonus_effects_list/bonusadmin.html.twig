@@ -1,0 +1,67 @@
+{% extends 'base_admin.html.twig' %}
+
+
+{% block body %}
+    <h1>Bonus et effets d'alliages - ADMIN</h1>
+    {% block filters %}
+        {% include ("bonus_effects_list/_filters.html.twig") %}
+    {% endblock %}
+
+    <div class="row">
+ 
+    {% for bonus_effects_list in bonus_effects_lists %}
+ 
+        {% if bonus_effects_list.bought is defined %}
+            <div class="col-md-6 col-lg-4 w-100 card-group bonus-effect"  data-type="{{ bonus_effects_list.rank.type }}" data-rank= "{{ bonus_effects_list.rank.number }}" data-name="{{ bonus_effects_list.name }}" data-name="{{ bonus_effects_list.description }}" data-price="{{ bonus_effects_list.rank.price }}">
+                <div class="card border-info" >
+                    <div class="card-header text-center text-info border-info bg-dark">
+                        
+                            {% if bonus_effects_list.rank.type is same as ("malus") %}
+                                <h5 class="card-title malus">{{ bonus_effects_list.name }}</h5>
+                                <h6 class="card-subtitle mb-2 malus">({{ bonus_effects_list.rank.type }} de rang {{ bonus_effects_list.rank.number }} : {{ bonus_effects_list.rank.price }} PO)</h6>
+                            {% elseif bonus_effects_list.rank.type is same as ("effet") %}
+                                <h5 class="card-title effect">{{ bonus_effects_list.name }}</h5>
+                                <h6 class="card-subtitle mb-2 effect">({{ bonus_effects_list.rank.type }} de rang {{ bonus_effects_list.rank.number }} : {{ bonus_effects_list.rank.price }} PO)</h6>
+                            {% else %}
+                                <h5 class="card-title bonus">{{ bonus_effects_list.name }}</h5>
+                                <h6 class="card-subtitle mb-2 bonus">({{ bonus_effects_list.rank.type }} de rang {{ bonus_effects_list.rank.number }} : {{ bonus_effects_list.rank.price }} PO)</h6>
+                            {% endif %}
+ 
+                        
+                    </div>
+                    <div class="card-body bg-secondary">
+                        <p class="card-text text-light">{{ bonus_effects_list.description| nl2br  }}</p>
+                    </div>
+                    <div class="card-footer text-center text-info bg-dark border-info">
+                        {% if is_granted('ROLE_ADMIN') %}  
+                            <a href="{{ path('bonus_effects_list_edit', {'id': bonus_effects_list.id}) }}" class="btn btn-dark text-info">Modifier</a>    
+                            <a href="{{ path('bonus_effects_list_show', {'id': bonus_effects_list.id}) }}" class="btn btn-dark text-info">Voir</a>
+                            {{ include('bonus_effects_list/_delete_form.html.twig') }}
+                        {% endif %}
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+        {% endif %}
+    
+    {% else %}
+        <p>Aucun alliage ne correspond.</p>
+    {% endfor %}
+
+</div>
+
+<nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {{ knp_pagination_render(bonus_effects_lists, '@KnpPaginator/Pagination/twitter_bootstrap_v3_pagination.html.twig',
+                {
+                    'attr': {'class' : 'page-item justify-content-center'},
+                }
+            ) }}
+
+           
+        </ul> 
+    </nav>
+{% endblock %}
+ 

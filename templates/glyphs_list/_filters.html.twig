@@ -1,0 +1,48 @@
+{{ form_start(form, {'attr': {'class': 'filters container-fluid'}}) }}
+	<!-- <form class="filters container-fluid"> -->
+		<div class="row align-items-center">
+	    	<div class="col-md-6">
+				{{ form_widget(form.recherche) }}
+			</div>
+			<div class="col-md-6">
+
+				{% for key, order in form.order.children %}
+
+					<div class="form-check form-check-inline">
+				    	{{ form_widget(order, {'attr': {'class': 'form-check-input'}}) }} 
+				    	{{ form_label(order, null, {'label_attr': {'class':'form-check-label'}}) }}
+				    </div>
+				{% endfor %}
+			</div>
+		</div>
+		<br/> 
+
+		<div class="row align-items-center">
+	    	<div class="col-md-4">
+				<div class="form-group">
+			    	<label for="alloys-type">Type</label>
+			    	{{ form_widget(form.type) }}
+			  	</div>
+			 </div>
+			 <div class="col-md-4">
+				<div class="form-group">
+			    	<label for="alloys-type">Effet</label>
+			    	{{ form_widget(form.effect) }}
+			  	</div>
+			 </div>
+			<div class="col-md-4">
+			  	<div class="form-group">
+			    	<label for="alloys-support">Supports</label>
+			    	{{ form_widget(form.support) }}
+			  	</div>
+			</div>
+		</div>
+		<br/>
+		<div class="clearfix">
+			{{ form_widget(form.validate, { 'label': 'Rechercher' })}}
+
+		</div>
+		
+
+<!-- 	</form> -->
+{{ form_end(form) }}

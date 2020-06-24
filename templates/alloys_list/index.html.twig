@@ -44,33 +44,33 @@
                     <div class="card-text text-light col-md-5 sup-type">
                         
                         {% if alloys_list.bonus1.name is defined and alloys_list.support is not empty %}
-                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus1.name }} :</span> {{ alloys_list.bonus1.description }} </span> <br/>
+                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus1.name }} :</span> {{ alloys_list.bonus1.description| nl2br  }} </span> <br/>
                         {% endif %}
                         {% if alloys_list.bonus2.name is defined and alloys_list.support is not empty %}
-                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus2.name }} :</span> {{ alloys_list.bonus2.description }} </span> <br/>
+                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus2.name }} :</span> {{ alloys_list.bonus2.description| nl2br  }} </span> <br/>
                         {% endif %}
                         {% if alloys_list.bonus3.name is defined and alloys_list.support is not empty %}
-                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus3.name }} :</span> {{ alloys_list.bonus3.description }} </span> <br/>
+                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus3.name }} :</span> {{ alloys_list.bonus3.description| nl2br  }} </span> <br/>
                         {% endif %}
                         {% if alloys_list.bonus4.name is defined and alloys_list.support is not empty %}
-                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus4.name }} :</span> {{ alloys_list.bonus4.description }} </span><br/>
+                            <span class="bonus"><span class="bold-title">Bonus - {{ alloys_list.bonus4.name }} :</span> {{ alloys_list.bonus4.description| nl2br  }} </span><br/>
                         {% endif %}
 
                         {% if alloys_list.malus1.name is defined and alloys_list.support is not empty %}
-                            <span class="malus"><span class="bold-title">Malus - {{ alloys_list.malus1.name }} :</span> {{ alloys_list.malus1.description }} </span><br/>
+                            <span class="malus"><span class="bold-title">Malus - {{ alloys_list.malus1.name }} :</span> {{ alloys_list.malus1.description| nl2br  }} </span><br/>
                         {% endif %}
                         {% if alloys_list.malus2.name is defined and alloys_list.support is not empty %}
-                            <span class="malus"><span class="bold-title">Malus - {{ alloys_list.malus2.name }} :</span> {{ alloys_list.malus2.description }} </span> <br/>
+                            <span class="malus"><span class="bold-title">Malus - {{ alloys_list.malus2.name }} :</span> {{ alloys_list.malus2.description| nl2br  }} </span> <br/>
                         {% endif %}
                         {% if alloys_list.malus3.name is defined and alloys_list.support is not empty %}
-                            <span class="malus"><span class="bold-title">Malus - {{ alloys_list.malus3.name }} :</span> {{ alloys_list.malus3.description }} </span> <br/>
+                            <span class="malus"><span class="bold-title">Malus - {{ alloys_list.malus3.name }} :</span> {{ alloys_list.malus3.description| nl2br  }} </span> <br/>
                         {% endif %}
                         
                         {% if alloys_list.effect1.name is defined and alloys_list.support is not empty %}
-                            <br/><span class="effect"><span class="bold-title">Effet - {{ alloys_list.effect1.name }} :</span> {{ alloys_list.effect1.description }}</span> <br/>
+                            <br/><span class="effect"><span class="bold-title">Effet - {{ alloys_list.effect1.name }} :</span> {{ alloys_list.effect1.description| nl2br  }}</span> <br/>
                         {% endif %}
                         {% if alloys_list.effect2.name is defined and alloys_list.support is not empty %}
-                            <span class="effect"><span class="bold-title">Effet - {{ alloys_list.effect2.name }} :</span> {{ alloys_list.effect2.description }}</span> <br/>
+                            <span class="effect"><span class="bold-title">Effet - {{ alloys_list.effect2.name }} :</span> {{ alloys_list.effect2.description| nl2br  }}</span> <br/>
                         {% endif %}
 
                         
@@ -100,6 +100,6 @@
             ) }}
 
            
-        </ul>
+        </ul> 
     </nav>
 {% endblock %}

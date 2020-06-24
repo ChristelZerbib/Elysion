@@ -46,7 +46,7 @@ class ObjectsListRepository extends ServiceEntityRepository
             }
 
             if($subtype !== null){
-                $qb->andWhere('t.subtype LIKE :subtype');
+                $qb->andWhere('t.id = :subtype');
                 $qb->setParameter('subtype', $subtype);
             }
             

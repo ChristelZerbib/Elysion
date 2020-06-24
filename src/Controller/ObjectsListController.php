@@ -23,7 +23,7 @@ class ObjectsListController extends AbstractController
      */
     public function index(Request $request, PaginatorInterface $paginator): Response
     {
-        $form = $this->createForm(ObjectsSearchType::class);
+        $form = $this->createForm(ObjectsSearchType::class, null, ['method'=>'GET']);
         
         $form->handleRequest($request);
          if ($form->isSubmitted() && $form->isValid()) {

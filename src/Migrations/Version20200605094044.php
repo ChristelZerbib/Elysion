@@ -22,17 +22,17 @@ final class Version20200605094044 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('DROP INDEX description ON alloys_list');
-        $this->addSql('DROP INDEX name ON alloys_list');
-        $this->addSql('DROP INDEX support ON alloys_list');
-        $this->addSql('DROP INDEX support_2 ON alloys_list');
-        $this->addSql('DROP INDEX support_3 ON alloys_list');
-        $this->addSql('DROP INDEX type ON alloys_list');
+        // $this->addSql('DROP INDEX description ON alloys_list');
+        // $this->addSql('DROP INDEX name ON alloys_list');
+        // $this->addSql('DROP INDEX support ON alloys_list');
+        // $this->addSql('DROP INDEX support_2 ON alloys_list');
+        // $this->addSql('DROP INDEX support_3 ON alloys_list');
+        // $this->addSql('DROP INDEX type ON alloys_list');
         $this->addSql('ALTER TABLE alloys_list ADD price INT NOT NULL');
-        $this->addSql('DROP INDEX rank_id ON bonus_effects_list');
-        $this->addSql('DROP INDEX number ON ranks');
-        $this->addSql('DROP INDEX price ON ranks');
-        $this->addSql('DROP INDEX type ON ranks');
+        // $this->addSql('DROP INDEX rank_id ON bonus_effects_list');
+        // $this->addSql('DROP INDEX number ON ranks');
+        // $this->addSql('DROP INDEX price ON ranks');
+        // $this->addSql('DROP INDEX type ON ranks');
     }
 
     public function down(Schema $schema) : void

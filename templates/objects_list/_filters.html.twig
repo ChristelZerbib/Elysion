@@ -25,7 +25,7 @@
 			  	</div>
 			 </div>
 			 <div class="col-md-4">
-				<div class="form-group">
+				<div class="form-group" id="subtypes">
 			    	<label for="type">Sous-type : </label>
 			    	{{ form_widget(form.subtype) }}
 			  	</div>
@@ -46,3 +46,37 @@
 
 <!-- 	</form> -->
 {{ form_end(form) }}
+
+<script>
+function displaySubtitles( typeName ) {
+	document.getElementById("subtypes").style.display = "block";
+	document.querySelectorAll("#subtypes option").forEach( elem => {
+		elem.style.display = elem.getAttribute("data-type") === typeName ? "block" : "none";
+	});
+}
+
+/*
+	Hi Christel ! The following line is equivalent to :
+	document.getElementById("objects_search_type").onchange = function(e) {
+		selectedIndex = e.target.selectedIndex;
+		document.querySelector("#subtypes select").selectedIndex = 0; // to remove current selection on subtypes
+		if(selectedIndex !== 0) {
+			displaySubtitles(e.target.options[selectedIndex].value);
+		}else{
+			document.getElementById("subtypes").style.display = "none";
+		}
+	};
+
+	Here are the links to help you understand
+	https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Op%C3%A9rateurs_logiques
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+	https://stackoverflow.com/questions/1085801/get-selected-value-in-dropdown-list-using-javascript
+*/
+document.getElementById("objects_search_type").onchange = e => {
+	document.querySelector("#subtypes select").selectedIndex = 0; 
+	e.target.selectedIndex !== 0 ? displaySubtitles( e.target.options[e.target.selectedIndex].value ) : document.getElementById("subtypes").style.display = "none"
+};
+
+/* Should we display the subtypes when the page load ? */
+document.getElementById("subtypes").style.display = document.querySelector("#objects_search_type option:checked").value === "" ? "none" : "block";
+</script>

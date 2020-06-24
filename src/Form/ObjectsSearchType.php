@@ -63,12 +63,14 @@ class ObjectsSearchType extends AbstractType
             ->add('subtype',  EntityType::class, [
                 'class' => ObjectTypes::class,
                 'query_builder' => function (EntityRepository $er) {
-                      return $er->createQueryBuilder('t');
-                              $er->groupBy('t.subtype');
+                      return $er->createQueryBuilder('t')->orderBy('t.subtype', 'ASC');
                         },
-                        'choice_label' => function ($choice, $key, $value) {
+                'choice_label' => function ($choice, $key, $value) {
                     return $choice->getSubtype();},
-                    'attr' => ['class' => 'form-control'],
+                'choice_attr' => function($choice, $key, $value) {
+                    return ['data-type'=>$choice->getType()];
+                },
+                'attr' => ['class' => 'form-control'],
                 'empty_data' => null,
                 'required' => false
             ])

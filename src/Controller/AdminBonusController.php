@@ -49,15 +49,16 @@ class AdminBonusController extends AbstractController
         $bonusEffectsList = new BonusEffectsList();
         $form = $this->createForm(BonusEffectsListType::class, $bonusEffectsList);
         $form->handleRequest($request);
-
+        if($form->isSubmitted()){
+                    var_dump($form->isValid());
+        }
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($bonusEffectsList);
             $entityManager->flush();
-
             return $this->redirectToRoute('bonus_effects_list_index');
         }
-
+        
         return $this->render('bonus_effects_list/new.html.twig', [
             'bonus_effects_list' => $bonusEffectsList,
             'form' => $form->createView(),

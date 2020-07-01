@@ -32,10 +32,6 @@ class ObjectLegend
      */
     private $eveil;
 
-    /**
-     * @ORM\OneToOne(targetEntity=ObjectsList::class, mappedBy="legend", cascade={"persist", "remove"})
-     */
-    private $object;
 
     public function getId(): ?int
     {
@@ -78,21 +74,4 @@ class ObjectLegend
         return $this;
     }
 
-    public function getObject(): ?ObjectsList
-    {
-        return $this->object;
-    }
-
-    public function setObject(?ObjectsList $object): self
-    {
-        $this->object = $object;
-
-        // set (or unset) the owning side of the relation if necessary
-        $newLegend = null === $object ? null : $this;
-        if ($object->getLegend() !== $newLegend) {
-            $object->setLegend($newLegend);
-        }
-
-        return $this;
-    }
 }

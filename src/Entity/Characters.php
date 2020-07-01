@@ -766,7 +766,7 @@ class Characters
         return $this->bonus_ethnique;
     }
 
-    public function setBonusEtnique(?BonusEthnique $bonus_etnique): self
+    public function setBonusEtnique(?Features $bonus_etnique): self
     {
         $this->bonus_ethnique = $bonus_ethnique;
 

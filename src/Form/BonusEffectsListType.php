@@ -47,16 +47,20 @@ class BonusEffectsListType extends AbstractType
                     'attr' => ['class' => 'form-control']
             ])
             ->add('isunique', CheckboxType::class, [
-                    'attr' => ['class' => 'form-check-input']
+                    'attr' => ['class' => 'form-check-input'],
+                    'required' => false, 
             ])
             ->add('israre', CheckboxType::class, [
-                    'attr' => ['class' => 'form-check-input']
+                    'attr' => ['class' => 'form-check-input'],
+                    'required' => false, 
             ])
             ->add('bought', CheckboxType::class, [
-                    'attr' => ['class' => 'form-check-input']
+                    'attr' => ['class' => 'form-check-input'],
+                    'required' => false, 
             ])
             ->add('special', CheckboxType::class, [
-                    'attr' => ['class' => 'form-check-input']
+                    'attr' => ['class' => 'form-check-input'],
+                    'required' => false, 
             ])
             ->add('evol_salary', IntegerType::class, [
                 'attr' => ['class' => 'form-control']
@@ -68,6 +72,7 @@ class BonusEffectsListType extends AbstractType
             ->add('evol_staff', NumberType::class, [
                 'help' => '(1 pour un coût réduit de 100%, 0.5 pour un coût réduit de 50%, 0 si aucune réduction)', 
                 'attr' => ['class' => 'form-control']
+
             ])
             ->add('up_feature', EntityType::class, [
                 'class' => UpFeature::class,
@@ -97,7 +102,7 @@ class BonusEffectsListType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => BonusEffectsList::class,
+            'data_class' => BonusEffectsList::class
         ]);
     }
 }

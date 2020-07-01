@@ -46,7 +46,11 @@ class BonusEffectsCommand extends Command
             $bonusEffect->setIsunique($bel['isunique']);
             $bonusEffect->setIsRare($bel['israre']);
             $bonusEffect->setDescription($bel['description']);
-            $bonusEffect->setUpFeature($em->getRepository(UpFeature::class)->findOneById($bel['up_feature_id']));
+
+            if(!empty($bel["up_feature_id"]) && strcmp($bel["up_feature_id"], "NULL") !== 0) {
+                    $bonusEffect->addUpFeature($em->getRepository(UpFeature::class)->findOneById($bel['up_feature_id']));
+                }
+
             if(strcmp($bel["add_glyphe_place"], "NULL") !== 0) {
                 $bonusEffect->setAddGlyphPlace($bel['add_glyphe_place']);
             }

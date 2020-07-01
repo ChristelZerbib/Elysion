@@ -105,7 +105,7 @@ class UserController extends AbstractController
                 ));
                 $this->getDoctrine()->getManager()->flush();
 
-                if (is_granted('ROLE_ADMIN')) { 
+                if ($this->isGranted('ROLE_ADMIN')) { 
                     return $this->redirectToRoute('user_index');
                 } else {
                     return $this->redirectToRoute('accueil');

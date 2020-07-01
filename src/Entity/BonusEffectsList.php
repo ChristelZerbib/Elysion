@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\BonusEffectsListRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -74,9 +76,15 @@ class BonusEffectsList
     private $evol_staff;
 
     /**
-     * @ORM\ManyToOne(targetEntity=UpFeature::class)
+     * @ORM\ManyToMany(targetEntity=UpFeature::class)
      */
-    private $up_feature;
+    private $upFeature;
+
+    public function __construct()
+    {
+        $this->upFeature = new ArrayCollection();
+    }
+
 
     public function getId(): ?int
     {
@@ -215,15 +223,31 @@ class BonusEffectsList
         return $this;
     }
 
-    public function getUpFeature(): ?UpFeature
+    /**
+     * @return Collection|UpFeature[]
+     */
+    public function getUpFeature(): Collection
     {
-        return $this->up_feature;
+        return $this->upFeature;
     }
 
-    public function setUpFeature(?UpFeature $up_feature): self
+    public function addUpFeature(UpFeature $upFeature): self
     {
-        $this->up_feature = $up_feature;
+        if (!$this->upFeature->contains($upFeature)) {
+            $this->upFeature[] = $upFeature;
+        }
 
         return $this;
     }
+
+    public function removeUpFeature(UpFeature $upFeature): self
+    {
+        if ($this->upFeature->contains($upFeature)) {
+            $this->upFeature->removeElement($upFeature);
+        }
+
+        return $this;
+    }
+
+
 }

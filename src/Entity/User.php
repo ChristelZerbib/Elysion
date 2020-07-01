@@ -123,7 +123,7 @@ class User implements UserInterface
          /**
      * @return Collection|Characters[]
      */
-    public function getCharacters(): Collection
+    public function getCharacters(): array
     {
         return $this->characters;
     }

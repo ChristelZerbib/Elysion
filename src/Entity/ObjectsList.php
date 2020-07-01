@@ -7,7 +7,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
-
+ 
 
 /**
  * @ORM\Entity(repositoryClass=ObjectsListRepository::class)
@@ -76,11 +76,7 @@ class ObjectsList
      */
     private $rarity;
 
-    /**
-     * @ORM\OneToOne(targetEntity=ObjectLegend::class, inversedBy="object", cascade={"persist", "remove"})
-     */
-    private $legend;
-
+    
     /**
      * @ORM\ManyToOne(targetEntity=Characters::class, inversedBy="objects")
      */
@@ -106,6 +102,12 @@ class ObjectsList
      * @ORM\ManyToMany(targetEntity=GlyphsList::class)
      */
     private $glyphs;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=ObjectLegend::class)
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $legend;
 
     public function __construct()
     {
@@ -227,18 +229,6 @@ class ObjectsList
         return $this;
     }
 
-    public function getLegend(): ?ObjectLegend
-    {
-        return $this->legend;
-    }
-
-    public function setLegend(?ObjectLegend $legend): self
-    {
-        $this->legend = $legend;
-
-        return $this;
-    }
-
     public function getCharacters(): ?Characters
     {
         return $this->characters;
@@ -309,6 +299,18 @@ class ObjectsList
         if ($this->glyphs->contains($glyph)) {
             $this->glyphs->removeElement($glyph);
         }
+
+        return $this;
+    }
+
+    public function getLegend(): ?ObjectLegend
+    {
+        return $this->legend;
+    }
+
+    public function setLegend(?ObjectLegend $legend): self
+    {
+        $this->legend = $legend;
 
         return $this;
     }

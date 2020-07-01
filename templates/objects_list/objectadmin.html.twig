@@ -1,31 +1,17 @@
-{% extends 'base.html.twig' %}
+{% extends 'base_admin.html.twig' %}
 
     
 
 
 {% block body %}
-    
-    <div class="row">
-        <div class="col-md-11">
-            <h1>Boutique des objets</h1>
-        </div> 
-        <div class="col-md-1">
-            
-            {% block info %}
-                {% include ("objects_list/_info.html.twig") %}
-            {% endblock %}
+    <h1>Boutique des objets</h1>
 
-        </div>
-               
-    </div>
-
-    
     {% block filters %}
         {% include ("objects_list/_filters.html.twig") %}
     {% endblock %}
 
         {% for objects_list in objects_lists %}
-        
+
             <div class="card bg-dark border-info mb-3" data-type="{{ objects_list.subtype.type }}"  data-name="{{ objects_list.name }}" data-name="{{ objects_list.description }}" data-price="{{ objects_list.price }}" data-shop="{{ objects_list.shop }}" data-subtype="{{ objects_list.subtype.subtype }}">
                 <div class="card-header border-info text-info cinzel">
                     {{ objects_list.name }}
@@ -47,7 +33,6 @@
                         {% for glyph in objects_list.glyphs %}
                             <span class="bold-title">{{ glyph.ingredienttype.type }} - {{ glyph.name }} </span> <br/> {{ glyph.description| nl2br  }} <br/>
                         {% endfor %}
-
 
                     </div>
                     <div class="card-text col-12 text-center">

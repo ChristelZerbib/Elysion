@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ObjectsListRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 
@@ -99,55 +101,16 @@ class ObjectsList
      */
     private $personalization;
 
-    /**
-     * @ORM\ManyToOne(targetEntity=GlyphsList::class)
-     */
-    private $glyph1;
 
     /**
-     * @ORM\ManyToOne(targetEntity=GlyphsList::class)
+     * @ORM\ManyToMany(targetEntity=GlyphsList::class)
      */
-    private $glyph2;
+    private $glyphs;
 
-    /**
-     * @ORM\ManyToOne(targetEntity=GlyphsList::class)
-     */
-    private $glyph3;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=GlyphsList::class)
-     */
-    private $glyph4;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=GlyphsList::class)
-     */
-    private $glyph5;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=GlyphsList::class)
-     */
-    private $glyph6;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=GlyphsList::class)
-     */
-    private $glyph7;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=GlyphsList::class)
-     */
-    private $glyph8;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=GlyphsList::class)
-     */
-    private $glyph9;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=GlyphsList::class)
-     */
-    private $glyph10;
+    public function __construct()
+    {
+        $this->glyphs = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -324,122 +287,28 @@ class ObjectsList
         return $this;
     }
 
-    public function getGlyph1(): ?GlyphsList
+    /**
+     * @return Collection|GlyphsList[]
+     */
+    public function getGlyphs(): Collection
     {
-        return $this->glyph1;
+        return $this->glyphs;
     }
 
-    public function setGlyph1(?GlyphsList $glyph1): self
+    public function addGlyph(GlyphsList $glyph): self
     {
-        $this->glyph1 = $glyph1;
+        if (!$this->glyphs->contains($glyph)) {
+            $this->glyphs[] = $glyph;
+        }
 
         return $this;
     }
 
-    public function getGlyph2(): ?GlyphsList
+    public function removeGlyph(GlyphsList $glyph): self
     {
-        return $this->glyph2;
-    }
-
-    public function setGlyph2(?GlyphsList $glyph2): self
-    {
-        $this->glyph2 = $glyph2;
-
-        return $this;
-    }
-
-    public function getGlyph3(): ?GlyphsList
-    {
-        return $this->glyph3;
-    }
-
-    public function setGlyph3(?GlyphsList $glyph3): self
-    {
-        $this->glyph3 = $glyph3;
-
-        return $this;
-    }
-
-    public function getGlyph4(): ?GlyphsList
-    {
-        return $this->glyph4;
-    }
-
-    public function setGlyph4(?GlyphsList $glyph4): self
-    {
-        $this->glyph4 = $glyph4;
-
-        return $this;
-    }
-
-    public function getGlyph5(): ?GlyphsList
-    {
-        return $this->glyph5;
-    }
-
-    public function setGlyph5(?GlyphsList $glyph5): self
-    {
-        $this->glyph5 = $glyph5;
-
-        return $this;
-    }
-
-    public function getGlyph6(): ?GlyphsList
-    {
-        return $this->glyph6;
-    }
-
-    public function setGlyph6(?GlyphsList $glyph6): self
-    {
-        $this->glyph6 = $glyph6;
-
-        return $this;
-    }
-
-    public function getGlyph7(): ?GlyphsList
-    {
-        return $this->glyph7;
-    }
-
-    public function setGlyph7(?GlyphsList $glyph7): self
-    {
-        $this->glyph7 = $glyph7;
-
-        return $this;
-    }
-
-    public function getGlyph8(): ?GlyphsList
-    {
-        return $this->glyph8;
-    }
-
-    public function setGlyph8(?GlyphsList $glyph8): self
-    {
-        $this->glyph8 = $glyph8;
-
-        return $this;
-    }
-
-    public function getGlyph9(): ?GlyphsList
-    {
-        return $this->glyph9;
-    }
-
-    public function setGlyph9(?GlyphsList $glyph9): self
-    {
-        $this->glyph9 = $glyph9;
-
-        return $this;
-    }
-
-    public function getGlyph10(): ?GlyphsList
-    {
-        return $this->glyph10;
-    }
-
-    public function setGlyph10(?GlyphsList $glyph10): self
-    {
-        $this->glyph10 = $glyph10;
+        if ($this->glyphs->contains($glyph)) {
+            $this->glyphs->removeElement($glyph);
+        }
 
         return $this;
     }

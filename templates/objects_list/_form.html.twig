@@ -1,4 +1,77 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    
+	{{ form_label(form.name, 'Nom : ') }}
+    {{ form_widget(form.name) }}
+    <br/>
+    {{ form_label(form.description, 'Description : ') }}
+    {{ form_widget(form.description) }}
+    <br/>
+	{{ form_label(form.comment, 'Commentaire : ') }}
+    {{ form_widget(form.comment) }}
+    <br/>
+    {{ form_label(form.price, 'Prix : ') }}
+    {{ form_widget(form.price) }}
+    <br/>
+    {{ form_label(form.subtype, 'Type : ') }}
+    {{ form_widget(form.subtype) }}
+    <br/>
+    <div class="row">
+    	<div class="col-md">
+    		{{ form_label(form.shop, 'Boutique : ') }}
+    		{{ form_widget(form.shop) }}
+    	</div>
+    	<div class="col-md">
+    		
+	    		{{ form_label(form.max_number, 'Si rare, quantité maximum : ') }}
+    			{{ form_widget(form.max_number) }}
+
+    	</div>
+    </div>
+    <br/>
+    <div class="row">
+    	<div class="col-md">
+    		{{ form_label(form.characters, 'Propriétaire : ') }}
+    			{{ form_widget(form.characters) }}
+    	</div>
+
+    	<div class="form-check col-md align-self-center text-center">
+			<br>{{ form_widget(form.personalization) }}
+	   		{{ form_label(form.personalization, 'Personnalisation à l\'achat ', {'label_attr': {'class': 'form-check-label'}}) }}
+		</div>
+    </div>
+    <br/>
+    <div class="row">
+    	<div class="col-md">
+    		{{ form_label(form.boat, 'Si navire, à sélectionner : ') }}
+    			{{ form_widget(form.boat) }}
+    	</div>
+
+    	<div class="form-check col-md">
+			{{ form_label(form.rarity, 'Rareté : ') }}
+    			{{ form_widget(form.rarity) }}
+		</div>
+    </div>
+    <br/>
+    <div class="row">
+    	<div class="col-md">
+    		{{ form_label(form.title, 'Titre de l\'objet : ') }}
+    			{{ form_widget(form.title) }}
+    	</div>
+
+    	<div class="form-check col-md">
+			{{ form_label(form.legend, 'Niveau d\'éveil : ') }}
+    			{{ form_widget(form.legend) }}
+		</div>
+		
+    </div>
+    <br/>
+    {{ form_label(form.alloy, 'Alliage : ') }}
+    	{{ form_widget(form.alloy) }}
+    <br/>
+	   {{ form_label(form.glyphs, 'Glyphes : ') }}
+		{{ form_widget(form.glyphs) }} 
+        <small class="form-text text-muted">{{ form_help(form.glyphs) }}</small>
+
+
+    <br><button class="btn btn-dark text-info border-info btn-block">{{ button_label|default('Sauvegarder') }}</button>
 {{ form_end(form) }}

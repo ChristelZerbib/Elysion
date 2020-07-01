@@ -3,30 +3,48 @@
 namespace App\Controller;
 
 use App\Entity\ObjectsList;
+use App\Entity\ObjectTypes;
 use App\Form\ObjectsListType;
+use App\Form\ObjectsSearchType;
 use App\Repository\ObjectsListRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Knp\Component\Pager\PaginatorInterface;
 
 /**
  * @Route("/elysion/admin/boutique-objets")
  */
 class AdminObjectsController extends AbstractController
 {
-    // /**
-    //  * @Route("/index", name="objects_list_admin", methods={"GET","POST"})
-    //  */
-    // public function index(ObjectsListRepository $objectsListRepository): Response
-    // {
-    //     return $this->render('objects_list/index.html.twig', [
-    //         'objects_lists' => $objectsListRepository->findAll(),
-    //     ]);
-    // }
+    /**
+     * @Route("/index", name="objects_list_admin", methods={"GET","POST"})
+     */
+ public function index(Request $request, PaginatorInterface $paginator): Response
+    {
+        $form = $this->createForm(ObjectsSearchType::class, null, ['method'=>'GET']);
+        
+        $form->handleRequest($request);
+         if ($form->isSubmitted() && $form->isValid()) {
+            $data = $form->getData();
+            $data = $this->getDoctrine()->getRepository(ObjectsList::class)->searchadmin($data['recherche'], $data['type'], $data['subtype'], $data['shop'], $data['order']);
+        }
+        else
+        {
+            $data = $this->getDoctrine()->getRepository(ObjectsList::class)->searchadmin();
+        }
+
+        $objects = $paginator->paginate($data, $request->query->getInt('page',1),20);
+               return $this->render('objects_list/objectadmin.html.twig', [
+            'objects_lists' => $objects,
+            'form' => $form->createView(),
+
+        ]);
+    }
 
     /**
-     * @Route("/new", name="objects_list_new", methods={"GET","POST"})
+     * @Route("/nouveau", name="objects_list_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -39,7 +57,7 @@ class AdminObjectsController extends AbstractController
             $entityManager->persist($objectsList);
             $entityManager->flush();
 
-            return $this->redirectToRoute('objects_list_index');
+            return $this->redirectToRoute('objects_list_admin');
         }
 
         return $this->render('objects_list/new.html.twig', [
@@ -59,7 +77,7 @@ class AdminObjectsController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="objects_list_edit", methods={"GET","POST"})
+     * @Route("/{id}/modifier", name="objects_list_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, ObjectsList $objectsList): Response
     {
@@ -69,7 +87,7 @@ class AdminObjectsController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('objects_list_index');
+            return $this->redirectToRoute('objects_list_admin');
         }
 
         return $this->render('objects_list/edit.html.twig', [
@@ -89,6 +107,6 @@ class AdminObjectsController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('objects_list_index');
+        return $this->redirectToRoute('objects_list_admin');
     }
 }

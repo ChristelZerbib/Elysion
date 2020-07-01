@@ -1,11 +1,23 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="clearfix">
+
+<div class="row">
+        <div class="col-md-11 clearfix">
             <h1 class="float-left">Alliages</h1>
         
             <a href="{{ path('bonus_effects_list_index') }}" class="link-alone btn btn-dark border-info text-info text-right float-right">Bonus et effets d'alliage seuls</a>
+        </div> 
+        <div class="col-md-1">
+            
+            {% block info %}
+                {% include ("alloys_list/_info.html.twig") %}
+            {% endblock %}
+
         </div>
+               
+</div>
+
         
         {% block filters %}
             {% include ("alloys_list/_filters.html.twig") %}
@@ -17,14 +29,14 @@
  
         {% if alloys_list.bought is defined and alloys_list.bought == false %}
             <div class="card bg-dark border-info mb-3" data-type="{{ alloys_list.type }}" data-supp1= "{{ alloys_list.support }}" data-supp2= "{{ alloys_list.support2 }}" data-supp3= "{{ alloys_list.support3 }}" data-name="{{ alloys_list.name }}" data-name="{{ alloys_list.description }}" data-price="{{ alloys_list.price }}">
-                <div class="card-header border-info text-info bold-title">
+                <div class="card-header border-info text-info cinzel">
                     {{ alloys_list.name }}
                 </div>
                 <div class="card-body bg-secondary no-gutters row justify-content-around">
  
 
                     {# description of the alloy #}
-                    <div class="card-text text-light col-12 sup-type">
+                    <div class="card-text text-light col-12 sup-type cinzel">
 
                         {% if alloys_list.support is defined and alloys_list.support is not empty %}
                             {{ alloys_list.support }}

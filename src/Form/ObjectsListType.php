@@ -4,6 +4,13 @@ namespace App\Form;
 
 use App\Entity\ObjectsList;
 use App\Entity\Titles;
+use App\Entity\ObjectTypes;
+use App\Entity\AlloysList;
+use App\Entity\GlyphsList;
+use App\Entity\Rarity;
+use App\Entity\ObjectLegend;
+use App\Entity\Characters;
+use App\Entity\Boats;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -24,11 +31,15 @@ class ObjectsListType extends AbstractType
             ->add('name', TextType::class, [
                     'attr' => ['class' => 'form-control'],
             ])
-            ->add('decription', TextareaType::class, [
+            ->add('description', TextareaType::class, [
                     'attr' => ['class' => 'form-control'],
+                    'empty_data' => null,
+                    'required' => false,
             ])
-            ->add('comment', TextType::class, [
+            ->add('comment', TextareaType::class, [
                     'attr' => ['class' => 'form-control'],
+                    'empty_data' => null,
+                    'required' => false, 
             ])
             ->add('shop', ChoiceType::class, [
                 'choices' => $this->getShop(),
@@ -39,7 +50,9 @@ class ObjectsListType extends AbstractType
                 'attr' => ['class' => 'form-control']
             ])
             ->add('max_number', IntegerType::class, [
-                'attr' => ['class' => 'form-control']
+                'attr' => ['class' => 'form-control'],
+                'empty_data' => "",
+                'required' => false, 
             ])
             ->add('personalization', CheckboxType::class, [
                     'attr' => ['class' => 'form-check-input'],
@@ -89,7 +102,7 @@ class ObjectsListType extends AbstractType
                         ->orderBy('r.name', 'ASC');
                         },
                 'choice_label' => function ($choice, $key, $value) {
-                    return $choice->getName();},
+                    return "Objet " . $choice->getName();},
                 'attr' => ['class' => 'form-control'],
                 'empty_data' => null,
                 'required' => false, 
@@ -102,7 +115,7 @@ class ObjectsListType extends AbstractType
                 'choice_label' => function ($choice, $key, $value) {
                     $legend="";
                     if ($choice->getEveil()) {
-                        $legend = "Phase d\'éveil (3)";
+                        $legend = "Phase d'éveil (3)";
                     } else if ($choice->getFusion()) {
                         $legend = "Phase de Fusion (2)";
                     }
@@ -139,127 +152,22 @@ class ObjectsListType extends AbstractType
                 'empty_data' => null,
                 'required' => false, 
             ])
-            ->add('glyph1', EntityType::class, [
+
+            ->add('glyphs', EntityType::class, [
                 'class' => GlyphsList::class,
                 'query_builder' => function (EntityRepository $er) {
                       return $er->createQueryBuilder('b')
                         ->orderBy('b.name', 'ASC');
                         },
                 'choice_label' => function ($choice, $key, $value) {
-                    return $choice->getName() . " : ". $choice->getDescription();},
+                    return $choice->getName();},
                 'attr' => ['class' => 'form-control'],
                 'empty_data' => null,
-                'required' => false
+                'required' => false, 
+                'multiple' => true,
+                'help' => '(Appuyez sur Ctrl pour sélectionner plusieurs glyphes)'
             ])
-            ->add('glyph2', EntityType::class, [
-                'class' => GlyphsList::class,
-                'query_builder' => function (EntityRepository $er) {
-                      return $er->createQueryBuilder('b')
-                        ->orderBy('b.name', 'ASC');
-                        },
-                'choice_label' => function ($choice, $key, $value) {
-                    return $choice->getName() . " : ". $choice->getDescription();},
-                'attr' => ['class' => 'form-control'],
-                'empty_data' => null,
-                'required' => false
-            ])
-            ->add('glyph3', EntityType::class, [
-                'class' => GlyphsList::class,
-                'query_builder' => function (EntityRepository $er) {
-                      return $er->createQueryBuilder('b')
-                        ->orderBy('b.name', 'ASC');
-                        },
-                'choice_label' => function ($choice, $key, $value) {
-                    return $choice->getName() . " : ". $choice->getDescription();},
-                'attr' => ['class' => 'form-control'],
-                'empty_data' => null,
-                'required' => false
-            ])
-            ->add('glyph4', EntityType::class, [
-                'class' => GlyphsList::class,
-                'query_builder' => function (EntityRepository $er) {
-                      return $er->createQueryBuilder('b')
-                        ->orderBy('b.name', 'ASC');
-                        },
-                'choice_label' => function ($choice, $key, $value) {
-                    return $choice->getName() . " : ". $choice->getDescription();},
-                'attr' => ['class' => 'form-control'],
-                'empty_data' => null,
-                'required' => false
-            ])
-            ->add('glyph5', EntityType::class, [
-                'class' => GlyphsList::class,
-                'query_builder' => function (EntityRepository $er) {
-                      return $er->createQueryBuilder('b')
-                        ->orderBy('b.name', 'ASC');
-                        },
-                'choice_label' => function ($choice, $key, $value) {
-                    return $choice->getName() . " : ". $choice->getDescription();},
-                'attr' => ['class' => 'form-control'],
-                'empty_data' => null,
-                'required' => false
-            ])
-            ->add('glyph6', EntityType::class, [
-                'class' => GlyphsList::class,
-                'query_builder' => function (EntityRepository $er) {
-                      return $er->createQueryBuilder('b')
-                        ->orderBy('b.name', 'ASC');
-                        },
-                'choice_label' => function ($choice, $key, $value) {
-                    return $choice->getName() . " : ". $choice->getDescription();},
-                'attr' => ['class' => 'form-control'],
-                'empty_data' => null,
-                'required' => false
-            ])
-            ->add('glyph7', EntityType::class, [
-                'class' => GlyphsList::class,
-                'query_builder' => function (EntityRepository $er) {
-                      return $er->createQueryBuilder('b')
-                        ->orderBy('b.name', 'ASC');
-                        },
-                'choice_label' => function ($choice, $key, $value) {
-                    return $choice->getName() . " : ". $choice->getDescription();},
-                'attr' => ['class' => 'form-control'],
-                'empty_data' => null,
-                'required' => false
-            ])
-            ->add('glyph8', EntityType::class, [
-                'class' => GlyphsList::class,
-                'query_builder' => function (EntityRepository $er) {
-                      return $er->createQueryBuilder('b')
-                        ->orderBy('b.name', 'ASC');
-                        },
-                'choice_label' => function ($choice, $key, $value) {
-                    return $choice->getName() . " : ". $choice->getDescription();},
-                'attr' => ['class' => 'form-control'],
-                'empty_data' => null,
-                'required' => false
-            ])
-            ->add('glyph9', EntityType::class, [
-                'class' => GlyphsList::class,
-                'query_builder' => function (EntityRepository $er) {
-                      return $er->createQueryBuilder('b')
-                        ->orderBy('b.name', 'ASC');
-                        },
-                'choice_label' => function ($choice, $key, $value) {
-                    return $choice->getName() . " : ". $choice->getDescription();},
-                'attr' => ['class' => 'form-control'],
-                'empty_data' => null,
-                'required' => false
-            ])
-            ->add('glyph10', EntityType::class, [
-                'class' => GlyphsList::class,
-                'query_builder' => function (EntityRepository $er) {
-                      return $er->createQueryBuilder('b')
-                        ->orderBy('b.name', 'ASC');
-                        },
-                'choice_label' => function ($choice, $key, $value) {
-                    return $choice->getName() . " : ". $choice->getDescription();},
-                'attr' => ['class' => 'form-control'],
-                'empty_data' => null,
-                'required' => false
-            ])
-        ;
+         ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
@@ -267,5 +175,13 @@ class ObjectsListType extends AbstractType
         $resolver->setDefaults([
             'data_class' => ObjectsList::class,
         ]);
+    }
+
+    public function getShop(){
+        $results = [];
+        foreach (ObjectsList::SHOP as $shop) {
+           $results[$shop] = $shop;
+        }
+        return $results;
     }
 }

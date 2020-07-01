@@ -1,7 +1,18 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Glyphes et améliorations</h1>
+<div class="row">
+    <div class="col-md-11">
+        <h1 class="text-left">Glyphes et améliorations technologiques</h1>
+    </div>
+    <div class="col-md-1">
+        {% block info %}
+            {% include ("glyphs_list/_info.html.twig") %}
+        {% endblock %}
+    </div>
+    
+</div>
+    
     {% block filters %}
         {% include ("glyphs_list/_filters.html.twig") %}
     {% endblock %}

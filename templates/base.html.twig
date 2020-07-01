@@ -4,14 +4,15 @@
         <meta charset="UTF-8">
         <title>{% block title %}Elysion - Gestion RPG{% endblock %}</title>
         {{ encore_entry_link_tags('app') }}
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Noto+Sans&display=swap" rel="stylesheet"> 
     </head>
     <body>
         {% block nav %}
         	{% include ("nav.html.twig") %}
     	{% endblock %}
 
-    	<div class="container global-frame">
-			<div class="row">
+    	<div class="container global-frame h-100">
+			<div class="row h-100">
 				<div class="col-12">
         			{% block body %}
         				<section>Cette page n'existe pas.</section>

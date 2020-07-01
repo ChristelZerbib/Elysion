@@ -35,7 +35,7 @@ class BonusEffectsListController extends AbstractController
             $data = $this->getDoctrine()->getRepository(BonusEffectsList::class)->search();
         }
 
-        $bonus = $paginator->paginate($data, $request->query->getInt('page',1),20);
+        $bonus = $paginator->paginate($data, $request->query->getInt('page',1),21);
         return $this->render('bonus_effects_list/index.html.twig', [
             'bonus_effects_lists' => $bonus,
             'form' => $form->createView(),

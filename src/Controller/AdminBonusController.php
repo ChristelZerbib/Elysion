@@ -35,7 +35,7 @@ class AdminBonusController extends AbstractController
                 $data = $this->getDoctrine()->getRepository(BonusEffectsList::class)->searchadmin();
             }
 
-            $bonus = $paginator->paginate($data, $request->query->getInt('page',1),20);
+            $bonus = $paginator->paginate($data, $request->query->getInt('page',1),21);
             return $this->render('bonus_effects_list/bonusadmin.html.twig', [
                 'bonus_effects_lists' => $bonus,
                 'form' => $form->createView(),

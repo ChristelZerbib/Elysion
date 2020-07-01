@@ -34,7 +34,7 @@
                 </a>
                 <div class="dropdown-menu alert-info" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item text-ocean" href="#">Validations</a>
-                  <a class="dropdown-item text-ocean" href="#">Profil</a>
+                  <a class="dropdown-item text-ocean" href="{{ path('user_password', {id: app.user.id}) }}">Mot de passe</a>
                   <a class="dropdown-item text-ocean" href="{{ path('app_logout') }}">Déconnexion</a>
                 </div>
             </li>

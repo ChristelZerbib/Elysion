@@ -2,7 +2,18 @@
 
 
 {% block body %}
-    <h1>Bonus et effets d'alliages</h1>
+<div class="row">
+    <div class="col-md-11">
+        <h1>Bonus et effets d'alliages</h1>
+    </div>
+    <div class="col-md-1">
+        {% block info %}
+            {% include ("bonus_effects_list/_info.html.twig") %}
+        {% endblock %}
+    </div>
+    
+</div>
+    
     {% block filters %}
         {% include ("bonus_effects_list/_filters.html.twig") %}
     {% endblock %}

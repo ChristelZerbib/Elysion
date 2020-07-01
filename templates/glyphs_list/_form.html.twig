@@ -1,19 +1,19 @@
 {{ form_start(form) }}
     {{ form_label(form.name, 'Nom : ') }}
     {{ form_widget(form.name) }}
-
+    <br/>
     {{ form_label(form.description, 'Description : ') }}
     {{ form_widget(form.description) }}
-
+    <br/>
     {{ form_label(form.price, 'Prix : ') }}
     {{ form_widget(form.price) }}
-
+    <br/>
     {{ form_label(form.ingredient_type, 'Type de glyphe / amélioration : ') }}
     {{ form_widget(form.ingredient_type) }}
-
+    <br/>
     {{ form_label(form.effect, 'Effet : ') }}
     {{ form_widget(form.effect) }}
-
+    <br/>
     {{ form_label(form.support, 'Supports : ') }}
     {{ form_widget(form.support) }}
     {{ form_widget(form.support_2) }}
@@ -22,7 +22,7 @@
 
     {{ form_label(form.evol_salary, 'Nombre de PO supplémentaires sur le salaire : ') }}
     {{ form_widget(form.evol_salary) }}
-
+    <br/>
     {{ form_label(form.evol_maintenance, 'Modification du coût de maintenance : ') }}
     {{ form_widget(form.evol_maintenance) }}
 	<small class="form-text text-muted">{{ form_help(form.evol_maintenance) }}</small>
@@ -37,7 +37,7 @@
 
     {{ form_label(form.characters, 'Propriétaire : ') }}
     {{ form_widget(form.characters) }}
-
+    <br/>
     {{ form_label(form.rarity, 'Rareté : ') }}
     {{ form_widget(form.rarity) }}
 

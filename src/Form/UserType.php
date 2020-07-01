@@ -17,7 +17,8 @@ class UserType extends AbstractType
     {
         $builder
             ->add('username', null, [
-                'label'=>'Nom d\'ututilisateur : '
+                'label'=>'Nom d\'ututilisateur : ',
+                'attr' => ['class' => 'form-control']
             ])
             ->add('roles', ChoiceType::class, [
                 'choices' => [
@@ -26,19 +27,33 @@ class UserType extends AbstractType
                 'required' => true,
                 'multiple' => false,
                 'expanded' => false,
-                'label'=>'Permissions : '
+                'label'=>'Permissions : ',
+                'attr' => ['class' => 'form-control']
             ])
             ->add('password', RepeatedType::class,[
                 'type' => PasswordType::class,
                 'invalid_message' => 'Les deux mots de passe doivent être identiques', 
                 'required' => true,
-                'first_options'  => ['label' => 'Entrez le mot de passe : '],
-                'second_options' => ['label' => 'Répétez le mot de passe : '],
+                'first_options'  => [
+                    'attr' => [
+                        'class' =>'form-control col-sm',
+                        'placeholder'=>'Entrez le mot de passe'
+                    ],
+                    'label' => 'Entrez le mot de passe : '
+                ],
+                'second_options' => [
+                    'attr' => [
+                        'class' =>'form-control col-sm',
+                        'placeholder' => 'Répétez le mot de passe '
+                    ],
+                    'label' => 'Répétez le mot de passe : '
+                ],
 
              ])
             ->add('pp', null, [
                 'label'=>'PP : ',
                 'empty_data' => 0,
+                'attr' => ['class' => 'form-control']
             ])
         ; 
 

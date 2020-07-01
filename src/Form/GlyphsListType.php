@@ -20,7 +20,7 @@ use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Doctrine\ORM\EntityRepository;
 
-class GlyphsListType extends AbstractType
+class GlyphsListType extends AbstractType 
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {

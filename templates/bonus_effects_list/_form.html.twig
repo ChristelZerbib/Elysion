@@ -3,19 +3,19 @@
 
 	{{ form_label(form.name, 'Nom : ') }}
     {{ form_widget(form.name) }}
-
+    <br/>
     {{ form_label(form.description, 'Description : ') }}
     {{ form_widget(form.description) }}
-
+    <br/>
     {{ form_label(form.rank, 'Type / Rang : ') }}
     {{ form_widget(form.rank) }}
-
+    <br/>
     {{ form_label(form.add_glyph_place, 'Nombre d\'emplacements de glyphes supplémentaires : ') }}
     {{ form_widget(form.add_glyph_place) }}
-
+    <br/>
     {{ form_label(form.evol_salary, 'Nombre de PO supplémentaires sur le salaire : ') }}
     {{ form_widget(form.evol_salary) }}
-
+    <br/>
 	{{ form_label(form.evol_maintenance, 'Modification du coût de maintenance : ') }}
     {{ form_widget(form.evol_maintenance) }}
 	<small class="form-text text-muted">{{ form_help(form.evol_maintenance) }}</small>

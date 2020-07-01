@@ -72,28 +72,28 @@ class ObjectListCommand extends Command
                     $object->setSubtype($em->getRepository(ObjectTypes::class)->findOneById($ol['subtype_id']));
                 }
 
-                if(strcmp($ol["glyphe1_id"], "NULL") !== 0) {
-                    $object->setGlyph1($em->getRepository(GlyphsList::class)->findOneById($ol['glyphe1_id']));
+                if(!empty($ol["glyphe1_id"])) {
+                    $object->addGlyph($em->getRepository(GlyphsList::class)->findOneById($ol['glyphe1_id']));
                 }
 
-                if(strcmp($ol["glyphe2_id"], "NULL") !== 0) {
-                    $object->setGlyph2($em->getRepository(GlyphsList::class)->findOneById($ol['glyphe2_id']));
+                if(!empty($ol["glyphe2_id"])) {
+                    $object->addGlyph($em->getRepository(GlyphsList::class)->findOneById($ol['glyphe2_id']));
                 }
 
-                if(strcmp($ol["glyph3_id"], "NULL") !== 0) {
-                    $object->setGlyph3($em->getRepository(GlyphsList::class)->findOneById($ol['glyph3_id']));
+                if(!empty($ol["glyph3_id"])) {
+                    $object->addGlyph($em->getRepository(GlyphsList::class)->findOneById($ol['glyph3_id']));
                 }
 
-                if(strcmp($ol["glyph4_id"], "NULL") !== 0) {
-                    $object->setGlyph4($em->getRepository(GlyphsList::class)->findOneById($ol['glyph4_id']));
+                if(!empty($ol["glyph4_id"])) {
+                    $object->addGlyph($em->getRepository(GlyphsList::class)->findOneById($ol['glyph4_id']));
                 }
 
-                if(strcmp($ol["glyph_sup1_id"], "NULL") !== 0) {
-                    $object->setGlyph5($em->getRepository(GlyphsList::class)->findOneById($ol['glyph_sup1_id']));
+                if(!empty($ol["glyph_sup1_id"])) {
+                    $object->addGlyph($em->getRepository(GlyphsList::class)->findOneById($ol['glyph_sup1_id']));
                 }
 
-                if(strcmp($ol["glyph_sup2_id"], "NULL") !== 0) {
-                    $object->setGlyph6($em->getRepository(GlyphsList::class)->findOneById($ol['glyph_sup2_id']));
+                if(!empty($ol["glyph_sup2_id"])) {
+                    $object->addGlyph($em->getRepository(GlyphsList::class)->findOneById($ol['glyph_sup2_id']));
                 } 
 
                 if(strcmp($ol["alloy_id"], "NULL") !== 0) {

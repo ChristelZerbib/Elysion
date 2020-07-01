@@ -78,9 +78,6 @@
     "doctrine/sql-formatter": {
         "version": "1.1.0"
     },
-    "jdorn/sql-formatter": {
-        "version": "v1.2.17"
-    },
     "knplabs/knp-components": {
         "version": "v2.3.5"
     },
@@ -106,7 +103,7 @@
         "version": "2.8.0"
     },
     "php": {
-        "version": "7.2"
+        "version": "7.4"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -275,9 +272,6 @@
     },
     "symfony/process": {
         "version": "v5.0.9"
-    },
-    "symfony/profiler-pack": {
-        "version": "v1.0.4"
     },
     "symfony/property-access": {
         "version": "v5.0.8"

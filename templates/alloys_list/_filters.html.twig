@@ -1,10 +1,10 @@
 {{ form_start(form, {'attr': {'class': 'filters container-fluid'}}) }}
 	<!-- <form class="filters container-fluid"> -->
 		<div class="row align-items-center">
-	    	<div class="col-md-6">
+	    	<div class="col-md-5">
 				{{ form_widget(form.recherche) }}
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-7">
 
 				{% for key, order in form.order.children %}
 

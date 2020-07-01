@@ -3,26 +3,37 @@
 {% block body %}
 <div class="row">
 	<div class="col-md">
-		<a class="btn btn-dark text-info border-info btn-block" href="{{ path('bonus_effects_list_admin') }}" class="btn btn-dark text-info border-info">Voir tous les bonus/malus ou effets d'alliage</a>
+		<a class="btn btn-dark text-light border-info btn-block" href="{{ path('bonus_effects_list_admin') }}" class="btn btn-dark text-info border-info">Voir tous les bonus/malus ou effets d'alliage</a>
 	</div>
 	<div class="col-md">
-		<a class="btn btn-dark text-info border-info btn-block" href="{{ path('bonus_effects_list_new') }}" class="btn btn-dark text-info border-info">Ajouter un nouveau bonus/malus ou effet d'alliage</a>
-	</div>
-</div>
-<div class="row">
-	<div class="col-md">
-		<a class="btn btn-dark text-info border-info btn-block" href="{{ path('alloys_list_admin') }}" class="btn btn-dark text-info border-info">Voir tous les alliages</a>
-	</div>
-	<div class="col-md">
-		<a class="btn btn-dark text-info border-info btn-block" href="{{ path('alloys_list_new') }}" class="btn btn-dark text-info border-info">Ajouter un nouvel alliage</a>
+		<a class="btn btn-dark text-light border-info btn-block" href="{{ path('bonus_effects_list_new') }}" class="btn btn-dark text-info border-info">Ajouter un nouveau bonus/malus ou effet d'alliage</a>
 	</div>
 </div>
+<br>
 <div class="row">
 	<div class="col-md">
-		<a class="btn btn-dark text-info border-info btn-block" href="{{ path('glyphs_list_admin') }}" class="btn btn-dark text-info border-info">Voir tous les glyphes et améliorations</a>
+		<a class="btn btn-dark text-light border-info btn-block" href="{{ path('alloys_list_admin') }}" class="btn btn-dark text-info border-info">Voir tous les alliages</a>
 	</div>
 	<div class="col-md">
-		<a class="btn btn-dark text-info border-info btn-block" href="{{ path('glyphs_list_new') }}" class="btn btn-dark text-info border-info">Ajouter un nouveau glyphe / ammélioration</a>
+		<a class="btn btn-dark text-light border-info btn-block" href="{{ path('alloys_list_new') }}" class="btn btn-dark text-info border-info">Ajouter un nouvel alliage</a>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md">
+		<a class="btn btn-dark text-light border-info btn-block" href="{{ path('glyphs_list_admin') }}" class="btn btn-dark text-info border-info">Voir tous les glyphes et améliorations</a>
+	</div>
+	<div class="col-md">
+		<a class="btn btn-dark text-light border-info btn-block" href="{{ path('glyphs_list_new') }}" class="btn btn-dark text-info border-info">Ajouter un nouveau glyphe / ammélioration</a>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md">
+		<a class="btn btn-dark text-light border-info btn-block" href="{{ path('objects_list_admin') }}" class="btn btn-dark text-info border-info">Voir tous les objets</a>
+	</div>
+	<div class="col-md">
+		<a class="btn btn-dark text-light border-info btn-block" href="{{ path('objects_list_new') }}" class="btn btn-dark text-info border-info">Ajouter un nouvel objet</a>
 	</div>
 </div>
 {% endblock %}

@@ -19,7 +19,7 @@ security:
             guard : 
                 authenticators : 
                     - App\Security\LoginFormAuthentificatorAuthenticator
-            logout : 
+            logout :
                 path : app_logout
                 target : accueil
 

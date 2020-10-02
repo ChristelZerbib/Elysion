@@ -36,7 +36,7 @@ class BonusEffectsListType extends AbstractType
                     return $choice->getType() . " de rang ". $choice->getNumber();},
                 'attr' => ['class' => 'form-control'],
                 'empty_data' => null,
-                'required' => false
+                'required' => true
             ])
 
             ->add('description', TextareaType::class, [
@@ -67,11 +67,13 @@ class BonusEffectsListType extends AbstractType
             ])
             ->add('evol_maintenance', NumberType::class, [
                 'help' => '(1 pour un coût réduit de 100%, 0.5 pour un coût réduit de 50%, 0 si aucune réduction)',
-                'attr' => ['class' => 'form-control']
+                'attr' => ['class' => 'form-control'],
+                'invalid_message' => 'Seules 0, 0.5 et 1 sont des valeurs acceptées'
             ])
             ->add('evol_staff', NumberType::class, [
                 'help' => '(1 pour un coût réduit de 100%, 0.5 pour un coût réduit de 50%, 0 si aucune réduction)', 
-                'attr' => ['class' => 'form-control']
+                'attr' => ['class' => 'form-control'],
+                'invalid_message' => 'Seules 0, 0.5 et 1 sont des valeurs acceptées'
 
             ])
             ->add('up_feature', EntityType::class, [
